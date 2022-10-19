@@ -1,0 +1,3306 @@
+\documentclass[12pt]{amsart}
+
+\usepackage{enumerate,amsmath,amssymb,amsthm}
+
+\usepackage{arydshln}
+\usepackage{dashrule}
+\usepackage{slashed}
+\usepackage{multirow}
+
+%for Griffiths curly r
+\usepackage{calligra}
+\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n}
+\DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}{}
+\newcommand{\scripty}[1]{\ensuremath{\mathcalligra{#1}}}
+
+\newcommand{\capk}{\frac{1}{4 \pi \epsilon_0}}
+
+\begin{document}
+\title{}
+\author{Alec Hewitt}
+\maketitle
+
+\setlength{\parindent}{0mm}
+\newcommand{\comment}[1]{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section*{Thermal Physics}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+\section*{Chapter 1}
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$C \equiv \frac{Q}{\Delta T};\,\, c \equiv \frac{C}{m}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+\begin{enumerate}
+\setcounter{enumi}{275}
+
+\item \underline{$C_P = ( \frac{\partial U}{\partial T})_P + P ( \frac{\partial V}{\partial T})_P$}\\
+$C_P = \frac{Q}{\Delta T} = ( \frac{\Delta U + P \Delta V}{\Delta T})_P = ( \frac{\partial U}{\partial T})_P + P( \frac{\partial V}{\partial T})_P\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$C_V = ( \frac{\partial U}{\partial T})_V$}\\
+$C_V = \frac{Q}{\Delta T} = ( \frac{\Delta U}{\Delta T})_V = ( \frac{\partial U}{\partial T})_V\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+If quadratic degrees of freedom\\
+$\implies U = \frac{1}{2} N f k T \implies ( \frac{\partial U}{\partial T})_V = \frac{1}{2} N f k\\$
+
+$C= \frac{Q}{\Delta T} = \frac{Q}{0} = \infty ( during phase transformation)\\
+L \equiv \frac{Q}{m}$ (Latent heat)\\
+$H \equiv U + PV$ (enthalpy)\\
+$U$ is the energy required to create object and $PV$ is the energy required to make room for it.\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\Delta H = Q + W_{other}$}\\
+$\Delta H = \Delta U + P \Delta V (P \sim$ const.)\\
+$\Delta U = Q - P \Delta V + W_{other}\\
+\implies \Delta H = Q + W_{other}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$C_P = ( \frac{\partial H}{\partial T})_P\\$
+skipped 1.7
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{ $\frac{Q}{ \Delta t} = - k_t A \frac{d T}{dx}$}\\
+consider a window separating cold and hot rooms, we expect the heat trransferring from hot to cold to be proportional to window area and inversely proportional oto $\Delta x$ ( thickness of window)\\
+proportional to the time $\Delta t$ and proportional to difference in temperature $\Delta T = T_2 - T_1\\
+\implies Q \propto \frac{A \Delta T \delta t}{\Delta x} \implies \frac{Q}{\Delta t} \propto A \frac{d T}{d}\\
+\implies \frac{Q}{\Delta t} = - k_t A \frac{d T}{dx}$
+
+
+\underline{Chapter 2}\\
+
+
+\item \underline{$\Omega(N,n) = \frac{N!}{n! \cdot (N-n)!} = \begin{pmatrix} N \\ n \end{pmatrix}$}
+
+pobability of $n$ heads $= \frac{\Omega(n)}{\Omega(\rm{all})}$\\
+suppose you have 100 coins, the number of ways that there are 2 heads is\\
+$\Omega(2) = \frac{100 \cdot 99}{2} 100$ places for the first head 99 ways for the second divided by 2 since each head is indistinguishable\\
+$\Omega(3) = \frac{100 \cdot 99 \cdot 98}{3 \cdot 2} = \frac{100 \cdot 99 \cdot(100-3 +1)}{3 \cdot2}\\$
+$3 \cdot 2$ because that is the number of ways you can arrange 3 indistinguishable heads\\
+$\Omega(n) = \frac{100 \cdot 99 \cdot 98 \cdots (100 - n +1 )}{n !} = \frac{100 \cdot 99 \cdot 98 \cdots(100 - n +1)(100 - n)!}{n! \cdot (100 - n)!} = \frac{100!}{n! \cdot (100-n)!}\\$
+or, in general\\
+$\therefore \Omega(N, n) = \frac{N!}{N!(N- n)!} = \begin{pmatrix} N \\ n \end{pmatrix}$ " N choose n"\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\Omega(N_{\uparrow}) = \begin{pmatrix} N \\ N_{\uparrow} \end{pmatrix} = \frac{N!}{N_{\uparrow}!(N- N_{\uparrow})!} = \frac{N!}{N_{\uparrow}! N_{\downarrow}!}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+Einstein solid: $\cdot | \cdots || \cdots\\$
+| represents partition between two oscillators\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\Omega(N,q) = \begin{pmatrix} q + N-1 \\ q \end{pmatrix} = \frac{( q+N-1)!}{q! (N-1) !}$}\\
+$N \sim$ solids $\implies N-1 \sim$ lines, $q$ units of energy\\
+$\implies q+ N -1 \sim$ symbols\\
+We choose $q$ of these symbols to be energy so there are $\Omega(N, q) = \begin{pmatrix} q + N -1 \\ q \end{pmatrix}$ ways to arrange $q$ energies with $q + N-1$ symbols\\
+$\implies \Omega(N,q) = \frac{(q + N -1)!}{q! (q+ N-1-q)!} = \frac{(1 + N -1 )!}{q! (N-1)!}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$2$ Second Law of Thermodynamics}\\
+Consider an islolated system of two solids (weakly coupled) that exchange energy w/ \\
+$N_A = N_B = 3;\,\, q_{total} = q_A + q_B = 6\\
+\Omega_A = \frac{(q_A + N_A -1)!}{q_A! (N_A -1)!}\\$
+
+\begin{table}[h!]
+  \begin{center}
+    %\caption{Your first table.}
+    \label{tab:table1}
+    \begin{tabular}{l|c|c|c|l} % <-- Alignments: 1st column left, 2nd middle and 3rd right, with vertical lines in between
+      \textbf{$q_A$} & \textbf{$\Omega_A$} & \textbf{$q_B$} & \textbf{$\Omega_B$} & \textbf{$\Omega_{tot} = \Omega_A \Omega_B$}\\
+      \hline
+      0 & 1 & 6 & 28 & 28\\
+      1 & 3 & 5 & 21 & 63\\
+      2 & 6 & 4 & 15 & 90\\
+      3 & 10 & 3 & 10 & 100\\
+      4 & 15 & 2 & 6 & 90\\
+      5 & 21 & 1 & 3 & 63\\
+      6 & 28 & 0 & 1 & 28
+    \end{tabular}
+  \end{center}
+\end{table}
+fundamental assumption of statistical mechanics: In an isolated system in thermal equilibrium all accessible microstates are equally probable\\
+In this example, this means that if we started with an arbitrary state, later we would most likely find the system in a macrostate where $\Omega_{tot}$ is maximized, this is the second law of thermodynamics.
+
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+Large numbers $\sim 10^{23} + 23 = 10^{23}\\$
+very large numbers $\sim 10^{10^{23}} \times 10^{23} = 10^{10^{23} + 23} = 10^{10^{23}}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$N! \approx N^N e^{-N} \sqrt{2 \pi N}$ sometimes $\sqrt{2 \pi N}$ is ignored (Stirling's approximation) $N>>1\\
+\ln N! \approx \ln N^N e^{-N} = N \ln N - N\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\Omega(N, q) \approx (\frac{eq}{N})^N$} $q>>N\\
+\Omega(N, q) = \begin{pmatrix} q + N -1 \\ q \end{pmatrix} = \frac{(q+N-1)!}{q! (N-1)!} \approx \frac{(q+N)!}{q! N!}\\
+\ln \Omega = \ln ( \frac{(q+N)!}{q! N!}) = \ln (q+N)! - \ln q! - \ln N!\\
+\approx (q+N) \ln (q+N) - (q+N) - q \ln q + q - N \ln N + N\\$
+use $q>>N\\
+\implies \ln(q+N) = \ln[q(1 + \frac{N}{q})] = \ln q + \ln(1+ \frac{N}{q})\\$
+\underline{recall:} $\ln (1+x) = \sum_{n=1}^{\infty} \frac{(-1)^{n+1} x^n}{n} \approx x\\
+\implies \ln (q+ N) \approx \ln q + \frac{N}{q}\\
+\implies \ln \Omega \approx (q+ N)(\ln q + \frac{N}{q}) - (q+N) - q \ln q + q - N \ln N + N\\
+= q \ln q + N + N \ln q + \frac{N^2}{q} -q - N - q \ln q + q - N \ln N + N\\
+= N \ln \frac{q}{N} + N + \frac{N^2}{q} \approx N \ln \frac{q}{N} + N\\
+\therefore \Omega = e^{N \ln \frac{q}{N} + N} = e^N (\frac{q}{N})^N = ( \frac{eq}{N})^N$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$x= \frac{q}{2 \sqrt{N}}$} (how sharp is $\Omega$ peak for interacting solids?)\\
+\underline{recaall:} $\Omega_{tot} = \Omega_A \Omega_B;\,\, \Omega = ( \frac{eq}{N})^N\\
+\implies \Omega_{tot} = ( \frac{e q_A}{N})^N(\frac{eq_B}{N})^N = ( \frac{e}{N}^{2N}(q_A q_B)^N\\$
+(assumed each oscillator has $N$ solids sharp peak occurs at $q_A = \frac{q}{2}\\
+\implies \Omega_{max} = ( \frac{e}{N})^{2N} (\frac{q}{2})^{2N}\\$
+What does it look like near peak?\\
+$q_A = \frac{q}{2} + x,\,\, q_B = \frac{q}{2} - x,\,\, x<< q\\
+\implies \Omega = (\frac{e}{N})^{2N} ((\frac{q}{2})^2 - x^2)^N\\
+\ln[(\frac{q}{2})^2 -x^2]^N = N \ln [(\frac{q}{2})^2 (1- ( \frac{2x}{q})^2)]\\
+N[ \ln (\frac{q}{2})^2 + \ln (1-( \frac{2x}{q})^2)]\\
+\approx N [ \ln (\frac{q}{2})^2 - ( \frac{2x}{q})^2]\\
+\implies ((\frac{q}{2})^2 - x^2)^N = e^{N \ln (\frac{q}{2})^2} e^{- N(2x/q)^2}\\$
+plug in\\
+$\implies \Omega = (\frac{e}{N})^{2N} e^{N \ln(q/2)^2} e^{-N(2x/q)^2} = \Omega_{max} e^{-N(2x/q)^2}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\Omega(U, V, N) = f(N) V^N U^{3N/2}$}(multiplicity of monatomic ideal gas)\\
+\underline{1 molecule}\\
+If we have a molecule in a box and we double the volume then we double the number of states \\
+$\implies \Omega_1 \propto V\\$
+also if we double the number of allowed momentum(or volume of momentum space)\\
+this should also double $\Omega\\
+\implies \Omega_1 \propto V V_p\\$
+constraint on momentum\\
+$\implies U = \frac{1}{2m} (p_x^2 + p_y^2 + p_z^2) \implies p_x^2 + p_y^2 + p_z^2 = 2m U\\$
+this gas is isolated, so the sum of all particle kinetic energy must equal U\\
+this is a sphere in momentum space with radius $\sqrt{2m U}\\$
+space cts $\implies$ invoke QM\\
+$\implies (\Delta x)(\Delta p_x) = h\\
+\Omega^{1D} = \frac{L}{\Delta x} \frac{L_{p_x}}{\Delta p_x} = \frac{L L_p}{h}\\
+\implies \Omega_1 = \frac{V V_p}{h^3}\\$
+\underline{2 molecules}\\
+$\implies p_{1x}^2 + p_{1y}^2 + p_{1z}^2 + p_{2x}^2 + p_{2y}^2 + p_{2z}^2 = 2 m U\\
+\implies$ 6 - D sphere\\
+$\Omega_2 \propto V_1 V_2 V_p \implies \Omega_2^{1 D} = \frac{L}{\Delta x} \frac{L}{\Delta x} \frac{A}{(\Delta p)^2} \frac{L^2 A_p}{h^2}\\
+A_p \sim$ Area of momentum hypersphere\\
+if $1,2$ are indistinguishable\\
+$\implies \Omega_2^{3D} = \frac{1}{2} \frac{V^2 A_p}{h^6}\\
+\implies \Omega_N = \frac{1}{N!} \frac{V^N}{h^3N} A_p\\
+A_p = \frac{2 \pi^{d/2}}{(\frac{d}{2} -1)!} r^{d-1},\,\, d=3N,\,\, r = \sqrt{2 m U}\\$
+$\implies \Omega_N = \frac{1}{N!} \frac{V^N}{h^{3N} }\frac{2 \pi^{3N/2}}{( \frac{3 N}{2} - 1)!} ( \sqrt{2m U})^{3 N -1}\\
+\approx \frac{1}{N!} \frac{V^N}{h^{3N}} \frac{ \pi^{3N/2}}{(\frac{3 N}{2})!} ( \sqrt{2m U})^{3N}\\$
+or \\
+$\Omega(U, V, N) = f(N) V^N U^{3N/2}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Interacting Ideal gasses}\\
+$\Omega_{tot} = [ f(N) ]^2 (V_A V_B)^N (U_A U_B)^{3N/2}\\$
+width of peak $= \frac{U_{total}}{\sqrt{3 N/2}}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$S \equiv k \ln \Omega\\
+S_{tot} = k ln \Omega_A \Omega_B = S_A + S_B\\$
+\underline{recall:} $\Omega_N = \frac{1}{N!} \frac{V^N}{h^{3N}} \frac{\pi^{3N/2}}{(3N/2)!} ( \sqrt{2 mU})^{3N}\\
+\ln \Omega _n = \ln \frac{1}{N!} + \ln \frac{V^N}{h^{3N} + \ln ( \frac{\pi^{3N/2}}{(3N/2}!}) + \frac{3N}{2} \ln 2 m U\\
+= - \ln N ! + N \ln V - 3 N \ln N + \frac{3N}{23} \ln \pi - \ln (\frac{3N}{2})!\\
++ \frac{3N}{2} \ln 2 m U\\$
+\underline{recall:} $\ln N! \approx N \ln N - N\\
+\implies \Omega = - N \ln N + N + N \ln V - 3 N \ln h + \frac{3N}{2} \ln \pi - \frac{3N}{2} \ln \frac{3N}{2} + \frac{3N}{2}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$S= Nk [\ln ( \frac{V}{N} ( \frac{4 \pi m U}{3 N h^2})^{3/2}) + \frac{5}{2}]$ (Derive)\\
+$\Delta U = W + Q = 0$ (freely expanding gas does no work and heat does not flow into or out of the gas)\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\Delta S_{total} = \Delta S_A + \Delta S_ B = 2 N k \ln 2 $} (entropy of mixing)\\
+\underline{recall:} $S = Nk [\ln (\frac{V}{N} (\frac{4 \pi m U}{3 N hT^2})^{3/2}) + \frac{5}{2}]\\$
+const $U, N$; changing $V\\
+\implies \Delta S = N k \ln (\frac{V_f}{V_i})\\$
+Lets mix two gases with equal volume initially separated by a partition\\
+$\Delta S_A = N k \ln ( \frac{2 V}{V}) = N k \ln 2 ;\,\, \Delta S_B = N k \ln 2\\
+\therefore \Delta S_{tot} = \Delta S_A + \Delta S_B = 2 N k \ln 2$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\section*{Chapter 3}
+
+
+After two objects have been in contact long enough, we say they are in thermal equilibrium\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\frac{1}{T} \equiv ( \frac{\partial S}{\partial U})_{N,V} \implies T = ( \frac{\partial U}{\partial S})_{N, V}$}\\
+temperature is the thing that is the same when they are in thermal equilibrium\\
+entropy for the total system is maximized in thermal equilibrium, which means if I added a small amount of energy to $A$ in the combined system the entropy does not change\\
+$\implies \frac{\partial S_{tot}}{\partial q_A} = 0 \implies \frac{\partial S_{tot}}{\partial U_A} = 0\\
+\implies \frac{\partial S_A}{\partial U_A} + \frac{\partial S_B}{\partial U_A} = \frac{\partial S_A}{\partial U_A} - \frac{\partial S_B}{\partial U_B} = 0\\
+\implies \frac{\partial S_A}{\partial U_A} = \frac{\partial S_B}{\partial U_B}\\$
+analytic dimensions $\frac{J/k}{J} = \frac{J}{J} \frac{1}{k} = \frac{1}{K}\\
+\implies (\frac{\partial S}{\partial U})_{V,N} = \frac{1}{T} \implies T= ( \frac{\partial U}{\partial S})_{N,V}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$C_V \equiv ( \frac{\partial U}{\partial T})_{N, V},\,\, U = N k T (Einstein Solid) (from\\
+T = ( \frac{\partial S}{\partial U})^{-1})\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\Delta S = \int \frac{dU}{T} = \int \frac{1}{T} (\frac{\partial U}{\partial T})_{N,V} dT = \int_0^{T_f} \frac{C_V}{T} d T = S_f - S(0)\\
+S(0) = 0$ (3rd law of thermodynamics)\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Magnetic dipole}\\
+\underline{recall:} $- \vec{\mu} \cdot \vec{B} = \epsilon_{dipole}\\
+E = N_{\uparrow} \epsilon^{\uparrow}_{dip} + N_{\downarrow} \epsilon_{dip}^{\downarrow} = - N_{\uparrow} \mu B + N_{\downarrow} \mu B\\
+= ( N_{\downarrow} - N_{\uparrow}) \mu B = \mu B ( N - 2 N_{\uparrow})\\
+M = \mu ( N_{\uparrow} - N_{\downarrow}) = - \frac{U}{B}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$M = N \mu \tanh ( \frac{\mu B}{kT});\,\, U = - N \mu B \tanh( \frac{\mu B}{k T})$}\\
+\underline{recall:} $\Omega(N_{\uparrow}) = \frac{N!}{N_{\uparrow}! N_{\downarrow} !};\,\, \ln N! \approx N \ln N - N\\
+\implies \frac{S}{k} = \ln \Omega(N_{\uparrow}) = \ln N! - \ln N_{\uparrow} ! - \ln N_{\downarrow}!\\
+= \ln N! - \ln N_{\uparrow}! - \ln ( N - N_{\uparrow})!\\
+\approx N \ln N - N - N_{\uparrow} \ln N_{\uparrow} + N _{\uparrow} - ( N - N_{\uparrow}) \ln ( N - N_{\uparrow}) + ( N- N_{\uparrow})\\
+= N \ln N - N_{\uparrow} \ln N_{\uparrow} - ( N - N_{\uparrow}) \ln ( N- N_{\uparrow})\\
+\implies \frac{1}{T} = ( \frac{\partial S}{\partial U})_{N, B} = \frac{\partial N_{\uparrow}}{\partial U} \frac{\partial S}{\partial N_{\uparrow}}\\
+\underline{recall:} U = \mu B ( N - 2 N_{\uparrow}) \implies \frac{\partial N_{\uparrow}}{\partial U} = - 2 \mu B\\
+\implies \frac{1}{T} = - \frac{1}{2 \mu B} \frac{\partial S}{\partial N_{\uparrow}}\\
+\frac{\partial S}{\partial N_{\uparrow}} = k ( - \ln N_{\uparrow} - \frac{N_{\uparrow}}{N_{\uparrow}} + \ln(N- N_{\uparrow}) + 1)\\
+= k ( \ln ( N- N_{\uparrow}) - \ln N_{\uparrow}) = k \ln ( \frac{N - N_{\uparrow}}{N_{\uparrow}})\\$
+\underline{recall:} $U = \mu B ( N- 2 N_{\uparrow}) \implies N_{\uparrow} = \frac{N}{2} - \frac{U}{2 \mu B}\\
+\implies \frac{\partial S}{\partial N_{\uparrow}} = k \ln ( \frac{N - \frac{N}{2} + \frac{U}{2 \mu B}}{\frac{N}{2} - \frac{U}{2 \mu B}}) = k \ln ( \frac{N + \frac{U}{\mu B}}{N - \frac{U}{ \mu B}})\\
+\implies \frac{1}{T} = \frac{k}{2 \mu B} \ln ( \frac{N - \frac{U}{\mu B}}{N+ \frac{U}{\mu B}})\\$
+Solve for $U\\
+\implies U = N \mu B ( \frac{1- e^{-2 \mu B/k T}}{1 + e^{2 \mu B/kT}}) = - N \mu B \tanh( \frac{\mu B}{k T})\\
+M = - \frac{U}{B} = N \mu \tanh ( \frac{\mu B}{k T});\,\, C_B = ( \frac{\partial U}{\partial T})_{N, B}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$P \equiv T ( \frac{\partial S}{\partial V})_{U, N}$}\\
+Pressure is the ' thing' that is the same when two systems are in mechanical equilibrium (sort of)\\
+$\implies \frac{\partial S_{tot}}{\partial U_A} = 0,\,\, \frac{\partial S_{tot}}{\partial V_A} = 0\\
+\implies \frac{\partial S_A}{\partial V_A} + \frac{\partial S_B}{\partial V_A} = \frac{\partial S_A}{\partial V_A} - \frac{\partial S_B}{\partial V_B} = 0\\
+\implies \frac{\partial S_A}{\partial V_A} = \frac{\partial S_B}{\partial V_B} \implies \frac{J/K}{m^3} = \frac{N m}{K m^3} = \frac{N}{K m^2} = \frac{1}{T} P\\
+\implies P = T ( \frac{\partial S}{\partial V}_{U,N}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$PV= N k T$}\\
+\underline{recall:} $\Omega = f(N) V^N U^{3N/2}\\
+S = k \ln \Omega = k \ln f(N) + N k \ln V + \frac{3N}{2} \ln U\\
+(\frac{\partial S}{\partial V})_{U,N} = \frac{N k}{V} = \frac{P}{T} \implies PV = N k T\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$dS = \frac{1}{T} d U + \frac{P}{T} d V$}\\
+$d S = \frac{\partial S}{\partial U} d U + \frac{\partial S}{\partial V} d V = \frac{1}{T} d U + \frac{P}{T} d V\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$d U = T d S - p d V\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$Q= T dS$} (quasistatic)\\
+\underline{recall:} $dU= T d S - P d V,\,\, d U = Q + W\\$
+quasistatic changes in volume $\sim$ pressure remains constant, i.e., no energy is wasted in compression $\implies W= - P d V\\
+\implies Q = T d S\\$
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+isentropic = adiabatic ($Q= 0$) + quasistatic\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+If you push harder than needed $\implies W> - P d V \implies dU= W + Q > - P d V + Q\\
+\implies - P d V + T d S > - P d V + Q\\
+\implies T d S > Q\\
+\implies d S > \frac{Q}{T}$ i.e. you add extra entropy\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\mu \equiv - T ( \frac{\partial S}{\partial N})_{U, V}$}\\
+$( \frac{\partial S_{tot}}{\partial U_A})_{N_A, V_A} = 0,\,\, ( \frac{\partial S_{tot}}{\partial N_A})_{U_A, V_a} = 0 $( diffusive equillibrium)\\
+$\implies \frac{\partial S_A}{\partial N_A} = \frac{\partial S_B}{ \partial N_B}$ ( at equillibrium)\\
+need energy units so multiply by $-T$\\
+(negative by convention)\\
+$\implies - T \frac{\partial S_A}{\partial N_A} = -T \frac{\partial S_B}{\partial N_B}\\
+\therefore \mu \equiv - T(\frac{\partial S}{\partial N})_{U,V}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$dS = ( \frac{\partial S}{\partial U})_{N,V} dU + ( \frac{\partial S}{\partial V})_{U,N} dV + ( \frac{\partial S}{\partial N})_{U,V} d S\\
+= \frac{1}{T} d U + \frac{P}{T} d V - \frac{\mu}{T} d N$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\mu$ from Sakur Tetrode equation unfinished\\
+$dU = T dS - P d V + \sum_i \mu_i d N_i$ (Thermodynamic identities) ( multiple species)\\
+$H \equiv U + PV$ (Enthalpy) $\sim$ the energy you would recover if you completely annihilated the system\\
+$F \equiv U - TS$ (Helmholtz free energy) $\sim$ energy needed to create system minus energy you can get for free from environment.\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\section*{Chapter 5}
+
+
+$G \equiv U - TS + PV$ (Gibbs free energy)\\
+Constant $P$ and $T$ then $G$ is the amount of energy required for you to put in to create system from nothing\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\Delta F \leq W,\,\,$ Const. $T$}\\
+$\Delta F = \Delta U - T \Delta S = Q + W - T \Delta S\\
+T \Delta S \geq Q$ if "new" entropy is created \\
+$\implies \Delta F \leq W\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\Delta G \leq W_{other} const. T, P$}\\
+$\Delta G = \Delta U - T \Delta S + P \Delta V = Q + W - T\Delta S + P \Delta V\\
+W = W_{other} + W_{by environment} = - P \Delta V + W_{other}\\
+\implies \Delta G \leq W_{other}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$dS_{total} = - \frac{1}{T} d F$}\\
+$S \sim$ system $S_R \sim$ reservoir\\
+$dS_{total} = d S + d S_R\\
+d S = \frac{1}{T} dU + \frac{P}{T} d V - \frac{\mu}{T} dN\\
+V_R,\,\, N_R$ fixed $\implies d S_R = \frac{1}{T_R} d U_R\\
+\implies d S_{total} = dS + \frac{1}{T_R} d U_R\\
+dU_R = - d U,\,\, T_R = T\\
+\implies d S_{tot} = d S - \frac{1}{T} d U = - \frac{1}{T}( dU - T d S) = - \frac{1}{T} d F\\$
+assumed $T$ constant\\
+$\implies fixed T, V, N \implies$ entropy increase decreases $F$ for system\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+likewise const $T, P$\\
+$\implies d S_{tot} = d S - \frac{1}{T} dU - \frac{P}{T} d V = - \frac{1}{T}(dU - T d S + P d V)\\
+= - \frac{1}{T} d G\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+quantities that double if you double the amount of "Stuff" are extensive\\
+the quantities that are unchanged are intensive\\
+Extensive: $V, N, S, U, H, F, G,$ mass\\
+intensive: $T, P, \mu,$ density
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$dH = T dS + V dP + \mu dN$}\\
+\underline{recall:} $H = U + PV\\
+\implies d H = dU + V dP + P dV\\$
+\underline{recall:} $dU = T d S - P d V + \mu d N\\
+dH = TdS - P d V + \mu d N + V d P + P d V\\
+= T d S + \mu d N + V d P$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$dF = - S d T - P d V + \mu d N$}\\
+\underline{recall:} $F = U - TS\\
+d F = d U - T d S - S d T\\
+= T d S - P d V + \mu d N - T d S - S d T\\
+= - S d T - P d V + \mu d N\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\implies S = - ( \frac{\partial F}{\partial T})_{V,N};\,\, P = - ( \frac{\partial F}{\partial V})_{T,N};\,\, \mu = ( \frac{\partial F}{\partial N})_{T,V}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$d G = - S d T + V d P + \mu d N$}\\
+\underline{recall:} $G = U - TS + PV\\
+\implies d G = d U - T d S - S d T + P d V + V d P\\
+\implies d G = - S d T + V d P + \mu d N\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$S = - ( \frac{\partial G}{\partial T})_{P,N};\,\, V = ( \frac{\partial G}{\partial P})_{T,N};\,\, \mu = ( \frac{\partial G}{\partial N})_{T,P}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$G= N \mu$}\\
+\underline{recall:} $\mu = ( \frac{\partial G}{\partial N})_{T,P}\\
+G \sim$ extensive\\
+$\implies \mu = \frac{G}{N} \implies G = N \mu\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+More generally $G = \sum_i N_i \mu_i$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\mu(T, P) = \mu^\circ ( T) + k T \ln ( P/P^\circ)$}(ideal gas)\\
+\underline{recall:} $G = N \mu;\,\, V = \frac{\partial G}{\partial P}\\
+\frac{\partial \mu}{\partial P } = \frac{1}{N} \frac{\partial G}{\partial P} = \frac{V}{N}\\$
+\underline{recall:} $PV = NkT\\
+\implies \frac{\partial \mu}{\partial P} = \frac{k T}{P}\\
+\implies \mu(T,P) - \mu(T, P^\circ) = k T \ln ( \frac{P}{P^\circ})\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\frac{dP}{dT} = \frac{L}{T \Delta V}$} (Clausius-Clapeyron relation)\\
+consider the boundary of $PT$ diagram between liquid and gas. Diffusive equilibrium $\implies$ Chemical potential are equal $\implies G_{\ell} = G_g$ ( at phase boundary change $d T$ and $d P$ so they remain equally stable\\
+$\implies d G_{\ell} = d G_g\\
+\implies - S_{\ell} d T + V_{\ell} dP = - S_g d T + V_g d P\\
+\implies V_{\ell} \frac{dP}{d T} - S_{\ell} = -S_g + V_g \frac{dP}{dT}\\
+\implies \frac{S_g - S_{\ell}}{V_g - V_{\ell}} = \frac{d P}{d T}\\
+\underline{recall:} d H = T d S + V d P\\
+\implies d H = T d S\\
+\implies \frac{d H}{T} = d S\\
+d H \equiv L\\
+\therefore \frac{L}{\Delta V T} = \frac{d P}{d T}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$P = \frac{Nk T}{V- N b} - \frac{a N^2}{V^2} or ( P + \frac{a N^2}{V^2} )( V- N b) = NkT$}\\
+$P, V, T$ relation is called an equation of state\\
+\underline{recall:} $PV = N k T\\$
+$\implies P( V - N b)$($- Nb$ makes it uncompressible to volumes smaller than $N b$)\\
+Potential of a single molecule is $\propto \frac{N}{V}$ so the total potential energy\\
+is $\propto \frac{N^2}{V} \implies U = - \frac{a N^2}{V}\\$
+but $P = - \frac{\partial U}{\partial V} \implies P = - \frac{a N^2}{V^2}$ (pressure due to potential energy)\\
+$\implies P = \frac{N k T}{V- N b} - \frac{a N^2}{V^2}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+
+
+
+
+\section*{\underline{Thermal Physics}}
+
+
+
+
+\section*{Chapter 6}
+
+$E(s) = E(s_1,s_2);\,\, s$ is the state of a two atom system which is equivalent to saying when the system is in state s then atom 1 is in state $s_1$ and atom 2 is in state $s_2$\\
+\underline{Note:} $E(particle 1, particle 2)$ so indistinguishable means $E(s_1,s_2) = E(s_2,s_1)\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$Z_{tot} = Z_1 Z_2$} (non-interacting, distinguishable)\\
+$E_{tot}(s) = E_1(s) + E_2(s)\\
+\implies Z_{total} = \sum_s e^{-\beta[E_1(s) + E_2(s)]} = \sum_s e^{-\beta E_1(s)} e^{-\beta E_2(s)}\\$
+\underline{Note:} $E(s) = E(s_1,s_2) = E_1(s_1) + E_2(s_2)\\
+\implies Z_{total} = \sum_{s_1} \sum_{s_2} e^{-\beta E_1(s_1)} e^{- \beta E_2(s_2)} = Z_1 Z_2$\\
+Note if I solved the schrodinger equation, without interactions it would be separable and so $Z_{tot}$ would loop over every possible state, which turns into a double sum. Note that energy does not have to be the same since the system is interacting with the resevoir all of the energies are accessible.
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$Z_{tot} \approx \frac{1}{N!} Z_1^N$} (non-interacting, indistinguishable, not dense)\\
+First Note $Z_{tot} \approx \frac{1}{2} Z_1 Z_2$ this is because if I have two particles in two different states, then it is the same state if I switch them; it is not exactly equal since they could be in the same state. More rigorously, for distinguishable particles\\
+$Z=Z_1 Z_2 = \sum_{s_1} \sum_{s_2} e^{- \beta E(s_1,s_2)}\\
+=e^{-\beta E(1,1)} + e^{-\beta E(1,2)} + e^{- \beta E(2,1)} + e^{- \beta E(2,2)}\\$
+Not too dense means $(1,1)$ or $(2,2)$ cant happen\\
+$\implies Z_{dist} = Z_1 Z_2 = e^{-\beta E(1,2)} + e^{- \beta E(2,1)} \\$
+indistinguishable;\,\, $E(1,2) = E(2,1)$\\
+$\implies Z_{dist} =Z_1 Z_2= (e^{-\beta E(1,2)} + e^{- \beta E(2,1)})\\
+Z_{indist} = e^{-\beta E(1,2)} = \frac{1}{2}(e^{-\beta E(1,2)} + e^{-\beta E(2,1)})\\
+=\frac{1}{2} Z_{dist}=\frac{1}{2} Z_1 Z_2$\\
+In general $Z_{tot} = \frac{1}{N!} Z_1^N\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$Z_{tot} = Z_1 Z_2 \dots Z_N$ (noninteracting, distinguishable)\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$Z_1 = Z_{tr} Z_{int}$}\\
+$Z_1 = \sum_s e^{-E(s)/kT} = \sum_{tr} \sum_{int} e^{-E_{tr}/kT}e^{-E_{int}}{kT}\\
+=(\sum_{tr} e^{-E_{tr}/kT})(\sum_{int} e^{-E_{int}/kT}) = Z_{tr} Z_{int}$\\
+\underline{Note:} energy is not a constant in these partition functions, E can be basically anything since our system exchanges energy with a resevoir.
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\ell_Q \equiv \frac{\hbar}{\sqrt{2 \pi m k T}} $} ( Quantum length)\\
+\underline{Molecule in a box}\\
+\underline{recall:} $ E_n=\frac{h^2 n^2}{8 m L^2} = E_{trans}$ (infinite square well) (particle has no potential in the box)\\
+$Z_{1D} = \sum_n e^{-E_n/kT} =\sum_n e^{-h^2 n^2/8 m L^2 k T}\\
+\rightarrow \frac{1}{\Delta n} \int_0^{\infty} e^{-h^2 n^2/8 m L^2 k T} dn = \int_0^{\infty} e^{-h^2 n^2/8 m L^2 kT} dn\\
+=\frac{\sqrt{\pi}}{2} \sqrt{\frac{8 m L^2 kT}{h^2}}=\frac{L}{\frac{h}{\sqrt{2 \pi mkT}}} = \frac{L}{\ell_Q}\\
+\therefore \ell_Q = \frac{h}{\sqrt{2 \pi m k T}}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$V_Q = \ell_Q^3 = \frac{h}{2 \pi m k T}$}\\
+$Z_{tr} = \sum_s e^{-E_{tr}/kT} = \frac{L_x}{\ell_Q} \frac{L_y}{\ell_Q} \frac{L_z}{\ell_Q} = \frac{V}{v_Q}\\
+\therefore v_Q = \ell_Q^3$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\mu=0$} for photons\\
+photons are bosons\\
+$\implies \bar{n}_{BE} = \frac{1}{e^{(\epsilon-\mu)/kT}-1}\\$
+but they also follow \\
+$\bar{n}_{Pl} = \frac{1}{e^{hf/kT}-1} \implies \epsilon = hf,\,\, \mu = 0\\
+N$ is not conserved for photons and $F$ is minimized at equilibrium\\
+but $( \frac{\partial F}{\partial N})_{T,V} = \mu = 0$ ($F$ is minimized)\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+\item \underline{$U = \int_0^{\infty} dn \int_0^{\pi/2} d \theta \int_0^{\pi/2} d \phi n^2 \sin \theta \frac{h c n}{L} \frac{1}{e^{hcn/2LkT} -1}$ (energy of photons in a box)}\\
+\underline{recall:} $\lambda = \frac{2L}{n};\,\, p = \frac{hn}{2L}$ (photons in a box)\\
+\underline{recall:} $E^2=(pc)^2+(m_0 c^2)^2,\,\, m_0=0$ (photons) $\implies E \equiv \epsilon = pc = \frac{hcn}{2L}$ (relativistic) (1D)\\
+$\epsilon= c \sqrt{p_x^2 + p_y^2 + p_z^2} = \frac{hc}{2L} \sqrt{n_x^2 + n_y^2 + n_z^2} = \frac{hcn}{2L} (3D)\\
+U = 2 \sum_{n_x} \sum_{n_y} \sum_{n_z} \epsilon \bar{n}_{Pl} ( \epsilon) = \sum_{n_x,n_yn_z} \frac{hcn}{L} \frac{1}{e^{hcn/2LkT} -1}\\$
+2 comes from the fact that every wave can hold photons with two independent polarizations\\
+$\implies U= \frac{1}{\Delta n^3} \int_0^{\infty} dn \int_0^{\pi/2} d \theta \int_0^{\pi/2} d \phi n^2 \sin \theta \frac{hcn}{L} \frac{1}{e^{hcn/2LkT}-1}\\
+\Delta n= 1\\$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\frac{U}{V} = \frac{8 \pi^5 (kT)^4}{15(hc)^3}$}\\
+\underline{recall:} $U = \int_0^{\infty} dn \int_0^{\pi/2} d \theta \int_0^{\pi/2} d \phi n^2 \sin \theta \frac{hcn}{L} \frac{1}{e^{hcn/2LkT}-1}=\frac{\pi}{2} \int_0^{\infty} dn n^2 \frac{hcn}{L} \frac{1}{e^{hcn/2LkT}-1}\\$
+\underline{recall:} $\epsilon=\frac{hcn}{2L} \implies \frac{2L}{hc} d \epsilon = dn\\
+U = \frac{\pi}{2} \frac{8 L^2}{h^2 c^2} \int_0^{\infty} d \epsilon \frac{2L}{hc} \frac{\epsilon^3}{e^{\epsilon/kT} -1}\\
+= 8 \pi (\frac{L}{hc})^3 \int_0^{\infty} \frac{\epsilon^3}{e^{\epsilon/kT} -1} d \epsilon\\
+\frac{U}{V} = \int_0^{\infty} \frac{8 \pi \epsilon^3/(hc)^3}{e^{\epsilon/kT}-1} d \epsilon = \int_0^{\infty} u(\epsilon) d \epsilon \\
+u(\epsilon) = \frac{8 \pi}{(hc)^3} \frac{\epsilon^3}{e^{\epsilon/kT}-1}$(spectrum or energy density per unit photon energy)\\
+$x=\frac{\epsilon}{kT}\\
+\implies \frac{U}{V} = \frac{8 \pi (kT)^4}{(hc)^3} \int_0^{\infty} \frac{x^3}{e^x-1} dx = \frac{8 \pi^5(kT)^4}{15 (hc)^3}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}\\
+
+
+\item \underline{$S(T) = \frac{32 \pi^5}{45} V (\frac{kT}{hc})^3 k$} (entropy of a photon gas)\\
+\underline{recall:} $dU=T dS$ (constant volume);$\,\, C_V = ( \frac{\partial U}{\partial T} )_V \implies dU = C_V dT\\
+\implies \frac{dU}{T} = \frac{C_V dT}{T}\\
+\implies S = \int_0 ^T \frac{dU}{T} = \int_0^T \frac{C_V(T')}{T'} dT'\\$ this step used S(T=0)=0
+\underline{recall:} $U= \frac{8 \pi^5}{15} \frac{(kT)^4}{(hc)^3} V\\
+\implies \frac{\partial U}{\partial T} = \frac{8 \pi^5}{15} k 4 \frac{(kT)^3}{(hc)^3} V = 4 a T^3\\
+\implies S = \int_0^T \frac{C_V}{T'} d T' = 4 a \int_0^T (T')^2 d T' = \frac{4}{3} a T^3\\
+= \frac{32 \pi^5}{45} V (\frac{kT}{hc})^3 k\\$
+Weinberg 1977 has a discussion of early universe dynamics. problem 7.49 is a good problem\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}\\
+
+
+\underline{power per unit area $= \sigma T^4;$ (Stefan's law$\,\, \sigma = \frac{2 \pi^5 k^4}{15 h^3 c^2}$ (Stefan-Boltzmann constant)}\\
+given photons in a box we want to determine how many will escape through a hole, refer to diagram 7.23\\
+Volume of chunk $= R d \theta R \sin \theta d \phi c dt\\$
+\underline{recall:} $\frac{U}{V} = \frac{8 \pi^5}{15} \frac{(kT)^4}{(hc)^3}\\$
+energy in chunk $= \frac{U}{V} c dt R^2 \sin \theta d \theta d \phi\\$
+probability of escape $= \frac{Area viewed from chunk}{Area of sphere around chunk}= \frac{A'}{4 \pi R^2} = \frac{A \cos \theta}{4 \pi R^2}$ $A'$ is the area of the hole that lies on the surface of the sphere \\
+energy escaping from chunk $= \frac{A \cos \theta}{4 \pi} \frac{U}{V} c dt \sin \theta  d \theta d \phi\\$
+total energy escaping $= \int_0^{2 \pi} d \phi \int_0^{\pi/2} d \theta \frac{A \cos \theta}{4 \pi} \frac{U}{V} c dt \sin \theta (\pi/2$ since we integrate over half of a sphere)\\
+$= 2 \pi \frac{A}{4 \pi} \frac{U}{V} c dt \int_0^{\pi/2} \cos \theta \sin \theta d \theta = \frac{A}{4} \frac{U}{V} c dt\\
+\implies$ power per unit area $= \frac{c}{4} \frac{U}{V}\\
+\therefore$ power per unit area $= \frac{2 \pi^5}{15} \frac{(kT)^4}{h^3 c^22} = \sigma T^4$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Theorem}\\
+A black body and a hole with the same size and same temperature, emit em waves with the same intensity, so Stefan's law works for a black body\\
+
+\underline{Proof}\\
+Assume the hole and the black body are the same size and same temperature. Suppose the black body emits less power than the hole, then more energy will flow from the hole to the black object and the black object will get hotter, this violates the second law of thermodynamics since we know heat travels from hotter objects to colder objects.\\
+The proof in the case that the black body emits more is similar\\
+$\therefore$ they must emit the same energy\\
+\underline{Note:} A black body does not reflect light , it only absorbs it.\\
+not only are the intensities identical, their spectrum must be too.\\
+If it is not black, but reflects some amount of light then Stefan's Law becomes Power $= \sigma e A T^4$\\
+\\
+(Skipped 7.108 - 7.117 (Debye))\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+$\star \star$
+\item \underline{$N_0 = N - N_{excited} = [1- ( \frac{T}{T_c})^{3/2}] N$} $(T< T_c)\\$
+Lets consider bosons as atoms with integer spin, assume they are in a box of length $L$\\
+$\implies \epsilon_0 = \frac{h^2}{8 mL^2}(1^2 + 1^2 + 1^2) = \frac{3 h^2}{8 m L^2}$ ( ground state)\\
+\underline{recall:} $\bar{n}_{BE} = \frac{1}{e^{(\epsilon- \mu)/kT}-1}$ (Bose-Einstein distribution)\\ 
+$\implies N = \int_0^{\infty} g(\epsilon) n(\epsilon) d \epsilon = \int_0^{\infty} g(\epsilon) \frac{1}{e^{(\epsilon- \mu)/kT} -1} d \epsilon \\
+g(\epsilon) = \frac{g_{electrons} ( \epsilon)}{2} = \frac{2}{\sqrt{\pi}} ( \frac{2 \pi m}{h^2})^{3/2} V \sqrt{\epsilon}\\$
+(only one spin orientatin)\\
+for $\mu = 0$ (low temp, $N_0$ large)\\
+$x= \epsilon/kT\\
+\implies \frac{2}{\sqrt{\pi}} (\frac{2 \pi m}{h^2})^{3/2} V \int_0^{\infty} \frac{\sqrt{\epsilon}}{e^x -1} d \epsilon\\
+= \frac{2}{\sqrt{\pi}} (\frac{2 \pi m k T}{h^2})^{3/2} V \int_0^{\infty} \frac{\sqrt{x}}{e^x-1} dx\\
+\int_0^{\infty} \frac{\sqrt{x}}{e^x-1} dx \approx$ 2.315 (numerical)\\
+$\implies N = 2.315 \frac{2}{\sqrt{\pi}} (\frac{2 \pi m kT}{h^2})^{3/2} V\\
+\approx 2.612 (\frac{2 \pi m k T}{h^2})^{3/2} V$ (this is wrong number of atoms, does not depend on T)\\
+there is one temperature where this would work $T \equiv T_c\\
+\implies N= 2.612 (\frac{2 \pi m k T_c}{h^2})^{3/2} V \\$
+When $T>T_c \mu$ must be less than zero $\mu<0 \implies N$ smaller $T<T_c$ changing sum to integral is not valid\\
+$\implies N_{excited} = 2/612 (\frac{2 \pi m k T}{h^2})^{3/2} V\,\, (T<T_c)$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$N_{excited} = ( \frac{T}{T_c})^{3/2} N (T<T_c)\\
+N_{ground} \equiv N_0 = N - N_{excited} = [1- (\frac{T}{T_c})^{3/2}]N (T<T_c)\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\mathcal{P} = \frac{1}{Z} e^{- E(s)/kT}$}(Boltzmann distribution)\\
+If the atom were isolated, then its energy would be fixed and all microstates are equally probable, however when it interacts with a resovoir, some states are more probable, unless microstates have same energy, the atom is not isolated but the resevoir and atom is isolated so all microstates are equally probable. Consider $\Omega_R(s_1)$ the multiplicity of the resevoir when the atom is in state $s_1$
+$\frac{\mathcal{P}(s_2)}{\mathcal{P}(s_1)} = \frac{\Omega_R(s_2)}{\Omega_R(s_1)}\\$
+\underline{recall:} $S = k ln \Omega \implies \Omega = e^{S/k}\\
+\implies \frac{\mathcal{P}(s_2)}{\mathcal{P}(s_1)} = e^{[S_R(s_2) - S_R(s_1)]/k}\\$
+\underline{recall:} $dS_R = \frac{1}{T} (d U_R + P d V_R - \mu d N_R)\\
+d V_R \approx 0,\,\, d N_R = 0\\
+\implies d S_R = \frac{1}{T} d U_R$ (thermal equillibrium)\\
+$\implies S_R(s_2) - S_R(s_1) = \frac{1}{T}[U_R(s_2) - U_R(s_1)]\\
+= - \frac{1}{T}[E(s_2) - E(s_1)]\\
+\implies \frac{\mathcal{P} (s_2)}{\mathcal{P}(s_2)} = e^{-[E(s_2)-E(s_1)]/kT} = \frac{e^{-E(s_2)/kT}}{e^{-E(s_1)/kT}}\\$
+Boltzmann factor $\equiv e^{-E(s)/kT}\\
+\implies \frac{\mathcal{P}(s_2)}{e^{-E(s_2)/kT}} = \frac{\mathcal{P}(s_1)}{e^{-E(s_1)/kT}} = \frac{1}{Z}\\
+\therefore \mathcal{P}(s) = \frac{1}{Z} e^{-E(s)/kT}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$Z = \sum_s e^{-E(s)/kT}$}\\
+$\sum_s \mathcal{P}(s) = \frac{1}{Z} \sum_s e^{-E(s)/kT} = 1\\
+\therefore Z = \sum_s e^{-E(s)/kT}$
+
+
+
+\item \underline{$\bar{X} = \sum_s X(s) P(s)$}\\
+$\bar{X} = \frac{\sum_s X(s) N(s)}{N} = \sum_s X(s) P(s)\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$U= N \bar{E}$ (identical independent particles)\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$M= N \bar{\mu}_z = N \mu \tanh(\beta \mu B);\,\, U = - N \mu B \tanh (\beta \mu B)$}\\
+\underline{recall:} $U= - \vec{\mu} \cdot \vec{B};\,\, U_{up} = - \mu B;\,\, U_{down} = \mu B\\
+Z = \sum_s e^{- \beta E(s)} = e^{\beta \mu B} + e^{-\beta \mu B} = 2 \cosh \beta \mu B\\
+P_{\uparrow} = \frac{e^{\beta \mu B}}{2 \cosh(\beta \mu B)};\,\, P_{\downarrow} = \frac{e^{- \beta \mu B}}{2 \cosh (\beta \mu B)}\\
+\bar{E} = \sum_s E(s) P(s) = - \mu B P_{\uparrow} + \mu B P_{\downarrow} = - \mu B (P_{\uparrow} - P_{\downarrow})\\
+=- \mu B \frac{e^{\beta \mu B} - e^{- \beta \mu B}}{2 \cosh (\beta \mu B)} = - \mu B \tanh(\beta \mu B)\\
+U= N \bar{E} = - N \mu B \tanh ( \beta \mu B)\\
+\bar{\mu}_z = \sum_s \mu_z (s) P(s) = \mu P_{\uparrow} - \mu P_{\downarrow} = \mu \tanh(\beta \mu B)\\
+\therefore M = N \bar{\mu}_z = N \mu \tanh(\beta \mu B)\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$E_n = \frac{\hbar^2}{2 I} n( n + 1)$}\\
+\underline{recall:} $E= \frac{1}{2} I \omega^2= \frac{\ell^2}{2 I};\,\, \ell^2 = \hbar^2 n (n+1)\\
+\therefore E_n = \frac{1}{2 I} \hbar^2 n(n+1)$
+
+$\star$
+\item \underline{$Z_{rot} \approx \frac{kT}{\epsilon} (kT>>\epsilon)$} (diatomic distinguishable)\\
+$k T>> \epsilon$ makes the approximation of turning the sum into an integral accurate.
+next time check if $j=\ell$ in this case, pretty sure it does, in that case it would make perfect sense that the degeneracy of $\psi_{\ell}^m$ is $2 \ell + 1$, since $-\ell \leq m \leq \ell$
+\underline{recall:} $E(j) = j(j+1) \epsilon, E_n = n(n+1) \hbar^2/2I, H \psi = E \psi (165 \rm{Griffiths})\\
+L^2 \psi = \hbar^2 \ell(\ell+1) \psi,\,\, [L^2,H] = 0\\
+\implies$ simultaneous eigen functions $\implies \psi^m_{\ell}$ is eigenfunction of $H$ but $- \ell \leq m \leq \ell\\
+\implies$ each value of $E_n$ has $2n + 1$ eigen functions (not completely correct but we are on the right track\\
+$\implies Z_{rot} = \sum_{j=0}^{\infty} N(j) e^{-E(j)/kT} = \sum_{j=0}^{\infty} (2j +1) e^{-j (j+1) \epsilon/kT} \frac{\Delta j}{\Delta j}\\$
+where $N(j) = ( 2j +1 )$ is the number of states with energy $E(j)$ (degenerate)\\
+$\Delta j = 1\\
+\implies Z_{rot} \approx \int_0^{\infty} (2j+1) e^{-j(j+1) \epsilon/kT} dj = \frac{kT}{\epsilon} (kT>> \epsilon)\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+If atoms are identical, then switching the two atoms would result in the same state so $Z_{rot} = \frac{kT}{2 \epsilon}$ (indistinguishable $kT>> \epsilon$)\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\bar{E}_{rot} = k T$} ($kT>> \epsilon$)\\
+\underline{recall:} $Z_{rot} = \frac{kT}{\epsilon}=\frac{1}{\epsilon \beta}$
+$\bar{E}_{rot} = - \frac{1}{Z} \frac{\partial Z}{\partial \beta} = - \beta \frac{\epsilon}{\epsilon} \frac{\partial}{\partial \beta} \frac{1}{\beta} = \beta \frac{1}{\beta^2} = \frac{1}{\beta} = k T\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+$\star$
+\item \underline{$\bar{E} = \frac{1}{2} k T$} (equipartition theorem)\\
+assume energy in the form of quadratic degrees of freedom\\
+Since this describes an object of temperature T, the spacing in energy of each molecule is spaced very close together.
+$\implies E(q) = c q^2,\,\, q \sim$ coordinate variable\\
+$\implies Z = \sum_q e^{- \beta E(q)} = \sum_q e^{- \beta c q^2} = \frac{1}{\Delta q} \sum_q e^{- \beta c q^2} \Delta q\\
+= \frac{q}{\Delta q} \int_{- \infty}^{\infty} e^{- \beta c q^2} dq;\,\, x = \sqrt{\beta c} q \implies d q = \frac{dx}{\sqrt{\beta c}}\\
+\implies Z = \frac{q}{\Delta q} \frac{1}{\sqrt{\beta c}} \int_{-\infty}^{\infty} e^{-x^2} dx = \frac{\sqrt{\pi c}}{\Delta q} \beta^{-1/2} = C \beta^{-1/2}$\\
+$\bar{E} = - \frac{1}{Z} \frac{\partial Z}{\partial \beta} = - \frac{1}{C \beta^{-1/2}} \frac{\partial}{\partial \beta} C \beta^{-1/2}\\
+= \frac{1}{2} \beta^{-1} = \frac{1}{2} k T$
+\\
+Skipped 6.4
+\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$F = - k T \ln Z$}\\
+$Z$ is like $\Omega$ so $\ln \Omega$ increases $\implies \ln Z$ increases\\
+$\implies - \ln Z$ decreases and $\ln Z$ dimensionless\\
+$F$ decreases and $\frac{F}{kT}$ is dimensionless\\
+$\therefore \frac{F}{kT} = - \ln Z \implies F = - k T \ln Z\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+$\star$
+\item \underline{$F= - k T \ln Z$}\\
+\underline{proof}\\
+\underline{recall:} $F = U - TS;\,\, (\frac{\partial F}{\partial T})_{V,N} = - S\\$
+Solve for $S \implies \frac{F-U}{T} = - S\\
+\implies (\frac{\partial F}{\partial T})_{V,N} = \frac{F- U}{T}\\$
+We show $F = - kT \ln Z$ obeys same ODE with same initial condition\\
+Let $\tilde{F} = - k T \ln Z\\
+\implies \frac{\partial \tilde{F}}{\partial T} = \frac{\partial}{\partial T} (- k T \ln Z) = - k T \ln Z - k T \frac{\partial}{\partial T} \ln Z\\
+\frac{\partial}{\partial T} \ln Z = \frac{\partial \beta}{\partial T} \frac{\partial}{\partial \beta} \ln Z\\
+=- \frac{1}{kT^2} \frac{1}{Z} \frac{\partial Z}{\partial \beta} = - \frac{U}{k T^2}\\
+\implies \frac{\partial \tilde{F}}{\partial T} = - k \ln Z - k T \frac{U}{k T^2} = \frac{\tilde{F}}{T} - \frac{U}{T} = \frac{\tilde{F} - U}{T}$\\
+\underline{recall:} $F= U - TS$ so at $T=0 F=U = U_0\\
+\implies Z(T=0) = e^{-U_0/kT}\\$
+(a horrible explanation for why the above equation is true: at $T=0$ all boltzmann factors are infinitely suppressed and everything must occupy a minimum energy $U_0$)\\
+$\implies \tilde{F}(0) = - k T \ln Z(0) = U_0 = F(0)\\
+\therefore \tilde{F} = F$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+\section*{Chapter 7}
+
+\item \underline{$\bar{n}_{Boltzmann}=e^{-(\epsilon-\mu)/kT}$} (dont understand)\\
+\underline{Note: } They are independent particles so their energies do not add when more particles are added to the state\\
+$\bar{n}_{Boltzmann}=\sum_n n P(s)=N P(s)=\frac{N}{Z_1} e^{-\epsilon/kT}\\
+\underline{recall:} \mu=-kT ln(\frac{Z}{N}) \implies N e^{-\mu/kT}=Z_1\\
+\implies \bar{n}_{Boltzmann}=e^{-(\epsilon-\mu)/kT}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\bar{n}=\frac{1}{e^{(\epsilon-\mu)/kT}+1}$} (fermions)\\
+$P(n)=\frac{1}{Z} e^{-(n \epsilon - \mu n)/kT}=\frac{1}{Z} e^{-n(\epsilon-\mu)/kT}\\
+Z=\sum_n e^{-(n \epsilon - \mu n)/kT} = 1 + e^{-(\epsilon-\mu)/kT}\\
+\bar{n}=\sum_n n P(n)=0 \cdot P(0) + P(1)\\
+=\frac{e^{-(\epsilon-\mu)/kT}}{1+e^{-(\epsilon-\mu)/kT}}=\frac{1}{e^{(\epsilon-\mu)/kT}+1}$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\bar{n}=\frac{1}{e^{(\epsilon-\mu)/kT}-1}$} (bosons)\\
+$Z=\sum_{n=0}^{\infty} e^{-n(\epsilon-\mu)/kT} = \sum_{n=0}^{\infty} (e^{-(\epsilon-\mu)/kT})^n = \frac{1}{1-e^{-(\epsilon-\mu)/kT}}\\
+\bar{n} = -\frac{1}{Z} \frac{\partial Z}{\partial x}; x=\frac{\epsilon-\mu}{kT}\\
+\bar{n}=-(1-e^{-x} ) \frac{\partial}{\partial x} ( 1- e^{-x})^{-1}=(1-e^{-x}) e^{-x} (1-e^{-x})^{-2}\\
+=\frac{e^{-x}}{1-e^{-x}}=\frac{1}{e^x-1}=\frac{1}{e^{(\epsilon-\mu)/kT}-1}$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Note:} $\epsilon_F= \mu(T=0)$ (Fermi energy) ( Fermi-Dirac distribution becomes step function)
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+\underline{degenerate gas} when a gas of fermions is cold enough that most states are below $\epsilon_F$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\lambda_n=\frac{2L}{n};\,\, p_n = \frac{h}{\lambda_n} = \frac{hn}{2 L}$} (infinite square well)\\
+\underline{recall:}$-\frac{\hbar^2}{2m} \frac{d^2 \psi}{dx^2} + V \psi = E \psi;\,\,V=0$ if $0<x<L$;$\,\, \infty$ o.w.\\
+$\psi''=\frac{-2mE}{\hbar^2} \psi \implies k= \pm \sqrt{\frac{2mE}{\hbar^2}} i\\
+\implies \psi(x)= A \cos (kx) + B \sin( kx) \\
+\psi(0)=A=0, \,\, \psi(L) = B \sin(kL)=0 \implies \sin(kL)=0\\
+\implies kL=n \pi \implies k=\frac{n \pi}{L} \implies \frac{2 \pi}{\lambda} = \frac{n \pi}{L} \implies \lambda_n=\frac{2 L}{n}\\
+p_n=\frac{h}{\lambda_n}=\frac{hn}{2 L},\,\, E=\frac{\hbar^2 k^2}{2m} = \frac{h^2}{8 m L^2} |\vec{n}|^2$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+$U=2 \sum_{n_x} \sum_{n_y} \sum_{n_z} \epsilon(\vec{n}) = 2 \iiint \epsilon(\vec{n}) d n_x d n_y d n_z$ at (T=0)\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$N=2 \sum_{n_x} \sum_{n_y} \sum_{n_z} = 2 \frac{1}{\Delta n_x \Delta n_y \Delta n_z} \iiint d n_x d n_y dn_z = 2 \frac{1}{8} ( \frac{4}{3} \pi n_{max}^3)\\
+=\frac{\pi n_{max}^3}{3} \implies \epsilon_F = \frac{h^2 n^2}{8 m L^2} = \frac{h^2}{8m}(\frac{3N}{\pi V})^{2/3}$at  (T=0)
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$U=\frac{3}{5} N \epsilon_{F}$}\\
+$U=2 \sum_{n_x} \sum_{n_y} \sum_{n_z} \epsilon(\vec{n})=2 \iiint \epsilon(\vec{n}) d n_x dn_y dn_z\\
+U=2 \int_0^{n_{max}} dn \int_0^{\pi/2} d\theta \int_0^{\pi/2} d \phi n^2 \sin \theta \epsilon(n)\\$
+\underline{recall:} $\epsilon= \frac{|\vec{p}|^2}{2m} = \frac{h^2}{ 8 m L^2}(n_x^2 + n_y^2 + n_z^2) =\frac{h^2}{8 m L^2} n^2\\
+\implies U= \pi \int_0^{n_{max}} \epsilon(n) n^2 d n = \frac{\pi h^2}{8 m L^2} \int_0^{n_{max}} n^4 dn = \frac{\pi h^2 n_{max}^5}{40 m L^2} = \frac{3}{5} N \epsilon_F\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+\item \underline{$\frac{V}{N} << v_{Q} \implies kT << \epsilon_F$}\\
+\underline{recall:} $v_Q = ( \frac{h}{\sqrt{2 \pi m k T}})^3, \,\, \epsilon_F = \frac{h^2}{8 m} ( \frac{3 N}{\pi V})^{2/3}\\
+\implies \frac{V}{N} << \frac{h^3}{(2 \pi m k T)^(3/2)} \implies (kT)^{3/2} << \frac{h^3 N}{V(2 \pi m)^{3/2}} \\
+\implies kT << \frac{h^2 N^{2/3}}{V^{2/3}(2 \pi m)}\\$\\
+$kT << \frac{h^2 N^{2/3}}{V^{2/3} (2 \pi m)} = \frac{h^2}{2 \pi m} (\frac{N}{V})^{2/3} \approx \frac{h^2 3^{2/3}}{8 \pi^{2/3} m} ( \frac{N}{V})^{2/3}\\
+=\frac{h^2}{8 m} ( \frac{3 N}{\pi V})^{2/3} = \epsilon_F$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+$\star \star$ thermal
+\item \underline{$C_V=(\frac{\partial U}{\partial T})_V = \frac{\pi^2 N k^2 T}{2 \epsilon_F}$}\\
+Suppose temperature of degenerate electron gas is almost zero, if we increase $T$, the number of electrons that can jump to higher energy is proportional to $T$\\
+($\#$ affected electrons) $\propto N;\,\, N \sim$ extensive\\
+additional energy $\propto (\#$ affected electrons)( energy acquired by each)\\
+$\propto ( N k T ) \cdot ( k T ) \propto N ( k T )^2 \sim$ units of  $J^2$\\
+so divide by $\epsilon_F$ to get $J$\\
+$\implies$ additional energy $\propto \frac{N (kT)^2}{\epsilon_F}$\\
+$\implies U_{add} = \frac{\pi^2}{4} N \frac{(kT)^2}{\epsilon_F}\\$
+\underline{recall:} $U = \frac{3}{5} N \epsilon_F ($ at $T=0)\\$
+$\implies U_{tot} = \frac{3}{5} N \epsilon_F + \frac{\pi^2}{4} N \frac{(kT)^2}{\epsilon_F}$ ( small T)\\
+$\therefore C_V= ( \frac{\partial U}{\partial T})_V= \frac{\pi^2 N k^2 T}{2 \epsilon_F}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+$\star \star$
+\item \underline{$g(\epsilon) = \frac{\pi ( 8 m)^{3/2}}{2 \hbar^3} V \sqrt{\epsilon}= \frac{3 N}{2 \epsilon_F^{2/3}} \sqrt{\epsilon}$} I wonder if we could obtain this using $N=2 \sum_{\vec{n}}$\\
+\underline{recall:} $p_n = \frac{h}{\lambda_n};\,\, \epsilon=\frac{p^2}{2m}\implies \,\,\epsilon=\frac{h^2}{8 m L^2} n^2 \\
+\implies n = \sqrt{\frac{8m L^2}{h^2} }\sqrt{\epsilon} \implies dn = \sqrt{\frac{8 m L^2}{h^2}} \frac{1}{2} \frac{1}{\sqrt{\epsilon}} d \epsilon\\$
+\underline{recall:} $U= 2 \iiint \epsilon(\vec{n}) dn_x dn_y dn_z = 2 \int_0^{n_{max}} dn \int_{0}^{\pi/2} d \theta \int_0^{\pi/2} d \phi n^2 \sin \theta \epsilon(n) = 2 \frac{\pi}{2} \int_0^{n_{max}} dn n^2 \epsilon(n);\,\, \epsilon= \frac{h^2}{8 m L^2} n^2$; plug $dn$, $n$ in\\
+$\implies U=2 \frac{\pi}{2} \int_0^{\epsilon_F} d \epsilon ( \sqrt{\frac{8mL^2}{h^2}} \frac{1}{2} \frac{1}{\sqrt{\epsilon}})(\sqrt{\frac{8 m L^2}{h^2}} \sqrt{\epsilon})^2 \epsilon\\
+=\frac{\pi}{2} \int_0^{\epsilon_F} d \epsilon ((\frac{8mL^2}{h^2})^{3/2} \sqrt{\epsilon}) \epsilon d \epsilon$\\
+$\therefore g( \epsilon) = \frac{ \pi ( 8 m)^{3/2}}{2 h^3} V \sqrt{\epsilon} = \frac{3 N}{2 \epsilon_F^{3/2}} \sqrt{\epsilon}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Note:} $N = \int_0^{\epsilon_F} g(\epsilon) d \epsilon (at T=0)\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$N= \int_0^{\infty} g(\epsilon)$ (probability state is occupied) (I think this line is wrong since int $n_{FD}$ doesn't equal 1) $d \epsilon = \int_0^{\infty} g( \epsilon) \bar{n}_{FD} (\epsilon) d \epsilon = \int_{0}^{\infty} g( \epsilon) \frac{1}{e^{(\epsilon- \mu)/kT} + 1} d \epsilon ( any T)\\
+U= \int_{0}^{\infty} \epsilon g( \epsilon) \bar{n}_{FD} ( \epsilon) d \epsilon = \int_0^{\infty} \epsilon g(\epsilon) \frac{1}{e^{(\epsilon-\mu)/kT}+1} d \epsilon (any T)\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\star \star$ 
+\item \underline{$N= \frac{2}{3} g_0 \mu^{3/2} + \frac{1}{4} g_0 ( kT)^2 \mu^{-1/2} \cdot \frac{\pi^2}{3} + \dots$} ( assume $kT<< \epsilon_F$) (Sommerfeld expansion)\\
+\underline{recall: } $N = \int_0^{\infty} g( \epsilon) \bar{n}_{FD} ( \epsilon) d \epsilon;\,\, g(\epsilon) = \frac{3N}{2 \epsilon_F^{3/2}} \sqrt{\epsilon} = g_0 \sqrt{\epsilon}\\
+\rightarrow = g_0 \int_0^{\infty} \sqrt{\epsilon} \bar{n}_{FD} (\epsilon) d \epsilon\\
+U= \bar{n}_{FD} ( \epsilon) \rightarrow dU = \frac{d \bar{n}_{FD} ( \epsilon)}{d \epsilon} {d \epsilon};\,\, dV = g_0 \epsilon^{1/2} d \epsilon \implies V= g_0 \frac{2}{3} \epsilon^{3/2}\\
+(\frac{2}{3} g_0 \epsilon^{3/2} \bar{n}_{FD}(\epsilon) |_0^{\infty} + \frac{2}{3} g_0 \int_0^{\infty} \epsilon^{3/2}(-\frac{d \bar{n}_{FD} (\epsilon)}{d \epsilon}) d \epsilon\\
+=\frac{2}{3} g_0 \int_0^{\infty} \epsilon^{3/2}(-\frac{d \bar{n}_{FD} ( \epsilon)}{d \epsilon}) d \epsilon \\
+-\frac{d \bar{n}_{FD}}{d \epsilon} = - \frac{d}{d \epsilon} ( e^{(\epsilon-\mu)/kT}+1)^{-1}=\frac{1}{kT} \frac{e^x}{(e^x+1)^2};\,\, x = \frac{\epsilon-\mu}{kT}\\
+N=\frac{2}{3} g_0 \int_0^{\infty} \frac{1}{kT} \frac{e^x}{(e^x+1)^2} \epsilon^{3/2} d \epsilon = \frac{2}{3} g_0 \int_{-\mu/kT}^{\infty} \frac{e^x}{(e^x+1)^2} \epsilon^{3/2} dx\\
+\epsilon^{3/2} = \sum_{n=0}^{\infty} \frac{f^{(n)} (\epsilon-\mu)^n}{n!} = \mu^{3/2} + (\epsilon-\mu) \frac{d}{d \epsilon} \epsilon^{3/2}|_{\mu} + \frac{1}{2} (\epsilon-\mu)^2 \frac{d^2}{d \epsilon^2} \epsilon^{3/2} |_{\epsilon=\mu} + \dots = \mu^{3/2} + \frac{3}{2} ( \epsilon-\mu) \mu^{1/2} + \frac{3/8} (\epsilon-\mu)^2 \mu^{-\frac{1}{2}} + \dots\\
+\implies N = \frac{2}{3} g_0 \int_{-\infty}^{\infty} \frac{e^x}{(e^x+1)^2} [\mu^{3/2} + \frac{3}{2} x k T \mu^{1/2} + \frac{3}{8} (x k T)^2 \mu^{-1/2} + \dots ] dx$
+Can extend to $-\infty$ since this part is negligible\\
+(dont understand since $\epsilon^{3/2}$ is imaginary.)\\
+\underline{1st term: } $\int_{- \infty}^{\infty} \frac{e^x}{(e^x+1)^2} dx = - \int_{- \infty}^{\infty} \frac{d}{?} \bar{n}_{FD}{d \epsilon} d \epsilon = \bar{n}_{FD} (-\infty) - \bar{n}_{FD}(\infty) = 1-0 =1\\
+\underline{2nd term: } \int_{-\infty}^{\infty} \frac{x e^x}{(e^x+1)^2} dx = \int_{-\infty}^{\infty} \frac{x}{e^{-x} (e^x + 1)^2} dx\\$
+$= \int_{-\infty}^{\infty} \frac{x}{(e^x + 1)(e^{-x} +1)} dx = \int_0^{\infty} \frac{x}{(e^x+1)(e^{-x} + 1)} dx + \int_{\infty}^0 \frac{x}{(e^x+1)(e^{-x}+1)} dx\\
+=\int_0^{\infty} \frac{x}{(e^x+1)(e^{-x}+1)} dx - \int_0^{\infty} \frac{x}{(e^x+1)(e^{-x}+1)} dx = 0\\$
+\underline{3rd term} $\int_{-\infty}^{\infty} \frac{x^2 e^x}{(e^x+1)^2}dx = \frac{\pi^2}{3}$ (difficult, can look up)\\
+$ \implies N=\frac{2}{3} g_0 \mu^{3/2} + \frac{1}{4} g_0 (kT)^2 \mu^{-1/2} \frac{\pi^2}{3} + \dots \\$
+\underline{recall:} $\frac{3N}{2 \epsilon_F^{3/2}} \sqrt{\epsilon} = g(\epsilon) = g_0 \sqrt{\epsilon}$, plug in $g_0$\\
+$\implies N= N(\frac{\mu}{\epsilon_F})^{3/2} + N \frac{\pi^2}{8} \frac{(kT)^2}{\epsilon_F^{3/2}} \mu^{1/2}\\$
+Cancel N's $\implies \frac{\mu}{\epsilon_F} \approx 1;\,\, solve for \frac{\mu}{\epsilon_F}$\\
+$[1-\frac{\pi^2}{8} \frac{(kT)^2}{\epsilon_F^{3/2} \mu^{1/2}} + \dots ]^{2/3} = \frac{\mu}{\epsilon_F}\\$
+use $\mu \approx \epsilon_F$\\
+$\implies \frac{\mu}{\epsilon_F} = [1- \frac{\pi^2}{8} ( \frac{kT}{\epsilon_F})^2 + \dots ]^{2/3}\\$
+\underline{recall: } $(1-\epsilon)^{2/3} = \sum_{n=0}^{\infty} (-1)^n \begin{pmatrix} \frac{2}{3}\\ n \end{pmatrix} \epsilon^n=\begin{pmatrix} \frac{2}{3} \\ 0 \end{pmatrix} - \begin{pmatrix} \frac{2}{3} \\ 1 \end{pmatrix} \epsilon + \dots= 1- \frac{2}{3} \epsilon + \dots ;  \,\, \begin{pmatrix} \alpha \\ n \end{pmatrix} = \frac{\alpha(\alpha -1)(\alpha -2) \dots ( \alpha - n + 1)}{n!}\\
+\implies \frac{\mu}{\epsilon_F} = [ 1 - \frac{2}{3} ( \frac{\pi^2}{8} (\frac{kT}{\epsilon_F})^2) + \dots]\\
+= 1 - \frac{\pi^2}{12} (\frac{kT}{(\epsilon_F^2} + \dots$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$U= \frac{3}{5} N \frac{\mu^{5/2}}{\epsilon_F^{3/2}} + \frac{3 \pi^2}{8} N \frac{(kT)^2}{\epsilon_F} + \dots\\
+U= \frac{3}{5} N \epsilon_F + \frac{\pi^2}{4} N \frac{(kT)^2}{\epsilon_F} + \dots\\$
+(Learn these later pg. 284)
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\bar{n}_{pl} = \frac{1}{e^{hf/kT}-1}$} (Planck distribution)\\
+\underline{recall:} $E_n = (n+\frac{1}{2}) \hbar \omega = 2 \pi f \frac{h}{2 \pi} ( n + \frac{1}{2}) = h f ( n + \frac{1}{2})\\$
+measure from ground state $\Delta E_n \equiv E_n \implies E_n = h f n\\$
+\underline{recall:} $\bar{n} = - \frac{1}{\mathcal{Z}} \frac{\partial \mathcal{Z}}{\partial x};\,\, x = \frac{(\epsilon-\mu)}{kT}\\
+\bar{n}_{Pl} = - ( 1- e^{-\beta h f}) \frac{\partial}{\partial x} \frac{1}{1-e^{-x}}\\
+=-(1-e^{-\beta h f})(e^{-x})(-\frac{1}{(1-e^{-\beta h f})^2})\\
+=\frac{e^{-\beta h f}}{1- e^{-\beta hf}}=\frac{1}{e^{\beta h f}-1}$
+
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+
+
+
+
+
+
+
+
+\section*{\underline{Solid State}}
+
+
+
+
+
+
+
+\section*{Chapter 2}
+
+
+\item \underline{$\langle E \rangle = \hbar \omega ( n_{B} ( \beta \hbar \omega) + \frac{1}{2})$ (Einstein)}\\
+\underline{recall:} $E_n = \hbar \omega(n+ \frac{1}{2})$ ( Quantum harmonic oscillators)\\
+$Z_{1D} = \sum_n e^{-E(n)\beta} = \sum_n e^{- \beta \hbar \omega(n+ \frac{1}{2})} = e^{- \beta \hbar \omega/2} \sum_n ( e^{- \beta \hbar \omega})^n = \frac{e^{- \beta \hbar \omega/2}}{1 - e^{- \beta \hbar \omega}} = \frac{1}{e^{\beta \hbar \omega/2} - e^{- \beta \hbar \omega/2}} = \frac{1}{2 \sinh ( \beta \hbar \omega/2)}\\
+\langle E \rangle = - \frac{1}{Z_{1D}} \frac{\partial Z_{1D}}{\partial \beta} = - 2 \sinh(\beta \hbar \omega/2) \frac{\partial \frac{\beta \hbar \omega}{2}}{\partial \beta} = \frac{\beta \hbar \omega}{2} \coth \frac{\beta \hbar \omega}{2}\\$
+\underline{Note:} $\coth x = \frac{\cosh x}{\sinh x} = \frac{e^x + e^{-x}}{e^x - e^{-x}} = \frac{e^{-x}(e^{2x} + 1)}{e^{-x}(e^{2x} -1)}= \frac{e^{2x} +1 +1 -1}{e^{2x} -1} = \frac{e^{2x} -1 +2}{e^{2x}-1} = \frac{2}{e^{2x}-1} + 1\\
+\implies \langle E \rangle = \frac{\hbar \omega}{2} \coth \frac{\beta \hbar \omega}{2} = \frac{\hbar \omega}{2}( \frac{2}{e^{\beta \hbar \omega} -1} + 1)\\
+\underline{recall:} n_{B}(x) = \frac{1}{e^x-1}$ (Bosons)\\
+$\therefore \langle E \rangle = \hbar \omega ( n_B (\hbar \omega \beta) + \frac{1}{2})\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+\item \underline{$C_{3D}=C_{1D} = 3 \frac{\partial \langle E \rangle}{\partial T}$}\\
+\underline{Aside:} $E_{n_x,n_y,n_z} = \hbar \omega [ (n_x + \frac{1}{2}) + ( n_y + \frac{1}{2}) + ( n_z + \frac{1}{2})]\\
+Z_{3D} = \sum_{n_x, n_y, n_z} e^{- \beta E_{n_x, n_y, n_z} }= ( Z_{1D})^3\\
+\implies \langle E \rangle_{3D} = -\frac{1}{Z_{3D}} \frac{\partial Z_{3D}}{\partial \beta} = - \frac{1}{Z_{1D}^3} \frac{\partial Z_{1D}}{\partial \beta} 3 Z_{1D}^2\\
+= - \frac{1}{Z_{1D}^3} 3 Z_{1D}^2 \frac{\partial Z_{1D}}{\partial \beta} = - \frac{3}{Z_{1D}} \frac{\partial Z_{1D}}{\partial \beta} = 3 \langle E \rangle_{1D}\\$
+
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Note:} $e^{ikr}=e^{ik(r+L)} \implies e^{ikL} = 1 \implies k = \frac{2 \pi n}{L}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+\item \underline{$\langle E \rangle = \int_0^{\infty} d \omega g(\omega) ( \hbar \omega) ( n_B (\beta \hbar \omega) + \frac{1}{2})$} (expectation energy of an atom in a solid); (3D) $g(\omega) = \frac{12 \pi \omega^2}{(2 \pi)^3 v^3} L^3$\\
+$\langle E \rangle = 3 \sum_{\vec{k}} \hbar \omega ( \vec{k}) ( n_B (\beta \hbar \omega(\vec{k})) + \frac{1}{2})\\$
+\underline{Note:} $\sum_{\vec{k}} = \frac{1}{\Delta k^3} \int d \vec{k};\,\, k = \frac{2 \pi n}{L} \implies \Delta k = \frac{2 \pi}{L}\\
+\implies \sum_{\vec{k}} = \frac{L^3}{(2 \pi )^3} \int d \vec{k}$\\
+$\implies \langle E \rangle = 3 \frac{L^3}{(2 \pi)^3} \int d \vec{k} \hbar \omega ( \vec{k})( n_B(\beta \hbar \omega (\vec{k})) + \frac{1}{2})\\
+\int d \vec{k} = \int_0^{2 \pi} d \phi \int_0^{\pi} d \theta \sin \theta \int_0^{\infty} k^2 dk = 4 \pi \int k^2 dk\\$
+$\omega(\vec{k}) = v | \vec{k} | \implies k = \frac{ \omega}{v}\\
+\implies 4 \pi \int_0^{\infty} k^2 dk = 4 \pi \int_0^{\infty} \frac{\omega^2}{v^2} \frac{1}{v} d \omega = 4 \pi \int_0^{\infty} \frac{1}{v^3} \omega^2 d \omega\\
+\implies \langle E \rangle = 3 \frac{4 \pi L^3}{(2 \pi)^3} \int_0^{\infty} \omega^2 d \omega \frac{1}{v^3} \hbar \omega(n_{B}(\beta \hbar \omega) + \frac{1}{2})\\
+= \int_0^{\infty} d \omega g( \omega) \hbar \omega( n_B (\beta \hbar \omega) + \frac{1}{2})\\
+g(\omega) \equiv L^3 ( \frac{12 \omega^2 \pi}{(2 \pi)^3 v^3}) = N \frac{12 \pi \omega^2}{(2 \pi)^3 n v^3} = N \frac{9 \omega^2}{\omega_d^3}\\
+\omega_d^3 = 6 \pi^2 n v^3$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+$\star$
+\item \underline{$C = \frac{\partial \langle E \rangle}{\partial T} = N k_{B} \frac{T^3}{(T_{Debye})^3} \frac{12 \pi^4}{5}$}\\
+\underline{recall:} $n_B(\beta \hbar \omega) = \frac{1}{e^{\beta \hbar \omega} -1}$\\
+$\implies \langle E \rangle = \frac{9N}{\omega_d^3} \hbar \int_0^{\infty} d \omega \frac{\omega^3}{e^{\beta \hbar \omega} - 1} + const\\
+x= \beta \hbar \omega\\
+\implies \langle E \rangle = \frac{9 N \hbar}{\omega_d^3 ( \beta \hbar)^4} \int_0^{\infty} dx \frac{x^3}{e^x-1} + const.\\
+\int_0^{\infty} dx \frac{x^3}{e^x-1} = \frac{\pi^4}{15}\\
+\implies \langle E \rangle = \frac{9 N \hbar}{\omega_d^3 (\beta \hbar)^4} \frac{\pi^4}{15} = 9 N \frac{(k_B T)^4}{(\hbar \omega_d)^3} \frac{\pi^4}{15} + const.\\
+\implies \frac{\partial \langle E \rangle}{\partial T} = N k_B \frac{(k_B T)^3}{( \hbar \omega_d)^3} \frac{12 \pi^4}{15} = C \sim T^3\\
+k_B T_{Debye} = \hbar \omega\\
+\therefore C = \frac{\partial \langle E \rangle }{\partial T} = N k_B \frac{T^3}{T^3_{Debye}} \frac{12 \pi^4}{15}$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+We want $C \rightarrow 3 k_B N$ for large $T$\\
+$\implies 3 N = \int_0^{\omega_{cutoff}} d \omega g(\omega)$ (there can only be as many modes as there are degrees of freedom in the system)\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Drude Theory}\\
+\underline{Assumptions}\\
+(1) electrons scatter in time $\tau$. Probability of scatter is $\frac{dt}{\tau}\\$
+(2) after scatter electron momentum $\vec{p}=0\\$
+(3) between scatter electrons respond to $\vec{E}_{ext},\,\, \vec{B}_{ext}\\$
+$\implies \langle \vec{p}(t+ dt) \rangle = \sum_i \mathcal{P}(t_i) \vec{p}(t_i)\\
+=(1- \frac{dt}{\tau}) (\vec{p}(t) + \vec{F} dt) + \vec{0} \frac{dt}{\tau}\\$
+i.e., it either scatters in $t=t_0 + dt$ or it doesn't\\
+$\implies \langle \vec{p}(t+ dt) \rangle = \vec{p}(t) + \vec{F} dt - \vec{p}(t) \frac{dt}{\tau}\\
+\implies \frac{\langle \vec{p}(t+ dt) \rangle - \vec{p}(t)}{dt} = \frac{d \vec{p}}{dt} = \vec{F} - \frac{\vec{p}}{\tau}\\$
+$\vec{F} = - e (\vec{E} + \vec{v} \times \vec{B})\\
+\vec{E} = 0;\,\, \vec{B} = 0 \implies \frac{d \vec{p}}{dt} = - \frac{\vec{p}}{\tau} \implies \vec{p}(t) = \vec{p}_0 e^{-t/ \tau}\\$
+\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{J} = \sigma \vec{E} = \frac{e^2 \tau n}{m} \vec{E}$}\\
+\underline{recall:} $\frac{d \vec{p}}{dt} = - e ( \vec{E} + \vec{v} \times \vec{B}) - \frac{\vec{p}}{\tau}\\
+\vec{B} = 0 \implies \frac{d \vec{p}}{dt} = - e \vec{E} - \frac{\vec{p}}{\tau},\,\, \frac{d \vec{p}}{dt} = 0$ (steady state)\\
+$\implies \vec{p} = - \tau e \vec{E} = m \vec{v} \implies \vec{v} = - \frac{e \tau}{m} \vec{E}\\
+\therefore \vec{J} = \frac{\vec{I}}{A} = \frac{q \vec{i}_e}{A} = - \frac{e \vec{i}_e}{A} = - \frac{e N \vec{v}}{ \ell A} = - e n \vec{v} = \frac{e^2 \tau n}{m} \vec{E}$
+
+
+
+
+
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+
+
+\item \underline{$F_n=\kappa (\delta x_{n+1}-\delta x_n)+\kappa(\delta x_{n-1}-\delta x_n)$} (solid state)\\
+$\delta x_n = x_n -x_n^{eq};\,\, x_n^{eq}=na$\\
+Ansatz: $\delta x_n=A e^{i\omega t - ikna}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\omega= 2 \sqrt{\frac{\kappa}{m}}| \sin ( \frac{ka}{2})|$}\\
+\underline{recall:} $m(\delta \ddot{x}_n) = \kappa(\delta x_{n+1} + \delta x_{n-1} -2 \delta x_n);\,\,\delta x_n= A e^{i \omega t - ikna}$\\
+plug in; $\delta \dot{x}_n=i \omega \delta x_n,\,\, \delta \ddot{x}_n=- \omega^2 \delta x_n\\
+\implies -m \omega^2 \delta x_n= \kappa ( e^{-ikna} \delta x_n + e^{ika} \delta x_n - 2 \delta x_n)\\
+\implies -m \omega^2= \kappa(e^{-ika} + e^{ika} -2)$\\
+\underline{recall:} $\cos (ka) = \frac{e^{-ika} + e^{ika}}{2}\\
+\implies m \omega^2 = 2 \kappa 2 \frac{1}{2}(1-\cos (2 \frac{ka}{2}))= 4 \kappa \sin^2(\frac{ka}{2})\\
+\therefore \omega= 2\sqrt{\frac{\kappa}{m}}|\sin (\frac{ka}{2})|$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{principle:} a system periodic in real space (period a), is periodic in reciprocal space (k space) with periodicity $\frac{2 \pi}{a}$\\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{$\omega$ periodic in $k \rightarrow k + \frac{2 \pi}{a}$}\\
+$\sin(\frac{(k+b)a}{2})= \sin(\frac{ka}{2} + \frac{b a}{2}) \\$
+periodic if $\frac{ba}{2}= 2 \pi n \implies b = \frac{4 \pi n}{a}\\
+\implies \omega = 2 \sqrt{\frac{\kappa}{m}}| \sin(\frac{ka}{2}) | \implies \omega$ periodic with period $\frac{b}{2} = \frac{2 \pi}{a}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Brillouin zone:} unit-cell in $k$ space.\\
+$k= \pm \frac{\pi}{a} $Brillouin-zone boundaries\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$x_n = na; G_n = \frac{2 \pi r}{a}$}\\
+\underline{recall:} $\delta x_n = A e^{i \omega t - i kna},\,\, k \rightarrow k+ \frac{2 \pi}{a}$\\
+Note that $\delta x_n$ is not periodic with $k= \frac{2 \pi}{na}$  since the $\omega(k)$ term in the exponential is not periodic under this transformation
+$\delta x_n = A e^{i \omega t - i( k + \frac{2 \pi}{a})na} = Ae^{i \omega t - ikna}e^{-i 2\pi n}\\
+=A e^{i \omega t - ikna};\,\, k \rightarrow k + \frac{2 \pi p}{a}$ Yields same result\\
+$k=\frac{2 \pi p}{a}$ is equivalent to $k=0$ \\
+$\therefore x_n = na; \,\, n \in \mathbb{Z}$ ( direct lattice)\\
+$\therefore G_n = \frac{2 \pi p}{ a};\,\, n \in \mathbb{Z}$ ( reciprocal lattice)\\
+\underline{Note:}  $e^{i G_m x_n} = e^{i (\frac{2 \pi m}{a} )na} = ( e^{i2\pi})^{nm}=1$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$v_{sound}= a\sqrt{\frac{\kappa}{m}}$} (long wavelength)\\
+\underline{sound:} $\lambda \sim large \implies k \sim small\\
+\omega= 2 \sqrt{\frac{\kappa}{m}} |\sin(\frac{ka}{2})| \approx 2 \sqrt{\frac{\kappa}{m}} |\frac{ka}{2}| = ka \sqrt{\frac{\kappa}{m}}\\
+\implies \frac{\omega}{k}=\frac{d \omega}{dk} = v_{sound} = a \sqrt{\frac{\kappa}{m}}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+for large $k$, $v_{sound}$ splits into a group velocity and phase velocity $v_{group} = \frac{d \omega}{d k};\,\, v_{phase}=\frac{\omega}{k}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{\# modes$=N$}\\
+\underline{periodic boundary conditions:} $x_{n+N}=x_n \implies e^{i \omega t-ikna} = e^{i \omega t - ik(n+N)a} \implies e^{-ikNa} = 1 = e^{ikNa}\\
+\implies k= \frac{2 \pi p}{Na} = \frac{2 \pi p}{L} \implies \#$ modes $= \frac{range k}{\Delta k} = \frac{\frac{2 \pi}{a}}{\frac{2 \pi}{Na}}=N$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$U_{total}=\frac{Na}{2 \pi} \int_{-\pi/a}^{\pi/a} dk \hbar \omega(k)(n_B (\beta \hbar \omega(k)) + \frac{1}{2})$}\\
+$n_B(\beta \hbar \omega)=\frac{1}{e^{\beta \hbar \omega} -1}$ (phonons)\\
+$E_k =\hbar \omega(k) (n_B (\beta \hbar \omega(k)) + \frac{1}{2})$ (Expectation energy)\\
+$U_{total} = \sum_k \hbar \omega(k)(n_B(\beta \hbar \omega(k)) + \frac{1}{2})\\$
+sum over $k=\frac{2 \pi p}{N a} s.t. -\pi/a \leq k < \pi/a\\
+\implies -\frac{N}{2} \leq p < \frac{N}{2} \implies -\frac{N}{2} \leq p \leq \frac{N}{2}-1\\
+\implies \sum_{k s.t. k=\frac{2\pi p}{Na} and -\frac{\pi}{a} < k < \frac{\pi}{2}} \rightarrow \sum_{p=-\frac{N}{2}}^{p=-\frac{N}{2} -1} \\
+\sum_k \rightarrow \frac{Na}{2 \pi} \int_{-\pi/2}^{\pi/2} dk\\
+\therefore U_{total} = \frac{Na}{2 \pi} \int_{-\pi/a}^{\pi/a} dk \hbar \omega(k) ( n_B (\beta \hbar \omega(k))+\frac{1}{2})\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Note:} $\frac{Na}{2 \pi} \int_{-\pi/a}^{\pi/a} dk = N\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$g(\omega) = 2 \frac{Na}{2 \pi} | \frac{dk}{d \omega}|$}\\
+$\frac{Na}{2 \pi} \int_{-\pi/a}^{\pi/a} dk = 2 \frac{Na}{2 \pi} \int |\frac{dk}{d \omega}| d \omega = \int g(\omega) d \omega\\
+\therefore g(\omega) = 2 \frac{Na}{2 \pi} |\frac{dk}{d \omega}|\\$
+factor of 2 because for every value of $\omega$ there are two corresponding $k$ values.\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{unit cell:} the part that repeats in a solid when all atoms are in equillibrium\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+reference point = lattice point\\
+in each unit cell there is \underline{one} reference point.\\
+the position of the lattice point is $r_n = na$ the position of atoms in the unit cell is measured from reference point. For example light grey atom in equillibrium position located at $x_n^{eq} = an - \frac{3a}{40};\\$
+dark grey located at $y_n^{eq} = an+ \frac{7a}{20}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\omega_{\pm}=\sqrt{\frac{\kappa_1 + \kappa_2}{m} \pm \frac{1}{m} \sqrt{(\kappa_1+\kappa_2)^2-4 \kappa_1 \kappa_2 \sin^2(\frac{ka}{2})}}$}\\
+Two atoms, same mass, different spring constants\\
+$\implies m \delta \ddot{x}_n=\kappa_2(\delta y_n - \delta x_n) + \kappa_1(\delta y_{n-1} - \delta x_n);\,\, m \delta \ddot{y}_n=\kappa_1 (\delta x_{n+1} - \delta y_n) + \kappa_2(\delta x_n - \delta y_n)\\
+\delta x_n = A_x e^{i \omega t - i k n a};\,\, \delta y_n = A_y e^{i \omega t - i k n a}\\
+\implies - \omega^2 m A_x e^{i \omega t - i k n a} = \kappa_2 A_y e^{i \omega t - i k n a} + \kappa_1 A_y e^{i \omega t - i k(n-1)a}-(\kappa_1 + \kappa_2)A_x e^{i \omega t - i k n a};\\
+-\omega^2 m A_y e^{i \omega t - i k n a}=\kappa_1 A_x e^{i \omega t - i k(n+1) a} + \kappa_2 A_x e^{i \omega t - i k n a} -(\kappa_1 + \kappa_2) A_y e^{i \omega t - i k n a}\\
+\implies - \omega^2 m A_x = \kappa_2 A_y + \kappa_1 A_y e^{ika} - ( \kappa_1 + \kappa_2) A_x\\
+\implies - \omega^2 m A_y = \kappa_1 A_x e^{-ika} + \kappa_2 A_x - ( \kappa_1 + \kappa_2 ) A_y\\
+\implies m \omega^2 \begin{pmatrix} A_x\\ A_y \end{pmatrix} = \begin{pmatrix} (\kappa_1 + \kappa_2) & - \kappa_2 - \kappa_1 e^{ika} \\ -\kappa_2 - \kappa_1 e^{-ika} & ( \kappa_1 + \kappa_2) \end{pmatrix} \begin{pmatrix} A_x \\ A_y \end{pmatrix}\\$
+\underline{recall:} We care about nontrivial $(A_x, A_y)$ so $\lambda \vec{x} = A \vec{x}$ where $\lambda=m \omega^2$ ( nontrivial $\vec{x}$) $\implies |A - \lambda I | = 0\\
+\implies 0=\begin{vmatrix} (\kappa_1 + \kappa_2) - m \omega^2 & - \kappa_2-\kappa_1 e^{ika} \\ -\kappa_2 - \kappa_1 e^{-ika} & (\kappa_1 + \kappa_2) - m \omega^2 \end{vmatrix}=|(\kappa_1 + \kappa_2) - m \omega^2|^2 - |\kappa_2 + \kappa_1 e^{ika}|^2$ (important)\\
+$\implies ((\kappa_1 + \kappa_2) - m \omega^2) = \pm | \kappa_1 + \kappa_2 e^{ika}|\\
+\implies m \omega^2 = (\kappa_1 + \kappa_2) \pm | \kappa_1 + \kappa_2 e^{ika} |\\
+| \kappa_1 + \kappa_2 e^{ika} | = \sqrt{(\kappa_1 + \kappa_2 e^{-ika})(\kappa_1 + \kappa_2 e^{ika})}\\
+=\sqrt{\kappa_1^2 + \kappa_2^2 + \kappa_1 \kappa_2 (e^{ika} + e^{-ika})}\\$
+\underline{recall:} $\cos(ka) = \frac{1}{2}( e^{ika} + e^{-ika})\\
+\implies m \omega^2 = ( \kappa_1 + \kappa_2) \pm \sqrt{ \kappa_1^2 + \kappa_2^2 + 2 \kappa_1 \kappa_2 \cos(ka)}\\
+\implies \omega_{\pm} = \sqrt{\frac{\kappa_1+ \kappa_2}{m} \pm \frac{1}{m} \sqrt{ \kappa_1^2 + \kappa_2^2 + 2 \kappa_1 \kappa_2 \cos(ka)}}\\
+\kappa_1^2 + \kappa_2^2 + 2 \kappa_1 \kappa_2 \cos(ka) = \kappa_1^2 + 2 \kappa_1 \kappa_2 + \kappa_2^2 - 2 \kappa_1 \kappa_2 ( 1-\cos(ka))\\
+4 \sin^2x=2(1-\cos2x) \implies (\kappa_1 + \kappa_2)^2 - 4 \kappa_1 \kappa_2 \sin^2 \frac{ka}{2}\\
+\therefore \omega_{\pm} = \sqrt{\frac{\kappa_1 + \kappa_2}{m} \pm \frac{1}{m} \sqrt{(\kappa_1 + \kappa_2)^2 - 4 \kappa_1 \kappa_2 \sin^2 \frac{ka}{2}}}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\begin{pmatrix} A_x \\ A_y \end{pmatrix} = \begin{pmatrix} 1 \\ 1 \end{pmatrix} \sim acoustic\,\, \begin{pmatrix} A_x\\A_y \end{pmatrix} = \begin{pmatrix} 1 \\ -1 \end{pmatrix} \sim optical (k \rightarrow 0$)}\\
+$\omega_- \sim acoustic k=0 \omega_- (k=0) = 0\\
+\underline{recall:} m \omega^2 \begin{pmatrix} A_x \\ A_y \end{pmatrix} = \begin{pmatrix} (\kappa_1 + \kappa_2) & - \kappa_2 - \kappa_1 e^{ika} \\ -\kappa_2 - \kappa_1 e^{-ika} ( \kappa_1 + \kappa_2) \end{pmatrix} \begin{pmatrix} A_x \\ A_y \end{pmatrix}\\
+k=0\\
+\omega^2 \begin{pmatrix} A_x\\ A_y \end{pmatrix} = \frac{\kappa_1+ \kappa_2}{m} \begin{pmatrix} 1 ^{ -1} \\ -1 ^ 1 \end{pmatrix} \begin{pmatrix} A_x\\ A_y \end{pmatrix} = 0 \\
+\implies \begin{pmatrix} A_x\\ A_y \end{pmatrix} = \begin{pmatrix} 1 \\ 1 \end{pmatrix} \implies$ oscillate in phase\\
+$\omega_+ \sim optical\,\, \omega_+^2 (k=0) = \frac{2( \kappa_1 + \kappa_2)}{m}\\
+\implies \frac{2(\kappa_1 + \kappa_2)}{m} \begin{pmatrix} A_x \\ A_y \end{pmatrix} = \frac{\kappa_1 + \kappa_2}{m} \begin{pmatrix} 1 ^ -1 \\ -1 & 1 \end{pmatrix} \begin{pmatrix} A_x\\ A_y \end{pmatrix}\\$
+$\implies \begin{pmatrix} A_x \\ A_y \end{pmatrix} = \begin{pmatrix} 1 \\ -1 \end{pmatrix} \sim$ eigenvector $\implies$ oscillate out of phase
+
+
+ \hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+\underline{Note:} $N \sim k \implies 2 N$ modes;  $\omega_+ \sim$ optic; $\omega_- \sim$ acoustic
+For each atom in the unit cell there is another mode that appears, the first one is an acoustic mode, they oscillate in phase (when k=0), the rest are optical modes, they oscillate out of phase (when k=0).\\
+The Brillouin zone $|k| \leq \pi/a$ is the reduced scheme, all of the $\omega$ curves superimposed on the Brillouin zone while after 'unfolding' these curves result in the extended scheme.
+
+
+ \hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+ 
+ 
+ \section*{\underline{Chapter 11}}
+$ |n \rangle \sim $ orbital of $n^{th}$ atom\\
+ 
+ 
+ \hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+$\star$
+\item \underline{$ \sum_m H_{nm} \phi_m = E \phi_m$}
+assume $ \langle n | m \rangle = \delta_{nm}\\$
+\underline{recall: } for $| \beta  \rangle = \hat{Q} | \alpha \rangle,\,\, Q_{nm} \equiv \langle n | \hat{Q} | m \rangle\\$
+spose $\hat{H} | \Psi \rangle = E | \Psi \rangle,\,\, w/,\,\, | \Psi \rangle = \sum_m \phi_m |m \rangle \\
+\implies \langle n | \hat{H} | \Psi \rangle = \sum_m \phi_m \langle n | \hat{H} | m \rangle = \sum_m H_{nm} \phi_m\\$
+and $\langle n | E | \Psi \rangle = E \langle n | \Psi \rangle = E \sum_m \phi_m \langle n | m \rangle = E \phi_n\\
+\therefore \sum_m H_{nm} \phi_m = E \phi_m\\$
+
+
+ \hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$H_{n,m} = \epsilon_0 \delta_{n,m} - t(\delta_{n+1,m} + \delta_{n-1,m})$}
+Let $H= K + \sum_j V(\vec{r}-\vec{R}_j)= K + \sum_j V_j;\,\, K = \frac{\hat{p}^2}{2m}\\
+\sum_j V_j$ is the total potential of nuclei in lattice acting on the electron at $\vec{r}$ (which is attached to atomic site $m$)\\
+$H|m \rangle = (K + \sum_j V_j ) |m \rangle = (K + \sum_{j \neq m} V_j + V_m ) | m \rangle\\
+= (K + V_m)| m \rangle + \sum_{j \neq m} V_j | m \rangle\\
+(K+ V_m)| m \rangle + \sum_{j \neq m} V_j | m \rangle\\
+(K + V_m) |m \rangle = \epsilon_{atomic} |m \rangle,\,\, \epsilon_{atomic}$ energy of electron from its nucleus\\
+$H_{n,m} = \langle n | H | m \rangle = \epsilon_{atomic} \langle n | m \rangle + \sum_{j \neq m} \langle n | V_j | m \rangle \\
+= \epsilon_{atomic} \delta_{nm} + \sum_{j \neq m} \langle n | V_j | m \rangle\\
+\sum_{j \neq m} \langle n | V_j | m \rangle$ is a hopping term\\
+assuming electrons can only hop to nearest neighbor\\
+$\implies \sum_{j \neq m} \langle n | V_j | m \rangle = 
+\begin{cases}
+V_0 \rm{if} n=m\\
+ -t;\,\, n=m \pm 1\\
+ 0 o.w.\\
+ \end{cases}
+n=m \implies \sum_{j \neq m} \langle n | V_j | m \rangle = V_0 = V_0 \delta_{nm}\\
+m= n+1 \implies \sum_{j \neq m} \langle n | V_j | m \rangle = V_0 \delta_{n,m} - t \delta_{n+1,m}\\
+m=n-1 \implies \sum_{j \neq m } \langle n | V_j| m \rangle = -t = V_0 \delta_{n,m} - t (\delta_{n+1,m} + \delta_{n-1,m})\\
+\implies H_{n,m} = \langle n | H | m \rangle = \epsilon_{atomic} \delta_{n,m} + \sum_{j \neq m} \langle n | V_j | m \rangle \\
+=\epsilon_{atomic} \delta_{n,m} + V_0 \delta_{n,m} - t(\delta_{n+1,m} + \delta_{n-1,m})\\
+=\epsilon_0 \delta_{n,m} - t (\delta_{n+1,m} + \delta_{n-1,m});\,\, \epsilon_0 \equiv \epsilon_{atomic} + V_0\\
+\therefore H_{n,m} = \epsilon_0 \delta_{n,m} - t (\delta_{n+1,m} + \delta_{n-1,m})\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+$\star$
+\item \underline{$\phi_n=\frac{1}{\sqrt{N}} e^{-ikna};\,\, | \Psi \rangle = \sum_n \phi_n | n \rangle$}\\
+$\phi_n = A e^{-ikna}$ (guess); want $\langle \Psi | \Psi \rangle =1\\
+\langle \Psi | \Psi \rangle = \sum_{n,m} \phi^*_n \phi_m \langle n | m \rangle = \sum_{n,m} \phi_n^* \phi_m \delta_{nm}=\sum_n |\phi_n|^2= |A|^2 \sum_n = N |A|^2=1 \implies A = \frac{1}{\sqrt{N}}$
+
+
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$E= \epsilon_0 - 2 t \cos(ka)$}\\
+\underline{recall:} $H_{n,m} = \epsilon_0 \delta_{nm} - t (\delta_{n+1,m} + \delta_{n-1,m});\,\, \sum_m H_{nm} \phi_m = E \phi_n\\
+\implies \sum_m (\epsilon_0 \delta_{nm} - t ( \delta_{n+1,m} + \delta_{n-1,m})) e^{-ikma} = E e^{-ikna}\\
+\implies \epsilon_0 e^{-ikna}| - t e^{-ik(n+1)a} -t e^{-ik(n-1)a} = E e^{-ikna}\\
+\implies \epsilon_0 - t e^{-ika} - t e^{ika} = E\\$
+\underline{recall:} $ \frac{1}{2}(e^{ika} + e^{-ika})=\cos ka\\
+\therefore E = \epsilon_0 -2 t \cos ka\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+compare with $\omega^2 = 2 \frac{\kappa}{m} -2 \frac{\kappa}{m} \cos ka\\$
+the reason $\omega^2$ and $E$ is because $F=m a = m \frac{\partial^2 x}{\partial t^2}$ and $\hat{H} \Psi = i \hbar \frac{\partial \Psi}{\partial t}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{band} - energy range for which eigenstates exist, since E is a function there is only 1 band and $\omega^2$ has 2.\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$m^* = \frac{\hbar^2}{2 t a^2}$} (effective mass)\\
+\underline{recall:} $E= \epsilon_0 - 2 t \cos (ka);\,\, \cos x \approx 1-\frac{x^2}{2}$(bottom of band)\\
+$E=\epsilon_0 - 2 t \cos ka \approx \epsilon_0 -2 t( 1- \frac{k^2 a^2}{2})\\
+=\epsilon_0 - 2t + t k^2 a^2 = const. + t k^2 a ^2\\$
+\underline{recall:} $E_{free}(k) =\frac{\hbar^2 k^2}{2m}\\
+\implies \frac{\hbar^2 k^2}{2 m^*} = t k^2 a ^2 \implies \frac{\hbar^2}{2 a^2 t} = m^*\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+If we had one atom per unit cell and multiple orbitals we would have multiple bands pop up (understand better) \\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+Suppose we have N atoms in our tight binding model contributing 1 electron each (valence =1), each band has N k-states but each k-state can be occupied by 2 electrons so the band would only be half filled.\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+When an electric field is applied, this shifts the filled k-states (or the fermi surface) and induces a current, needs justification, a filled band cannot have an induced current from a smal magnetic field.\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+A divalent model would have a completely filled band\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Definition 12.1} A lattice is an infinite set of points defined by integer sums of a set of linearly independent primitive lattice vectors.\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$R_{[n_1 n_2 n_3]} = n_1 \vec{a}_1 + n_2 \vec{a}_2 + n_3 \vec{a}_3,\,\, n_1,n_2,n_3 \in \mathbb{Z}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\vec{a}_1,\vec{a}_2,\vec{a}_3$ primitive lattice vectors.\\
+\underline{recall:} this is analogous to $R=na$ (1D crystal)\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Equivalent Definition 12.1.1}\\
+A lattice is an infinite set of vectors where addition of any two vectors in the set gives a third vector in the set\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Equivalent Defintion 12.1.2}\\
+A lattice is a set of points where the environment of any given point is equivalent to the environment of any other given point.\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Defintion 12.2} A unit cell is a region of space such that when many identical units are stacked together it tiles (completlely fills) all of space and reconstructs the full structure.\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Equivalent Definition 12.2.1} A unit cell is the repeated motif which is the elementary building block of the periodic structure.\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+\underline{Definition 12.3}\\
+A primitive unit cell for a periodic crystal is a unit cell containing exactly one lattice point.
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Definition:}\\
+a lattice point is a point ofn the lattice\\
+\underline{Note:} inside a unit cell, you can have fractional lattice points.\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+\underline{Definition 12.4}\\
+Given a lattice point, the set of all points in space which are closer to that given lattice point than to any other lattice point constitute the Wigner-Seitz cell of the given lattice point.\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Definition 12.5}\\
+The description of objects in the unit cell with respect to the reference lattice point in the unit cell is known as a basis.\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+review 12.2, Note that [0,0] i fig 12.8 is the reference point
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+Body centered cubic lattice (bcc)- a regular cubic lattice with an extra point right in the center of each cube, contains 2 lattice points (recall fractional lattice points)\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+Face centered cubic (fcc)- a cubic lattice except each face of the cube has a point right in the middle, contains 4 lattice points
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+Of course, there are tons of other lattice structures as well.
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Definition 13.1}\\
+Spose $\vec{R}$ is a point indirect lattice $\vec{G}$ element of reciprocal lattice $\iff e^{i \vec{G} \cdot \vec{R}} = 1\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+(1) reciprocal lattice is a lattice in reciprocal space\\
+(2) primitive lattice $\vec{a}_i$ and reciprocal lattice $(\vec{b}_j)$ are related by $\vec{a}_i \cdot \vec{b}_j = 2 \pi \delta_{ij}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\vec{b}_1 = \frac{2 \pi \vec{a}_2 \times \vec{a}_3}{\vec{a}_1 \cdot (\vec{a}_2 \times \vec{a}_3)}\\
+\vec{b}_2 = \frac{2 \pi \vec{a}_3 \times \vec{a}_1}{\vec{a}_1 \cdot (\vec{a}_2 \times \vec{a}_3)}\\
+\vec{b}_3= \frac{2 \pi \vec{a}_1 \times \vec{a}_2}{\vec{a}_1 \cdot ( \vec{a}_2 \times \vec{a}_3)}\\$
+easy to check $\vec{a}_1 \cdot \vec{b}_1 = \frac{2 \pi \vec{a}_1 \cdot (\vec{a}_2 \times \vec{a}_3)}{\vec{a}_1 \cdot (\vec{a}_2 \times \vec{a}_3)} = 2 \pi\\$
+just like $k = \frac{2 \pi}{a}\,\, \vec{b}_1 = \frac{2 \pi \vec{Q}}{V} but V = \vec{a}_1 \cdot ( \vec{a}_2 \times \vec{a}_3)\\$
+we want $\vec{a}_1 \cdot \vec{b}_1 = 2 \pi$ so a good choice of $\vec{Q} = \vec{a}_2 \times \vec{a}_3$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\mathcal{F} [ \rho (\vec{r}) ] = \sum_{\vec{R}} e^{i \vec{k} \cdot \vec{R}} = \frac{(2 \pi)^D}{V} \sum_{\vec{G}} \delta^D(\vec{k} - \vec{G})$}\\
+$\rho(r) = \sum_n \delta(r-an) \,\,$ (Density of a 1-D lattice)\\
+$\mathcal{F}[ \rho (r) ] = \int dr e^{ikr} \rho(r) = \sum_n \int dr e^{ikr} \delta(r-an)\\
+= \sum_n e^{ikan} = \frac{2 \pi}{|a|} \sum_m \delta (k- \frac{2 \pi m}{a})$ (Poisson resumation formula)\\
+In general,\\
+$\therefore \mathcal{F} [ \rho(\vec{r})] = \sum_{\vec{R}} e^{i \vec{k} \cdot \vec{R}} = \frac{(2 \pi)^D}{V} \sum_{\vec{G}} \delta^D (\vec{k} - \vec{G})\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\mathcal{F} [ \rho (\vec{r}) ] = (2 \pi)^D \sum_{\vec{G}} \delta^D (\vec{k} - \vec{G}) S(\vec{k}) ;\,\, S(\vec{k}) = \int_{unit-cell} d \vec{x} e^{i \vec{k} \cdot \vec{x}} \rho(\vec{x})$}\\
+periodic lattice\\
+\underline{recall:} $\mathcal{F}[\rho(\vec{r}) = \int dr e^{i \vec{k} \cdot \vec{r}} \rho(\vec{r})$ all of space\\
+lets instead integrate over a unit cell and add up all unit cells. Let $\vec{r} = \vec{R} + \vec{x},\,\, \vec{x}$ within unit cell\\
+$\implies \mathcal{F}[\rho(\vec{r})] = \sum_{\vec{R}} \int_{unit-cell} d \vec{x} e^{i \vec{k} \cdot (\vec{x} + \vec{R})} \rho(\vec{x} + \vec{R})\\
+= \sum_{\vec{R}} e^{i \vec{k} \cdot \vec{R}} \int_{unit-cell} d \vec{x} e^{i \vec{k} \cdot \vec{x}} \rho(\vec{x})\\$
+\underline{recall:} $\sum_{\vec{R}} e^{i \vec{k} \cdot \vec{R}} = \frac{(2 \pi)^D}{V} \sum_{\vec{G}} \delta^D(\vec{k} - \vec{G})$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$E^i = \tilde{\rho} J^i;\,\, \tilde{\rho} = ( \frac{1}{ne} \epsilon^i_{jk} B^k - \frac{m}{ne \tau} \delta^i_j) J^j$}\\
+\underline{recall:} $\frac{d \vec{p}}{dt} = - e ( \vec{E} + \vec{v} \times \vec{B}) - \frac{\vec{p}}{\tau}\\
+\frac{d \vec{p}}{dt} = 0$ (steady state)\\
+\underline{recall:} $\vec{J} = 0 n e \vec{v} \implies \vec{v} = \frac{\vec{J}}{-ne}\\
+\implies 0 = - e ( \vec{E} + -\frac{\vec{J}}{ne} \times \vec{B}) - \frac{\vec{p}}{\tau}\\
+\implies \vec{E} = \frac{1}{ne} \vec{J} \times \vec{B} - \frac{1}{\tau} \frac{m \vec{J}}{ne}\\
+\implies ( \vec{E})^i = E^i = \frac{1}{ne} \epsilon^i_{jk} J^j B^k - \frac{m}{ne \tau} J^i\\
+= \frac{1}{ne} \epsilon^i_{jk} J^j B^k - \frac{m}{ne \tau} \delta^i_j J^j\\
+=(\frac{1}{ne} \epsilon^i_{jk} B^k - \frac{m}{ne \tau} \delta^i_j) J^j$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+Skipped section 3.2\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$N= 2 \frac{V}{(2 \pi)^3} \int d \vec{k} n_F(\beta(\epsilon(\vec{k}) - \mu))$}\\
+\underline{recall:} $n_F(\beta(E-\mu)) = \frac{1}{e^{\beta(E- \mu)} + 1}\\
+\implies N= 2 \sum_{\vec{k}} n_F(\beta(\epsilon(\vec{k}) - \mu)) = 2 \frac{V}{(2\pi)^3} \int d \vec{k} n_F(\beta(\epsilon(\vec{k}) - \mu)$)\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Definition:} Fermi energy ($E_F$) chemical potential at $T=0$\\
+$E_F = \frac{\hbar^2 k_F^2}{2m}$ (fermi wave vector (implicit definition))\\
+$p_F = \hbar k_F$ (fermi momentum)\\
+$v_F = \hbar k_F/m$ (fermi velocity)\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$N = 2 \frac{V}{(2 \pi)^3} ( \frac{4 }{3} \pi k_F^3);\,\, k_F = ( 3 \pi^2 n)^{1/3};\,\, E_F = \frac{\hbar^2(3 \pi^2 n)^{2/3}}{2m}$}\\
+Consider 3D metal $N \sim$ electrons $T= 0$\\
+$\implies n_F(\beta(\epsilon(\vec{k}-\mu)) =\Theta (E_F - \epsilon(\vec{k}))$ (step function)\\
+$\implies N= 2 \frac{V}{(2 \pi)^3} \int d \vec{k} \Theta (E_f - \epsilon(\vec{k})) = 2 \frac{V}{(2 \pi)^3} \int^{|k|< k_F} d \vec{k}\\$
+\underline{Note:} $\Theta(x) =\begin{cases} 1,\,\, x \geq 0,\\ 0,\,\, x < 0 \end{cases}\\
+\implies E_F - \epsilon(k) \geq 0 \implies \epsilon(k) \leq E_F \implies |k| < k_F\\
+\therefore N =2 \frac{V}{(2 \pi)^3} (\frac{4}{3} \pi k_F^3) \implies k_F=(3 \pi^2 n)^{1/3} \implies E_F = \frac{\hbar^2(3 \pi^2 n)^{2/3}}{2m}$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$N= 2 \frac{V}{(2 \pi)^3} \frac{4}{3} \pi k_F^3 = \frac{V}{3 \pi^2} k_F^3$} (alternative method)\\
+$N= 2 \sum_{n_x, n_y,n_z} =2 \int_0^{\pi/2} \int_0^{\pi/2} \int_0^{n_{max}} \sin \theta n^2 dn d \theta d \phi\\
+=2 \frac{\pi}{2} \frac{n_{max}^3}{3}\\$
+\underline{recall:} $k= \frac{\pi n}{L} \implies k_F = \frac{\pi n_{max}}{L}\\
+\implies N = \frac{\pi}{3} ( \frac{L k_F}{\pi})^3 = \frac{\pi}{3} \frac{V k_F}{\pi^3} = \frac{V}{3 \pi^2} k_F^3$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$g(\epsilon) = \frac{3 n}{2 E_F} (\frac{\epsilon}{E_F})^{1/2}$}\\
+\underline{recall:} $E_{tot} = \frac{2V}{(2 \pi)^3} \int d \vec{k} \epsilon(\vec{k}) n_F(\beta(\epsilon(\vec{k}) - \mu)) = \frac{2 V}{(2 \pi)^3} \int_0^{\infty} 4 \pi k^2 dk \epsilon(\vec{k}) n_F(\beta(\epsilon(\vec{k})-\mu))\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$E_{tot} = V \int_0^{\infty} d \epsilon \epsilon g(\epsilon) n_F(\beta(\epsilon- \mu));\,\, N = V \int_0^{\infty} d \epsilon g(\epsilon) n_F(\beta(\epsilon - \mu))$}\\
+$E_{tot} = \frac{2 V}{(2 \pi)^3} \int d \vec{k} \epsilon(\vec{k} n_F(\beta(\epsilon(\vec{k}) - \mu)) = \frac{2 V}{(2 \pi)^3} \int_0^{\infty} 4 \pi k^2 dk \epsilon(\vec{k}) n_F(\beta(\epsilon(\vec{k}) - \mu))\\
+k = \sqrt{\frac{2 \epsilon m}{\hbar^2}} \implies dk = \sqrt{\frac{m}{2 \epsilon \hbar^2}} d \epsilon\\
+\implies E_{tot} = \frac{2 V}{(2 \pi)^3} \int_0^{\infty} 4 \pi \frac{2 \epsilon m}{\hbar^2} \sqrt{\frac{m}{2 \epsilon \hbar^2}} d \epsilon \epsilon n_F(\beta(\epsilon - \mu))\\
+= V \int_0^{\infty} d \epsilon \epsilon g(\epsilon) n_F(\beta(\epsilon - \mu))\\$
+where $g(\epsilon) = \frac{2}{(2 \pi)^3} 4 \pi \frac{2 \epsilon m}{\hbar^2} \sqrt{\frac{m}{2 \epsilon \hbar^2}}\\
+= \frac{(2m)^{3/2}}{2 \pi^2 \hbar^3} \epsilon^{1/2}\\$
+also\\
+$N = V \int_0^{\infty} d \epsilon g(\epsilon) n_F(\epsilon-\mu)\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+skipped 6.7 come back to on weekend\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+Skipped 4.13, 4.14\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$v= \sqrt{\frac{\kappa a^2}{m}}$}\\
+isolate an atom in a 1-D solid\\
+Imagine the equillibrium position is at $x_eq$, if you perturb it the potential is approximately hooks law
+$\implies - \kappa(x- x_{eq}) = - \kappa (\delta x_{eq}) = F =\\$
+\underline{recall:} $\beta = - \frac{1}{V} \frac{\partial V}{\partial P}$ (compressibility) $\beta = - \frac{1}{L} \frac{\partial L}{\partial F}$ (1-D)\\
+\underline{recall:} $v = \sqrt{\frac{B}{\rho}} = \sqrt{\frac{1}{\rho \beta}},\,\, B= \frac{1}{\beta}$ (bulk modulus)\\
+$\beta = - \frac{1}{L} \frac{\partial L}{\partial F} = - \frac{1}{a} (\frac{\partial x}{\partial F})\\
+= - \frac{1}{a} (\frac{\partial F}{\partial x})^{-1} = - \frac{1}{a}(- \frac{1}{\kappa}) = \frac{1}{\kappa a};\,\, \rho = \frac{m}{a}\\
+\therefore v = \sqrt{\frac{1}{\rho \beta}} = \sqrt{\frac{\kappa a^2}{m}} = \sqrt{\frac{\kappa}{m}}a$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Definition 13.2}\\
+\underline{Definition 13.3}\\
+\underline{Claim 13.1}\\
+\underline{Proof:}\\
+We know direct and reciprocal lattice are defined by $e^{i \vec{G} \cdot \vec{r}} = 1 \implies \vec{G} \cdot \vec{r} = 2 \pi m$, this defines an infinite set of parallel planes\\
+\underline{Claim}\\
+The spacing between planes is $d = \frac{2 \pi}{||\vec{G}||}\\$
+\underline{Proof:}\\
+Consider $\vec{r}-1$ point on a plane and $\vec{r}_2$ a point on adjacent plane\\
+$\implies \vec{G} \cdot (\vec{r}_1 - \vec{r}_2) = 2 \pi (m+1) - 2 \pi m = 2 \pi\\
+\implies || \vec{G} || \hat{G} \cdot (\vec{r}-1 - \vec{r}_2) = 2 \pi\\
+\implies \hat{G} \cdot ( \vec{r}_1 - \vec{r}_2) = \frac{2 \pi}{||\vec{G} ||}\\$
+Thus the distance between two planes in the direction of normal $\hat{G} is d = \frac{2 \pi}{|| \vec{G}||}\\$
+Choose $\vec{G}$ to be the smallest such $\vec{G}$ ( largest distance) such that every plane contains lattice points.\\
+\underline{Note:} $\vec{G} = \frac{2 \pi \hat{G}}{d}$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Definition 13.4} Brillouin zone is primitive unit cell of the reciprocal lattice\\
+\underline{Definition 13.5}
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{recall:} $R= \frac{2 \pi}{\hbar} | \frac{V_{if}}{2}|^2 \rho (E_f) = \frac{2 \pi}{\hbar} | \frac{\langle i | V | f \rangle}{2}|^2 \rho(E_f)\\$
+analogously\\
+$\Gamma(\vec{k}', \vec{k}) = \frac{2 \pi}{\hbar} | \langle \vec{k}' | V | \vec{k} \rangle |^2 \delta( E_{\vec{k}'} - E_{\vec{k}})\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\langle \vec{k}' | V | \vec{k} \rangle = \frac{1}{L^3} \int d \vec{r} e^{- i( \vec{k}' - \vec{k}) \cdot \vec{r}} V(\vec{r})$}\\
+trap a particle in a box of length $L$\\
+actually no, we are shooting a particle at a crystal lattice, the lattice represents potential and $|\vec{k} \rangle $ represents the free particle (say electron) that we are shooting at the lattice\\
+$\implies \psi_{\vec{k}} = \frac{1}{\sqrt{L^3}} e^{i \vec{k} \cdot \vec{r}}\\$
+\underline{Note:} dont use the regular def for $\langle x | p \rangle$ because the domain is $(-\infty,\infty)$ instead use $0, L$. $\implies \psi_{\vec{k}}= A e^{i p x/\hbar}$ but $p = \hbar k \implies \psi_{\vec{k}} = A e^{i k x}$. normalizing gives us $\int_0^{\infty} |A|^2 dx=1$ for $(k=k')$ so $A= \frac{1}{\sqrt{L}}$
+$\implies \langle \vec{k}' | V | \vec{k} \rangle = \langle \vec{k}' | V(\hat{\vec{x}}) ( \int d \vec{x} | \vec{x} \rangle \langle \vec{x} | ) | \vec{k} \rangle\\
+= \int d \vec{x} \langle \vec{k}' | V ( \hat{\vec{x}})| \vec{x} \rangle \langle \vec{x} | \vec{k} \rangle\\
+= \int d \vec{x} V( \vec{x}) \langle \vec{k}' | \vec{x} \rangle \langle \vec{x} | \vec{k} \rangle = \frac{1}{L^3} \int d \vec{r} e^{- i \vec{k}' \cdot \vec{r}} V e^{i \vec{k} \cdot \vec{r}}\\
+= \frac{1}{L^3} \int d \vec{r} e^{-i( \vec{k}' - \vec{k})} V(\vec{r})$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$ \langle \vec{k}' | V | \vec{k} \rangle = \frac{1}{L^3} [ \sum_{\vec{R}} e^{- i ( \vec{k}' - \vec{k}) \cdot \vec{R}} ] [ \int_{unit- cell} d \vec{x} e^{- i ( \vec{k}' - \vec{k}) \cdot \vec{x}} V( \vec{x})]$}\\
+\underline{recall:} $\langle \vec{k}' | V | \vec{k} \rangle = \frac{1}{L^3} \int d \vec{r} e^{- i ( \vec{k}' - \vec{k}) \cdot \vec{r}} V( \vec{r})\\
+= \frac{1}{L^3} \sum_{\vec{R}} \int_{unit- cell} d \vec{x} e^{-i ( \vec{k}' - \vec{k}) \cdot ( \vec{x} + \vec{R})} V(\vec{x} + \vec{R})\\
+= \frac{1}{L^3} [ \sum_{\vec{R}} e^{- i ( \vec{k}'- \vec{k}) \cdot \vec{R}}][ \int_{unit-cell} d \vec{x} e^{- i ( \vec{k}' - \vec{k}) \cdot \vec{x}} V( \vec{x} + \vec{R})]\\$
+Potential periodic $\implies V( \vec{x} + \vec{R})= V(\vec{x})\\
+\therefore \langle \vec{k}' | V | \vec{k} \rangle = \frac{1}{L^3} [ \sum_{\vec{R}} e^{- i ( \vec{k}' - \vec{k}) \cdot \vec{R}} ][ \int_{unit-cell} d \vec{x} e^{- i( \vec{k}' - \vec{k}) \cdot \vec{x}} V(\vec{x})]\\$
+\underline{recall:} $\sum_{\vec{R}} e^{i \vec{k} \cdot \vec{R}} = \frac{(2 \pi)^D}{V} \sum_{\vec{G}} \delta^D( \vec{k} - \vec{G})\\
+\implies \sum_{\vec{R}} e^{- i ( \vec{k}' - \vec{k}) \cdot \vec{R}} = \frac{(2 \pi)^D}{V} \sum_{\vec{G}} \delta^D( \vec{k}' - \vec{k} - \vec{G})\\
+\implies \vec{k}' - \vec{k} = \vec{G},\,\,$ otherwise $\langle \vec{k}' | V | \vec{k} \rangle = 0\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$| \vec{k} | = | \vec{k}' |$ conservation of energy ( dont understand)\\
+$n \lambda = 2 d \sin \theta$ ( bragg condition for constructive interference\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$2 d \sin \theta = n \lambda$}\\
+$\hat{k} \cdot \hat{G} = \cos ( 90 - \theta) = \sin \theta = - \hat{k}' \cdot \vec{G} = - \cos ( 90 + \theta)\\
+= \sin \theta\\
+\vec{k} - \vec{k} ' = \vec{G}$ (Laue condition);$\,\, | \vec{k} | = | \vec{k}' | = \frac{2 \pi }{\lambda}\\
+\implies \vec{k} - \vec{k}' = \frac{2 \pi}{\lambda} ( \hat{k} - \hat{k'} = \vec{G}\\
+\implies \frac{2\pi}{\lambda} \hat{G} \cdot ( \hat{k} - \hat{k}') = \hat{G} \cdot \vec{G} = | \vec{G}|\\
+\implies \frac{2 \pi}{\lambda} 2 \hat{G} \cdot \hat{k} = \frac{2 \pi}{\lambda} 2 \sin \theta = | \vec{G} |\\
+\implies \frac{2 \pi}{| \vec{G}|} 2 \sin \theta = 2 d \sin \theta = \lambda\\$
+\underline{recall:} $d = \frac{2 \pi}{| \vec{G} |}\\$
+but if $\vec{G}$ is reciprocal lattice vector then $n \vec{G}$ is too $\implies 2 d \sin \theta = n \lambda\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$S(\vec{G}) = \int_{unit-cell} d \vec{x} e^{i \vec{G} \cdot \vec{x}} V(\vec{x})$ (structure factor)\\
+$\vec{G} = \vec{k} - \vec{k}'$ ( reciprocal lattice vector)\\
+$I_{(hk \ell)} \propto | S_{(h k \ell)}|^2$ (scattering intensity)\\
+assume $V( \vec{x}) = \sum_{atom j} V_j ( \vec{x}- \vec{x}_j)$\\
+i.e. the interactions of atoms does not affect in coming waves.\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$S(\vec{G}) \sim \sum_{atoms in j unit-cell} b_j e^{i \vec{G} \cdot \vec{x}_j}$} (scattering neutrons)\\
+Short range nuclear forces\\
+$\implies V(\vec{x}) = \sum_{atoms j} f_j \delta (\vec{x} - \vec{x}_j)\\
+\vec{x}_j$ position of $j^{th}$ atom in unit cell\\
+$f_j$ form factor (strenth of scatter)\\
+$V(\vec{x} \propto \sum_{atom j} b_j \delta( \vec{x} - \vec{x}_i) f_j = \frac{2 \pi \hbar b_j}{m}\\
+\therefore S(\vec{G}) = \int_{unit-cell} d \vec{x} e^{i \vec{G} \cdot \vec{x}} V(\vec{x})\\
+= \sum_{atom j} \int_{unit-cell} d \vec{x} e^{i \vec{G} \cdot \vec{x}} f_j \delta ( \vec{x} - \vec{x}_j)\\
+= \sum_{atom j} e^{i \vec{G} \cdot \vec{x}_j} f_j \propto \sum_{atom j} b_j e^{i \vec{G} \cdot \vec{x}_j}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$S(\vec{G}) = \sum_{atom in j unit- cell} f_j ( \vec{G}) e^{i \vec{G} \cdot \vec{x}_j}$}\\
+(x-rays scatter from electrons)\\
+$V_j ( \vec{x}- \vec{x}_j) = Z_j g_j(\vec{X} - \vec{X}_j)\\
+g_j \sim$ short range; $Z_j \sim$ atomic number of jth atom\\
+$\implies S(\vec{G}) = \int_{unit - cell} d \vec{x} e^{i \vec{G} \cdot \vec{x}} V(\vec{x})\\
+= \sum_j \int d \vec{X} e^{i \vec{G} \cdot \vec{x}} V_j ( \vec{X})\\
+= \sum_{jth atom in unit-cell} f_j( \vec{G}) e^{i \vec{G} \cdot \vec{X}_j}$ ( don't understand)\\
+shifts all eigen energies by constant\\
+$\implies$ may assume $V_0 = 0\\
+\epsilon(\vec{k}) = \epsilon_0(\vec{k}) + \sum_{\vec{k}' = \vec{k} + \vec{G}} \frac{| \langle \vec{k}' | V| \vec{k} \rangle |^2}{\epsilon_0 ( \vec{k}) - \epsilon_0 ( \vec{k}')}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\epsilon(\vec{k}) = \epsilon_0 (\vec{k}) + \langle \vec{k} | V | \vec{k} \rangle = \epsilon_0 ( \vec{k}) + V_0$}(first order; nondegenerate)\\
+$H_0 = \frac{\hat{p}^2}{2m};\,\, \epsilon_0 ( \vec{k}) = \frac{\hbar^2 |\vec{k}|^2}{2m}\\
+H = H_0 + V(\vec{r})$ (perturbation)\\
+$V(\vec{r}) = V(\vec{r} + \vec{R})\\$
+\underline{recall:} $\langle \vec{k}' | V | \vec{k} \rangle = \frac{1}{L^3} \int d \vec{r} e^{i( \vec{k} - \vec{k}') \cdot \vec{r}} V(\vec{r}) \equiv V_{\vec{k}' - \vec{k}}\\$
+this is zero unless $\vec{k}' - \vec{k}$ is a reciprocal Lattice vector\\
+$\implies \epsilon(\vec{k}') = \langle \vec{k} | H | \vec{k} \rangle = \langle \vec{k} | \epsilon_0 | \vec{k} \rangle + \langle \vec{k} | V | \vec{k} \rangle = \epsilon_0 (\vec{k}) + V_0$
+
+
+this is for non-degenerate case.\\
+its possible that $\epsilon_0(\vec{k}) = \epsilon_0( \vec{k}')$ but $\vec{k}' = \vec{k} + \vec{G}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$(\epsilon_0( \vec{k}) - E)( \epsilon_0(\vec{k} + \vec{G}) - E) - |V_{\vec{G}}|^2 =0 $} (degenerate)\\
+$\langle \vec{k} | H | \vec{k} \rangle = \epsilon_0( \vec{k}),\,\, $spose we have to plane wave states $| \vec{k}' \rangle = | \vec{k} + \vec{G} \rangle$ and $| \vec{k} \rangle\\
+\langle \vec{k}' | H | \vec{k}' \rangle = \epsilon_0 ( \vec{k}') = \epsilon_0 ( \vec{k} + \vec{G})\\
+\langle \vec{k} | H | \vec{k}' \rangle = V_{\vec{k} - \vec{k}'} = V^*_{\vec{G}}\\
+\langle \vec{k}' | H | \vec{k} \rangle = V_{\vec{k}' - \vec{k}} = V_{\vec{G}}\\
+V_{- \vec{G}} = V^*_{\vec{G}}\\
+|\psi \rangle = \alpha | \vec{k} \rangle + \beta | \vec{k}' \rangle = \alpha | \vec{k} \rangle + \beta | \vec{k} + \vec{G} \rangle\\
+H=  \begin{pmatrix} \epsilon_0 ( \vec{k}) & V_{- \vec{G}}^* \\ V_{\vec{G}} & \epsilon_0( \vec{k} + \vec{G} )\end{pmatrix}\\
+\implies 
+ \begin{vmatrix} \epsilon_0 ( \vec{k})- E & V_{- \vec{G}}^* \\ V_{\vec{G}} & \epsilon_0( \vec{k} + \vec{G} ) - E\end{vmatrix}=0\\
+ \therefore 
+ (\epsilon_0( \vec{k}) - E)( \epsilon_0(\vec{k} + \vec{G}) - E) - |V_{\vec{G}}|^2 =0$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+ \item \underline{$E_{\pm} = \epsilon_0 ( \vec{k}) \pm | V_{\vec{G}}|$}\\
+$\vec{k}$ on zone boundary $\implies \epsilon_0 ( \vec{k}) = \epsilon_0( \vec{k} + \vec{G})\\$
+\underline{recall:} $( \epsilon_0 ( \vec{k}) - E)( \epsilon_0( \vec{k} + \vec{G}) - E) - | V_{\vec{G}}|^2 =0\\
+\implies E_{\pm} = \epsilon_0( \vec{k}) \pm | V_{\vec{G}}|$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\begin{cases} \psi_+ \sim e^{ix \pi/a} + e^{-i x \pi/a} \propto \cos(\frac{x \pi}{a}) \\ \psi_- \sim e^{i x \pi/a} - e^{- i x \pi/a} \end{cases} (1D)$}\\
+$V(x) = \tilde{V} \cos(2 \pi x/a);\,\, \tilde{V} > 0$ Brillouin zones at $k= \frac{\pi}{a} and k' = - k = - \frac{\pi}{a} \implies k' - k = G = - \frac{2 \pi}{a}$ and $\epsilon_0( \vec{k}) = \epsilon_0(\vec{k}')\\$
+\underline{recall:} $\begin{pmatrix} \epsilon_0(\vec{k}) & V_{\vec{G}}^* \\ V_{\vec{G}} & \epsilon_0( \vec{k} + \vec{G}) \end{pmatrix} \begin{pmatrix} \alpha \\ \beta \end{pmatrix} = E \begin{pmatrix} \alpha \\ \beta \end{pmatrix};\,\, | \psi \rangle = \alpha | \vec{k} \rangle + \beta | \vec{k}' \rangle\\
+\implies \begin{pmatrix} \epsilon_0( \vec{k} & V_{\vec{G}} \\ V_{\vec{G}} & \epsilon_0 ( \vec{k}) \end{pmatrix} \begin{pmatrix} \alpha \\ \beta \end{pmatrix} = E \begin{pmatrix} \alpha \\ \beta \end{pmatrix}\\
+\implies \alpha = \pm \beta \implies | \psi_{\pm} \rangle = \frac{1}{\sqrt{2}} ( | k \rangle \pm | k' \rangle)\\
+\implies \langle x | k \rangle \rightarrow e^{ikx} = e^{ix \pi/a}\\
+\implies \langle x | k' \rangle \rightarrow e^{-ik'x} = e^{-i x \pi/a}\\
+\implies \begin{cases} \langle x | \psi_+ \rangle \sim e^{i x \pi/a} + e^{- i x \pi/a} \propto \cos(x \pi/a)\\ \langle x | \psi_- \rangle \sim e^{ix \pi/a} - e^{- i x \pi/a} \propto \sin(x \pi/a) \end{cases}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$E_{\pm} = \frac{\hbar^2 ( n \pi/a)^2}{2m} \pm | V_{G}| + \frac{\hbar^2 \delta^2}{2m} [ 1 \pm \frac{\hbar^2 (n \pi/a)^2}{m} \frac{1}{|V_{G}}]$} (k just off zone boundaries $k= \pm \frac{n \pi}{a}$)\\
+gap at zone boundaries is$ \pm | V_G |\\$
+consider $k = n \pi/a + \delta$ can scatter to $k' = - \frac{n \pi}{a} + \delta\\
+\implies \epsilon_0(k) = \epsilon_0( \frac{n \pi}{a} + \delta= \frac{\hbar^2 k^2}{2m} = \frac{\hbar^2}{2m} ( \frac{n \pi}{a} + \delta )^2 = \frac{\hbar^2}{2m} [ ( \frac{n \pi}{a})^2 + \frac{2 \pi n \delta}{a} + \delta^2]\\
+\epsilon_0(k') = \epsilon_0(- \frac{n \pi}{a} + \delta) = \frac{\hbar^2}{2m} [ ( n \pi/a)^2 - 2 n \pi \delta/a + \delta^2]\\
+\underline{recall:} ( \epsilon_0 ( \vec{k}) - E)( \epsilon_0(\vec{k} + \vec{G}) - E) - | V_{\vec{G}}|^2=0\\
+\implies ( \frac{\hbar^2}{2m} [ (n \pi/a)^2 + \delta^2] - E + \frac{\hbar^2}{2m} 2 n \pi \delta/a) \cdot ( \frac{\hbar^2}{2m}[(n \pi/a)^2 + \delta^2] - E - \frac{\hbar^2}{2m} \frac{2 n \pi \delta}{a})- | V_{\vec{G}}|^2 = 0\\
+\implies ( \frac{\hbar^2}{2m} [ ( n \pi/a) + \delta^2]- E)^2 = ( \frac{\hbar^2}{2m} 2 n \pi \delta/a)^2 + |V_G|^2\\
+\implies E_{\pm} = \frac{\hbar^2}{2m} [(n \pi/a)^2 + \delta^2] \pm \sqrt{( \frac{\hbar^2}{2m} 2 n \pi \delta/ a)^2 + |V_G|^2}\\$
+small $\delta \implies \sqrt{x + 1} \approx 1 + \frac{1}{2} x\\
+\implies E_{\pm} = \frac{\hbar^2}{2m}[ ( n \pi/a)^2 + \delta^2] \pm (1+( \frac{\hbar^2}{2m |V_G|^2} \frac{n \pi \delta}{a})^2)|V_G|\\
+\implies E_{\pm} = \frac{\hbar^2}{2m} ( n \pi/a)^2 \pm |V_G| + \frac{\hbar^2 \delta^2}{2m} [ 1 \pm \frac{\hbar^2}{2m} ( \frac{n \pi}{a})^2 \frac{1}{|V_G|}]$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+this equation can be rewritten as $E_{\pm} ( G + \delta) = C_{pm} \pm \frac{\hbar^2 \delta^2}{2m_{\pm}^*} C_{\pm}$ ( constants)\\
+where $m_{\pm}^* = \frac{m}{|1 \pm \frac{\hbar^2 ( n \pi/a)^2}{m} \frac{1}{|V_G|} |}\\$
+
+
+
+
+
+
+\section*{General Relativity}
+Do exercise 32 chapter 9 in GR\\
+Lets restrict the gauge:\\
+Lets use TT gauge transverse to direction of motion which has unit vector $n^j = x^j/r$ this simplifies the wave.\\
+Choose axes so that at the point we measure the wave it travels in the z direction (assume plane waves)\\
+$\implies \bar{h}_{zi}^{TT} = - 2 \Omega^2 D_{zi} e^{i \Omega(r-t)}/r\\
+= - 2 \Omega^2 \int T^{00} x_z x_i d^3 x e^{i \Omega(r-t)}/r$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+\underline{Chapter 2}\\
+\item \underline{$\Delta x^{\bar{\alpha}} = \sum_{\beta = 0}^3 \Lambda^{\bar{\alpha}}_{\beta} \Delta x^{\beta}$}\\
+\underline{recall:} $\Delta x^{\bar{0}} = \frac{\Delta x^0}{\sqrt{1-v^2}} - \frac{v \Delta x^1}{\sqrt{1-v^2}}\\
+\Delta x^{\bar{0}} = \Lambda^{\bar{0}}_1 \Delta x^1 + \Lambda^{\bar{0}}_2 \Delta x^2 = \Lambda^{\bar{0}}_{\alpha} \Delta x^{\alpha}\\
+\therefore \Delta x^{\bar{\alpha}} = \Lambda^{\bar{\alpha}}_{\beta} \Delta x^{\beta}$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{recall:} $( \vec{e}_{\alpha})^{\beta} = \delta_{\alpha}^{\beta} (\beta^{th}$ component of $\alpha^{th}$ basis vector)\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{e}_{\alpha} = \Lambda^{\bar{\beta}}_{\alpha} \vec{e}_{\bar{\beta}}$}\\
+$\vec{A} = A^{\alpha} \vec{e}_{\alpha} = A^{\bar{\alpha}} \vec{e}_{\bar{\alpha}} \implies \Lambda^{\bar{\alpha}}_{\beta} A^{\beta} \vec{e}_{\bar{\alpha}} = A^{\alpha} \vec{e}_{\alpha} \implies A^{\beta} \Lambda_{\beta}^{\bar{\alpha}} \vec{e}_{\bar{\alpha}} = A^{\alpha} \vec{e}_{\alpha}\\
+\beta \rightarrow \alpha, \bar{\alpha} \rightarrow \bar{\beta} \implies A^{\alpha} \Lambda_{\alpha}^{\bar{\alpha}} \vec{e}_{\bar{\alpha}} = A^{\alpha} \vec{e}_{\alpha} \implies A^{\alpha} (\Lambda^{\bar{\alpha}}_{\alpha} \vec{e}_{\bar{\alpha}} - \vec{e}_{\alpha}) = 0\\
+\implies \vec{e}_{\alpha} = \Lambda^{\bar{\alpha}}_{\alpha} \vec{e}_{\alpha}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\Lambda^{\bar{\beta}}_{\alpha} (\vec{v}) \Lambda^{\nu}_{\bar{\beta}}(- \vec{v}) = \delta^{v}_{\alpha}$}\\
+$\Lambda^{\bar{\beta}}_{\alpha} = \Lambda^{\bar{\beta}}_{\alpha}(\vec{v}),\,\, \vec{e}_{\alpha} = \Lambda^{\bar{\beta}}_{\alpha} (\vec{v}) \vec{e}_{\bar{\beta}},\,\, \vec{e}_{\bar{\mu}} = \Lambda^{\nu}_{\bar{\mu}}(- \vec{v}) \vec{e}_{\nu}\\
+\implies \vec{e}_{\bar{\beta}} = \Lambda_{\bar{\beta}}^{\nu}(- \vec{v}) \vec{e}_{\nu}\\
+\therefore \Lambda^{\bar{\beta}}_{\alpha}(\vec{v}) \Lambda^{\nu}_{\bar{\beta}}(- \vec{v}) = \delta^{\nu}_{\alpha} \implies \vec{e}_{\alpha} = \delta^{\nu}_{\alpha} \vec{e}_{\nu}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$A^{\bar{\beta}} = \Lambda^{\bar{\beta}}_{\alpha} (\vec{v}) A^{\alpha} \implies \Lambda^{\nu}_{\bar{\beta}}(- \vec{v}) A^{\bar{\beta}} = A^{\nu}$}\\
+$A^{\bar{\beta}} = \Lambda^{\bar{\beta}}_{\alpha}(\vec{v}) A^{\alpha} \implies \Lambda_{\bar{\beta}}^{\nu}(- \vec{v}) A^{\bar{\beta}} = \Lambda_{\bar{\beta}}^{\nu}(- \vec{v}) \Lambda^{\bar{\beta}}_{\alpha} A^{\alpha} = \delta^{\nu}_{\alpha} A^{\alpha} = A^{\nu}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{momentarily comoving reference frame (MCRF)} - an inertial frame that momentarily has the same velocity as the accelerated particle
+
+
+$\vec{U}$ (four velocity) - vector tangent to world line, length s.t. stretches 1 unit of time in particles reference frame, $\vec{U} := (\vec{e}_0)_{MCRF}$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\vec{p} = m \vec{U}$ (four momentum) $\vec{p} \rightarrow_O (E, p^1 , p^2, p^3)\\
+\vec{p} := \sum_i \vec{p}_{(i)},\,\, \sum_i \vec{p}_(i)\rightarrow_{CM} (E_{tot},0,0,0)$ (center of momentum frame (CM))\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\vec{A}^2 := -(A^0)^2 + (A^1)^2 + (A^2)^2 + (A^3)^2$ (mag of $\vec{A}) \rightarrow$ frame independent\\
+$\vec{A}^2 > 0 \implies \vec{A}$ spacelike, $\vec{A}^2 < 0 \implies$ timelike, $\vec{A}^2 = 0$ null-like\\
+$\vec{A} \cdot \vec{B} := - A^0 B^0 + A^1 B^1 + A^2 B^2 + A^3 B^3$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\vec{e}_{\alpha} \cdot \vec{e}_{\beta} = \eta_{\alpha \beta},\,\, \eta_{00} = -1;\,\, \eta_{0 i} = \eta_{j0}=0,\,\, \eta_{\alpha \beta} = \delta_{\alpha \beta} for \alpha,\,\, \beta \neq 0\\
+ds^2 = d \vec{x} \cdot d \vec{x} = - dt^2 + dx^2 + dy^2 + dz^2,\,\, (d \tau)^2 = - d \vec{x} \cdot d \vec{x}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+$\star$
+\item \underline{$\vec{U} = \frac{d \vec{x}}{d \tau}$}\\
+$\frac{d \vec{x}}{d \tau} \cdot \frac{d \vec{x}}{d \tau} = \frac{ d \vec{x} \cdot d \vec{x}}{d \tau^2} = - \frac{ d \tau^2}{d \tau^2} = -1,\,\, d \vec{x} \rightarrow_{MCRF, d \tau = dt} (dt,0,0,0)\\
+\frac{d \vec{x}}{d\tau} \rightarrow_{MCRF} (1,0,0,0),\,\, \frac{d \vec{x}}{d \tau} = (\vec{e}_0)_{MCRF}\\
+\therefore \vec{U} = \frac{d \vec{x}}{d \tau}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Note:} $\vec{v} = v^{\alpha} \vec{e}_{\alpha} = \Lambda^{\alpha}_{\beta'} V^{\beta'} \Lambda^{\mu'}_{\alpha} \vec{e}_{\mu'} = \Lambda^{\alpha}_{\beta'} \Lambda^{\mu'}_{\alpha} V^{\beta'} \vec{e}_{\mu'} = \delta^{\mu'}_{\beta'} V^{\beta'} \vec{e}_{\mu'}\\
+= v^{\mu'} \vec{e}_{\mu'} = \vec{v},\,\,$ Lorentz invariant\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$- \vec{p} \cdot \vec{U}_{obs} = \bar{E}$}\\
+$\vec{p} \cdot \vec{p} = m^2 \vec{U} \cdot \vec{U} = - m^2\\
+\vec{p} \cdot \vec{p} = - E^2 + (p^1)^2 + (p^2)^2 + (p^3)^2 = - m^2\\
+\implies E^2 = m^2 + \sum_{i=1}^{3} (p^i)^2\\
+\vec{p} \cdot \vec{U}_{obs} = \vec {p} \cdot \vec{e}_{\bar{0}},\,\, \vec{p} \rightarrow_{\bar{O}}(\bar{E}, p^{\bar{1}}, p^{\bar{2}}, p^{\bar{3}})\\
+\therefore - \vec{p} \cdot \vec{U}_{obs} = - \bar{E} \vec{e}_{\bar{0}} \cdot \vec{e}_{\bar{0}} = \bar{E}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Photons}\\
+$d \vec{x} \cdot d \vec{x} = 0$ (null like)\\
+- no MCRF for photons\\
+- no tangent vectors to the world line of a photon with nonzero magnitudes
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\vec{A} \cdot \vec{B} = g_{\alpha \beta} A^{\alpha} B^{\beta}$}\\
+$\vec{A} = A^{\alpha} \vec{e}_{\alpha} ;\,\, \vec{B} = B^{\beta} \vec{e}_{\beta}\\
+\vec{A} \cdot \vec{B} = (A^{\alpha} \vec{e}_{\alpha}) \cdot (B^{\beta} \vec{e}_{\beta}) = A^{\alpha} B^{\beta} \vec{e}_{\alpha} \cdot \vec{e}_{\beta} = g_{\alpha \beta} A6{\alpha} B^{\beta}\\
+$
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Linearity}\\
+\underline{First Argument}\\
+$(\alpha \vec{A}) \cdot \vec{B} = \alpha(\vec{A} \cdot \vec{B})\\
+(\vec{A} + \vec{B}) \cdot \vec{C} = \vec{A} \cdot \vec{C} + \vec{B} \cdot \vec{C}\\$
+\underline{Second Arugument}\\
+$\vec{A} \cdot (\beta \vec{B}) = \beta (\vec{A} \cdot \vec{B})\\
+\vec{A} \cdot (\vec{B} + \vec{C}) = \vec{A} \cdot \vec{B} + \vec{A} \cdot \vec{C}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$g(\vec{A}, \vec{B}):= \vec{A} \cdot \vec{B}$}\\
+$g(\alpha \vec{A} + \beta \vec{B}, \vec{C}) = \alpha g(\vec{A}, \vec{C} ) + \beta g(\vec{B}, \vec{C})$ (linear)\\
+(similar argument for second argument)\\
+$g(\vec{e}_{\alpha}, \vec{e}_{\beta}) = \vec{e}_{\alpha} \cdot \vec{e}_{\beta} = \eta_{\alpha \beta}$ or $g_{\alpha \beta}$ in general\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{properties}\\$
+\begin{cases}
+	\tilde{s} = \tilde{p} + \tilde{q}\\
+	\tilde{r} = \alpha \tilde{p}
+\end{cases}
+\implies
+\begin{cases}
+	\tilde{s}(\vec{A} = \tilde{p}\vec{A}) + \tilde{q}(\vec{A})\\
+	\tilde{r}(\vec{A}) = \alpha \tilde{p}(\vec{A})
+\end{cases}$
+
+\underline{definition:} $p_{\alpha} := \tilde{p}(\vec{e}_{\alpha})\\
+\tilde{p}(\vec{A} = \tilde{p}(A^{\alpha} \vec{e}_{\alpha}) = A^{\alpha} \tilde{p}(\vec{e}_{\alpha}) = A^{\alpha} p_{\alpha}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$p_{\bar{\beta}} = \Lambda_{\bar{\beta}}^{\alpha} p_{\alpha}$}\\
+$p_{\bar{\beta}} = \tilde{p}(\vec{e}_{\bar{\beta}}) = \tilde{p}(\Lambda_{\bar{\beta}}^{\alpha} \vec{e}_{\alpha}) = \Lambda_{\bar{\beta}}^{\alpha} \tilde{p}(\vec{e}_{\alpha}) = \Lambda_{\bar{\beta}}^{\alpha} p_{\alpha}\\$
+compare with $\vec{e}_{\bar{\beta}} = \Lambda_{\bar{\beta}^{\alpha} \vec{e}_[\alpha}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+
+
+\item \underline{$ds^2 = dt^2 - a(t)^2 ( \frac{dr^2}{1-kr^2} + r^2 d \theta^2 + r^2 \sin^2 \theta d \phi^2)$}\\
+$ds^2 = dt^2 - ( \frac{dr^2}{1-\frac{r^2}{a^2}} + r^2 d \theta^2 + r^2 \sin^2 \theta d \phi^2)\\
+= dt^2 - a^2( \frac{d(\frac{r}{a})^2}{1-(\frac{r}{a})^2} + ( \frac{r}{a}^2 d \theta^2 + (\frac{r}{a})^2 \sin^2 \theta d \phi^2)\\
+\frac{r}{a} \rightarrow r\\
+\implies ds^2 = dt^2 - a^2(\frac{dr^2}{1-r^2} + r^2 d \theta^2 + r^2 \sin^2 \theta d\phi^2)\\
+\therefore ds^2 = dt^2 - a^2 (\frac{dr^2}{1-kr^2} + r^2 d \theta^2 + r^2 \sin^2 \theta d \phi^2)\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Note:} $T(k,\ell)\,\, S(m,n),\,\, T \otimes S \rightarrow (k + m, \ell + n)\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$A^{\bar{\alpha}} p_{\bar{\alpha}} = A^{\beta} p_{\beta}$}\\
+$A^{\bar{\alpha}} p_{\bar{\alpha}} = (\Lambda^{\bar{\alpha}}_{\beta} A^{\beta})(\Lambda^{\mu}_{\bar{\alpha}} p_{\mu})= \Lambda^{\bar{\alpha}}_{\beta} \Lambda^{\mu}_{\bar{\alpha}} A^{\beta} p_{\mu}= \delta^{\mu}_{\beta} A^{\beta} p_{\mu} = A^{\beta} p_{\beta}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\{ \tilde{\omega}^{\alpha} \} dual to \{ \vec{e}_{\alpha} \} \implies \tilde{p} = p_{\alpha} \tilde{\omega}^{\alpha}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\tilde{\omega}^{\alpha}(\vec{e}_{\beta}) = \delta^{\alpha}_{\beta}$}\\
+$\tilde{p}(\vec{A}) = \tilde{p}(A^{\alpha} \vec{e}_{\alpha}) = A^{\alpha} \tilde{p}(\vec{e}_{\alpha}|) = A^{\alpha} p_{\alpha}\\
+= p_{\alpha} \tilde{\omega}^{\alpha}(\vec{A}) = A^{\beta} p_{\alpha} \tilde{\omega}^{\alpha}(\vec{e}_{\beta})\\
+\implies \tilde{\omega}^{\alpha}(\vec{e}_{\beta}) = \delta^{\alpha}_{\beta}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\tilde{\omega}^{\bar{\alpha}} = \Lambda^{\bar{\alpha}}_{\beta} \tilde{\omega}^{\beta}\,\, p_{\beta} = \Lambda^{\bar{\alpha}}_{\beta} p_{\bar{\alpha}}$}\\
+$\tilde{p} = p_{\bar{\alpha}} \tilde{\omega}^{\bar{\alpha}} = p_{\beta} \tilde{\omega}^{\beta} \implies p_{\bar{\alpha}} \tilde{\omega}^{\bar{\alpha}} = \Lambda^{\bar{\alpha}}_{\beta} p_{\bar{\alpha}} \tilde{\omega}^{\beta}\\
+\therefore \tilde{\omega}^{\bar{\alpha}} = \Lambda^{\bar{\alpha}}_{\beta} \tilde{\omega}^{\beta}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$[t = t(\tau), x=x(\tau), y= y(\tau), z=z(\tau)]\\
+\vec{U} \rightarrow (\frac{dt}{d\tau}, \frac{dx}{d \tau}, \dots), \phi(\tau) = \phi[ t (\tau, x(\tau), y(\tau),z(\tau)]\\
+\frac{d \phi}{d \tau} = \frac{\partial \phi}{\partial t} \frac{dt}{d \tau} + \frac{\partial \phi}{\partial x} \frac{dx}{d \tau} + \frac{\partial \phi}{\partial y} \frac{d y}{d \tau} + \frac{\partial \phi}{\partial z} \frac{dz}{d \tau}\\
+= \frac{\partial \phi}{\partial t} U^t + \frac{\partial \phi}{\partial z} U^x + \frac{\partial \phi}{\partial y} U^y + \frac{\partial \phi}{\partial z} U^z\\$
+one form has components $(\frac{\partial \phi}{\partial t}, \frac{\partial \phi}{\partial x}, \frac{\partial \phi}{\partial y} , \frac{\partial \phi}{\partial z})\\
+\tilde{d} \phi \rightarrow_O ( \frac{\partial \phi}{\partial t}, \frac{\partial \phi}{\partial x}, \frac{\partial \phi}{\partial y}, \frac{\partial \phi}{\partial z})$ gradient of $\phi\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$(\tilde{d} \phi)_{\bar{\alpha}} =\Lambda^{\beta}_{\bar{\alpha}} (\tilde{d} \phi)_{\beta},\,\, \frac{\partial x^{\beta}}{\partial x^{\bar{\alpha}}} = \Lambda^{\beta}_{\bar{\alpha}}$}\\
+$(\tilde{d} \phi)_{\bar{\alpha}} = \Lambda^{\beta})_{\bar{\alpha}}(\tilde{d} \phi)_{b\eta}\\
+\frac{\partial \phi}{\partial x^{\bar{\alpha}}}= \frac{\partial x^{\beta}}{\partial x^{\bar{\alpha}}} \frac{\partial \phi}{\partial x^{\beta}} \implies (\tilde{d} \phi)_{\bar{\alpha}} = \frac{\partial x^{\beta}}{\partial x^{\bar{\alpha}}}(\tilde{d} \phi)_{\beta}\\$
+\underline{recall:} $x^{\beta} = \Lambda^{\beta}_{\bar{\alpha}} x^{\bar{\alpha}} \implies \frac{\partial x^{\beta}}{\partial x^{\bar{\alpha}}} = \Lambda^{\beta}_{\bar{\alpha}}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Definition:} $\frac{\partial \phi}{\partial x^{\alpha}} := \phi_{, \alpha},\,\, x^{\alpha}_{, \beta} \equiv \delta^{\alpha}_{\beta}\\
+\tilde{\omega}^{\alpha}(\vec{e}_{\beta}) = \delta^{\alpha}_{\beta} \implies \tilde{d} x^{\alpha} := \tilde{\omega}^{\alpha} \implies \tilde{d} f = \frac{\partial f}{\partial x^{\alpha}} \tilde{d} x^{\alpha}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{definition:} $f_{\alpha \beta} := f(\vec{e}_{\alpha}, \vec{e}_{\beta})$ (general $\begin{pmatrix} 0 \\ 2 \end{pmatrix}$ tensor)\\
+\underline{aside:} $f(\vec{A}, \vec{B}) = f( A^{\alpha} \vec{e}_{\alpha}, B^{\alpha} \vec{e}_{\beta} = A^{\alpha} B^{\beta} f(\vec{e}_{\alpha}, \vec{e}_{\beta}) = A^{\alpha} B^{\beta} f_{\alpha \beta}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$f= f_{\alpha \beta} \tilde{\omega}^{\alpha} \otimes \tilde{\omega}^{\beta}$}\\
+$f= f_{\alpha \beta} \tilde{\omega}^{\alpha b\eta} \implies f_{\mu \nu} = f(\vec{e}_{\mu}, \vec{e}_{\nu}) = f_{\alpha \beta} \tilde{\omega}^{\alpha \beta}(\vec{e}_{\mu}, \vec{e}_{\nu})\\
+\tilde{\omega}^{\alpha \beta}(\vec{e}_{\mu}, \vec{e}_{\nu}) = \delta^{\alpha}_{\mu} \delta^{\beta}_{\nu} \implies \tilde{\omega}^{\alpha \beta} = \tilde{\omega}^{\alpha} \otimes \tilde{\omega}^{\beta}\\
+\therefore f= f_{\alpha \beta} \tilde{\omega}^{\alpha} \otimes \tilde{\omega}^{\beta}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$h_{(\alpha \beta)} := \frac{1}{2} (h_{\alpha \beta} + h_{\beta \alpha})$}\\
+$f(\vec{A}, \vec{B}) = f(\vec{B}, \vec{A}),\,\, \forall \vec{A}, \vec{B}$ (symmettric)\\
+$\vec{A} = \vec{e}_{\alpha},\,\, \vec{B} = \vec{e}_{\beta}\\
+\implies f_+{\alpha \beta} = f_{\beta \alpha}\\$
+Arbitrary $\begin{pmatrix} 0 \\ 2 \end{pmatrix}$ can be symmetric\\
+$h_{(s)}(\vec{A}, \vec{B}) = \frac{1}{2}h(\vec{A}, \vec{B}) + \frac{1}{2} h(\vec{B}, \vec{A})\\
+\implies h_{(s) \alpha \beta} = \frac{1}{2} (h_{\alpha \beta} + h_{\beta \alpha})\\
+\implies h_{(\alpha \beta)} := \frac{1}{2} (h_{\alpha \beta} + h_{\beta \alpha})\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$h_{[\alpha \beta]} = \frac{1}{2} (h_{\alpha \beta} - h_{\beta \alpha})$}\\
+$f(\vec{A}, \vec{B}) = - f(\vec{B}, \vec{A}) \forall \vec{A}, \vec{B}$ (antisymmetric)\\
+$\implies f_{\alpha \beta} = - f_{\beta \alpha}\\
+h_{(A)} (\vec{A}, \vec{B}) = \frac{1}{2} h(\vec{A}, \vec{B}) - \frac {1}{2} h(\vec{B}, \vec{A})\\
+\implies h_{(A) \alpha \beta} = \frac{1}{2}(h_{\alpha \beta} - h_{\beta \alpha})\\
+\therefore h_{[\alpha \beta]} = \frac{1}{2} (h_{\alpha \beta} - h_{\beta \alpha})\\$
+\underline{Note:} $h_{\alpha \beta} = h_{(\alpha \beta)} + h_{[\alpha \beta]};\,\, g(\vec{A}, \vec{B}) = g(\vec{B}, \vec{A})$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$V_{\alpha} = \eta_{\alpha \beta} V^{\beta}$}\\
+$g(\vec{V}, ) := \tilde{V} (),\,\, \tilde{V}(\vec{A}) = g(\vec{V}, \vec{A}) = \vec{V} \cdot \vec{A}, \,\, g(, \vec{V}) := \tilde{V}()\\
+V_{\alpha} = \tilde{V}(\vec{e}_{\alpha}) = \vec{V} \cdot \vec{e}_{\alpha} = V^{\beta} \vec{e}_{\alpha} \cdot \vec{e}_{\beta} = g_{\alpha \beta} V^{\beta\\
+\therefore V_[\alpha} = \eta_{\alpha b\eta} V^{\beta}\\
+if \vec{V} \rightarrow (a,b,c,d) \implies \tilde{V} \rightarrow(-a,b,c,d)\\
+V_{\alpha} = \eta_{\alpha \beta} V^{\beta}$ invertible $\implies A^{\alpha} := \eta^{\alpha \beta} A_{\beta}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\tilde{p}^2 = \eta^{\alpha \mu} p_{\mu} p_{\alpha}$}\\
+$\tilde{p}^2 = \vec{p}^2 = \eta_{\alpha \beta} p^{\alpha} p^{\beta}\\
+\implies \tilde{p}^2 = \eta_{\alpha \beta} (\eta^{\alpha \mu} p_{\mu})( \eta^{\beta \nu} p_{\nu}) \implies \eta_{\alpha \beta} \eta^{\beta \nu} = \delta^{\nu}_{\alpha}\\
+\therefore \tilde{p}^2 = \eta^{\alpha \mu} p_{\mu} p_{\alpha}$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\eta^{00} = -1,\,\, \eta^{0i} = 0, \eta^{ij} = \delta^{ij} \implies \tilde{p}^2 = - (p_0)^2 + (p_1)^3 + (p_2)^2 + (p_3)^2\\
+\tilde{p} \cdot \tilde{q} := \frac{1}{2} [ (\tilde{p} + \tilde{q})^2 - \tilde{p}^2 - \tilde{q}^2] \implies \tilde{p} \cdot \tilde{q} = - p_0 q_0 + \sum_{n=1}^3 p_n q_n\\
+\vec{V}(\tilde{p}) \equiv \tilde{p}(\vec{V}) \equiv p_{\alpha} V^{\alpha} \equiv \langle \tilde{p} , \vec{V} \rangle\\
+An \begin{pmatrix} M \\ N \end{pmatrix}$ tensor is a linear function of M one-forms and N vectors into the real numbers.\\
+$R^{\bar{\alpha}_{\bar{\beta}}}= R(\tilde{\omega}^{\bar{\alpha}}; \vec{e}_{\bar{\beta}}) = R(\Lambda^{\bar{\alpha}}_{\mu} \tilde{\omega}^{\mu} ; \Lambda^{\nu}_{\bar{\beta}} \vec{e}_{\nu}) = \Lambda^{\bar{\alpha}}_{\mu} \Lambda^{\nu}_{\bar{\beta}} R^{\mu}_{\nu}\\$
+upper indices are contravariant and lower ones are covariant\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\begin{pmatrix} 2 \\ 1 \end{pmatrix} \leftarrow \begin{pmatrix} 1 \\ 2 \end{pmatrix}$
+\underline{ex.} $T^{\alpha}_{\beta \gamma}: = \eta_{\beta \mu} T^{\alpha \mu}_{\gamma}$ (mapping $2^{nd}$ one form)\\
+\underline{ex.} $T^{\beta}_{\alpha \gamma} := \eta_{\alpha \mu} T^{\mu \beta}_{\gamma}$ (mapping on first index)\\
+$\begin{pmatrix} 3 \\ 0 \end{pmatrix}$ tensor $T^{\alpha \beta \gamma} := \eta^{\gamma \mu} T^{\alpha \beta}_{\mu}\\
+\eta^{\alpha}_{\beta} \equiv \eta^{\alpha \mu} \eta_{\mu \beta} \equiv \delta^{\alpha}_{\beta}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$d \tilde{T}/d \tau = (T^{\alpha}_{\beta, \gamma} \tilde{\omega}^{\beta} \otimes \vec{e}_{\alpha}) U^{\gamma},\,\, \nabla \tilde{T}:= ( T^{\alpha}_{\beta, \gamma} \tilde{\omega}^\beta \otimes \tilde{\omega}^{J\gamma} \otimes \vec{e}_{\alpha})$}\\
+$\tilde{T} = T^{\alpha}_{\beta} \tilde{\omega}^{\beta} \otimes \vec{e}_{\alpha}\\
+\frac{d \tilde{T}}{d \tau} = \lim_{\Delta \tau \rightarrow 0} \frac{\tilde{T}(\tau + \Delta \tau) - \tilde{T}(\tau)}{ \Delta \tau},\,\, \tilde{\omega}^{\alpha} (\tau + \Delta \tau) = \tilde{\omega}^{\alpha} (\tau)\\
+\implies \frac{d \tilde{T}}{d \tau} = (\frac{d T^{\alpha}_{\beta}}{d \tau}) \tilde{\omega}^{\beta} \otimes \vec{e}_{\alpha}\\
+\frac{d \tilde{T}}{d \tau} = (T^{\alpha}_{\beta, \gamma} \tilde{\omega}^{\beta} \otimes \vec{e}_{\alpha}) U^{\gamma} = \nabla_{\vec{U}} \tilde{T}, \nabla_{\vec{U}} \tilde{T} \rightarrow \{ T^{\alpha}_{\beta, \gamma} U^{\gamma} \}\\
+\nabla \tilde{T} := ( T^{\alpha}_{\beta, \gamma} \tilde{\omega}^{\beta} \otimes \tilde{\omega}^{\gamma} \otimes \vec{e}_{\alpha})\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\tilde{p}^2 = \vec{p}^2$}\\
+$\tilde{p}^2 = (p_{\alpha} \tilde{\omega}^{\alpha})(p_{\beta} \tilde{\omega}^{\beta}) = \eta^{\alpha \beta} p_{\alpha} p_{\beta} = \eta^{\alpha \beta}(\eta_{\alpha \mu} p^{\mu})(\eta_{\beta \nu} p^{\nu})\\
+= \eta^{\alpha \beta} \eta_{\beta \nu} \eta_{\alpha \mu} p^{\mu} p^{\nu} = \delta^{\alpha}_{\nu} \eta_{\alpha \mu} p^{\mu} p^{\nu} = \eta_{\alpha \mu} p^{\mu} p^{\alpha} = \eta_{\alpha \mu} p^{\alpha} p^{\mu}\\
+\vec{p}^2 = ( p^{\alpha} \vec{e}_{\alpha}) (p^{\beta} \vec{e}_{\beta}) = \vec{e}_{\alpha} \cdot \vec{e}_{\beta} p^{\alpha} p^{\beta} = \eta_{\alpha \beta} p^{\alpha} p^{\beta}\\
+\therefore \tilde{p}^2 = \vec{p}^2\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\section*{Chapter 4}
+$n:=$ number density in the MCRF of the element.\\
+$\frac{n}{\sqrt{1-v^2}} = \{$ number density in frame in which particles have velocity $v \}\\$
+$(\rm{flux})^{\bar{x}} = \frac{nv}{\sqrt{1-v^2}}\\
+\vec{N} = n \vec{U}, \vec{U} \rightarrow_{O} ( \frac{1}{\sqrt{1-v^2}}, \frac{v^x}{\sqrt{1- v^2}}, \frac{v^y}{\sqrt{1-v^2}}, \frac {v^z}{\sqrt{1-v^2}})\\
+\vec{N} \cdot \vec{N} = - n^2,\,\, n= (- \vec{N} \cdot \vec{N})^{1/2}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\phi(t,x,y,z) = const.,\,\, \tilde{n}:= \frac{ \tilde{d} \phi}{| \tilde{d} \phi|}$ (unit normal one- form)\\
+$| \tilde{d} \phi| is mag of \tilde{d} \phi : | \tilde{d} \phi| = | \eta^{\alpha \beta} \phi_{, \alpha} \phi_{, \beta} |^{1/2} compare with \eta^{\alpha \beta} p_{\alpha } p_{\beta} = \tilde{p} \cdot \tilde{p}\\
+\tilde{n} d x^{\alpha} d x^{\beta} dx^{\gamma}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$- \tilde{d} \bar{t} = U_{\alpha} = \eta_{\alpha \beta} U^{\beta}$ (four velocity as one form), $U_0 = -1 ,\,\, U_i = 0\\
+E = \langle \tilde{d} t , \vec{p} \rangle = p^0 = - \vec{p} \cdot \vec{U}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\rho :=$ energy density in the MCRF $= mn\\
+\frac{\rho}{1-v^2} = \{$ energy density in a frame which particles have velocity $\vec{v} \}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\tilde{T} (\tilde{d} x^{\alpha}, \tilde{d} x^{\beta}) = T^{\alpha \beta} := \{$ flux of $\alpha$ momentum across a surface of constant $x^{\beta} \}\\$
+$T^{00} =$ energy density\\
+$T^{0i} =$ energy flux across $x^i$ surface\\
+$T^{i0} = i$ momentum density\\
+$T^{ij} =$ flux $i$ momentum across $j$ surface\\
+in MCRF $(T^{00})_{MCRF} = \rho = mn;\,\, (T^{i0})_{MCRF} = (T^{0i})_{MCRF} = (T^{ij})_{MCRF} = 0\\$
+Dust: $\tilde{T} = \vec{p} \otimes \vec{N} = mn \vec{U} \otimes \vec{U} = \rho \vec{U} \otimes \vec{U}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{aside:} $T^{\alpha \beta} = \tilde{T}(\tilde{\omega}^{\alpha}, \tilde{\omega}^{\beta}) = \rho \vec{U}(\tilde{\omega}^{\alpha}) \vec{U}(\tilde{\omega}^{\beta}) = \rho U^{\alpha} U^{\beta}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$d \rho - (\rho + p) \frac{dn}{n} = n T d S$}, $\Delta q= T dS\\
+\Delta E = \Delta Q  - P \Delta V,\,\, or \Delta Q = \Delta E + P \Delta V\\$
+particles conserved,$\,\, V= \frac{N}{n} \implies \Delta V = - \frac{N}{n^2} \Delta n\\
+E = \rho V = \rho \frac{N}{n} \implies \Delta E = \rho \Delta V + V \Delta \rho\\
+\implies \Delta Q = \frac{N}{n} \Delta \rho - N (\rho + P) \frac{\Delta n}{n^2}\\
+\implies n \frac{\Delta Q}{N}$
+$\implies n \Delta q = \Delta \rho - \frac{\rho + P}{n} \Delta n,\\, q : = \frac{Q}{N}\\
+\implies d \rho - ( \rho. + P) \frac{dn}{n}\\
+\implies d \rho - ( \rho + P) \frac{dn}{n} \equiv A d B\\
+\therefore d \rho - ( \rho + P) \frac{dn}{n} = n T dS \implies \Delta q = T \Delta S\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+If $S$ is a surface of constant $x^i$, then $T^{ij}$ for fluid element $A$ is $F^i/A,\,\, S$ has area $A$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$T^{ij} = T^{ji}$} (symmetric; stuck)\\
+\underline{Proof}\\
+Only need to show components symmetric in one frame $\implies \forall \tilde{r}, \tilde{q},\,\, \tilde{T}(\tilde{r}, \tilde{q}) = \tilde{T}( \tilde{q}, \tilde{r}) \implies$ symmetry in any frame\\
+(see diagram)\\
+(a) $F^i_1 = T^{ix} \ell^2$ (force exerted on neighbor)\\
+$F^i_2 = T^{iy} \ell^2,\,\, F^i_3 = - T^{ix} \ell^2,\,\, F^i_4 = - T^{iy} \ell^2\\$
+as $\ell \rightarrow 0$ acceleration becomes infinite\\
+unless,$\,\, F^i_3 \approx - F^i_1,\,\, F^i_2 \approx - F_4^i\\$
+assume forces acti on center of face\\
+$\tau_z^1 = - x F_1^y = - \frac{1}{2} \ell T^{yx} \ell^2 (F_1^y$ is exerted on neighbor $-F_1^y$ is exerted on self)\\
+$\tau_z^2 = - y F_{2 (self)}^x$ (Since if $F_{2(swlf)}^x$ is positive then $\tau_z^2$ is negative)\\
+$= y F_2^x = \frac{\ell}{2} T^{xy} \ell^2\\$
+(take note of weird coordinate system too)\\
+$\tau_z^3 = x_3 F_{3 (self)}^y = - \frac{\ell}{2} T^{yx} \ell^2\\
+\tau_z^4 = y_4 F_{4 (self)}^y = \frac{\ell}{2} T^{xy} \ell^2\\$
+total torque\\
+$\implies \tau_z = \sum_{i=1}^4 \tau_z^i = \ell^2 (T^{xy} - T^{yx} ) = I \alpha\\
+\implies \alpha= \frac{\tau_z}{I} since I depends on m and m \rightarrow 0 \tau_z or else \alpha \rightarrow \infty\\
+\therefore \tau_z = 0\\
+\implies T^{xy} = T^{yx}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$T^{\alpha \beta}_{\,\,\,\, , \beta}=0$}\\
+flow of energy: (4): $\ell^2 T^{0x}(x=0),\,\, (2) : - \ell^2 T^{0x}(x=\ell)\\$
+flow in $y: \ell^2 T^{0y}(y=0) - \ell^2 T^{0y}(y=\ell)\\$
+$\implies \frac{\partial}{\partial t} (T^{00} \ell^3) = \ell^2 [ T^{0x} (x=0) - T^{0x} (x=\ell) + T^{0y}(y=0)\\
+- T^{0y}(y= \ell) + T^{0 z} (z=0) - T^{0z} (z= \ell)\\
+\implies \frac{\partial}{\partial t} T^{00} = - \frac{\partial}{\partial x} T^{0x} - \frac{\partial}{\partial y} T^{0y} - \frac{\partial}{\partial z} T^{0z}\\
+\implies T^{00}_{,0} + T^{0x}_{,x} + T^{0y}_{,y} + T^{0z}_{,z} = T^{0 \beta}_{,\beta} =0\\$
+same analysis for momentum\\
+$\therefore T^{\alpha \beta}_{, \beta}=0\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$N^{\alpha}_{, \alpha} = ( n U^{\alpha})_{, \alpha}=0$} (conservation of particles)\\
+$\frac{\partial}{\partial t} N^0 = - \frac{\partial }{\partial x} N^x - \frac{\partial}{\partial y} N^y - \frac{\partial}{\partial z} N^z\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+perfect fluid - no heat conduction, no viscosity no heat conduction - $T^{0i} = T^{i0} = 0\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+No viscosity - $T^{ij} = 0$ unless $i = j \implies T^{ij}$ diagonal\\
+$\implies T^{ij} = P \delta^{ij}$
+
+
+
+
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$(T^{\alpha \beta}) = \begin{pmatrix} \rho & 0 & 0 & 0 \\ 0 & P & 0 & 0 \\ 0 & 0 & P & 0 \\ 0 & 0 & 0 & P \end{pmatrix} (MCRF)\\
+\implies T^{\alpha \beta} = ( \rho + P) U^{\alpha} U^{\beta} + P \eta^{\alpha \beta}\\
+\therefore \tilde{T} = ( \rho + P) \vec{U} \otimes \vec{U} + P \tilde{g}^{-1}$ (stress energy tensor for perfect fluid)\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\eta_{\alpha \gamma} = \eta_{\gamma \alpha}$}\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$U^{\alpha}_{\,\, , \beta} U_{\alpha} = 0$}\\
+\underline{Proof}\\
+$\vec{U} \cdot \vec{U} = \eta_{\alpha \beta} U^{\alpha} U^{\beta} = U^{\alpha} U_{\alpha} = -1 \implies ( U^{\alpha} U_{\alpha})_{, \beta} = 0\\
+\implies ( U^{\alpha} U^{\gamma} \eta_{\alpha \gamma} ) _{, \beta} = ( U^{\alpha} U^{\gamma})_{, \beta} \eta_{\alpha \gamma} = U^{\alpha}_{\,\, ,  \beta} U^{\alpha} \eta_{\alpha \gamma} + U^{\alpha} U^{\gamma}_{\,\, , \beta} \eta_{\alpha \gamma}\\
+= 2 U^{\alpha}_{,\beta} U^{\gamma} \eta_{\alpha \gamma} = 2 U^{\alpha}_{\,\,  , \beta} U_{\alpha} = 0
+\ $
+Since: $U^{\alpha}_{\,\, , \beta} U^{\gamma} \eta_{\alpha \beta} = U^{\alpha} U^{\gamma}_{, \beta} \eta_{\alpha \gamma}\\
+\therefore U^{\alpha}_{\,\, , \beta} U_{\alpha} = 0\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$U^{\alpha} S_{, \alpha} = \frac{d S}{d \tau} = 0$}\\
+$T^{\alpha \beta}_{\,\,\,\, , \beta} = [ ( \rho + P ) U^{\alpha} U^{\beta} + P \eta^{\alpha \beta} ]_{, \beta} = 0\\$
+assume $( n U^{\beta})_{, \beta} = 0,\,\,$ First term: $[ ( \rho + P) U^{\alpha} U^{\beta}]_{, \beta} = [ \frac{\rho + P}{n} U^{\alpha} n U^{\beta}]_{,\beta}\\
+= \frac{( \rho + P)}{n} U^{\alpha} [ n U^{\beta}]_{, \beta} + n U^{\beta} [ \frac{\rho + P}{n} U^{\alpha}]_{, \beta} = n U^{\beta} ( \frac{ \rho + P}{n} U^{\alpha})_{, \beta}\\$
+Second term $[ P \eta^{\alpha \beta}]_{, \beta} = P_{, \beta} \eta^{\alpha \beta} + P \eta^{\alpha \beta}_{, \gamma} = P_{, \beta} \eta^{\alpha \beta}\\$
+Use $U^{\alpha}_{\,\, , \beta} U_{\alpha} = 0,\,\, 1^{\rm{st}} + 2^{\rm{nd}} = 0\\
+\implies n U^{\beta} ( \frac{\rho + P}{n} U^{\alpha})_{, \beta} + P_{, \beta} \eta^{\alpha \beta} = 0 \implies n U^{\beta} U_{\alpha} ( \frac{\rho + P}{n} U^{\alpha}_{, \beta} )+ P_{, \beta} \eta^{\alpha \beta} U_{\alpha} = 0\\$
+last term $p_{, \beta} U^{\beta},\,\,$ using $U^{\alpha}_{, \beta} U_{\alpha} = 0,\,\, U^{\alpha} U_{\alpha} = -1\\
+\implies U^{\beta} [ - n ( \frac{\rho + P}{n})_{, \beta} + P_{, \beta} ] = 0\\
+\implies - U^{\beta} [ \rho_{, \beta} - \frac{\rho + P}{n} n_{,\beta}]=0\\
+\implies \frac{d \rho}{d \tau} - \frac{\rho + P}{n} \frac{dn}{d \tau} = 0,\,\,$ (boost into rest frame)\\
+\underline{note:} $\frac{d \rho}{d \tau} = U^{\beta} \rho_{, \beta}\\$
+\underline{recall:} $d \rho -(\rho + p) \frac{dn}{n} = n T d S\\
+\frac{d \rho}{d \tau} - \frac{( \rho + p)}{n} \frac{dn}{d \tau} = n T \frac{d S}{d \tau} =0\\
+\therefore U^{\alpha} S_{, \alpha} = \frac{dS}{ d \tau} = 0$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+from $T^{\alpha \beta}_{\,\, \,\, , \beta} = 0$ and $N^{\alpha}_{\,\,\,\, , \alpha} = ( n U^{\alpha})_{\alpha} = 0\\
+\implies \int V^{\alpha}_{, \alpha} d^4 x = \oint V^{\alpha} n_{\alpha} d^3 S$ (gauss's law)\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Chapter 5}
+$\frac{E'}{E} = \frac{h \nu'}{h \nu} = \frac{m}{m + m g h + O(\vec{v}^4)} = 1 - g h + O(v^4)\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$r= ( x^2 + y^2)^{1/2},\,\, x = r \cos \theta\\
+\theta = \tan^{-1}(y/x),\\, y= r \sin \theta\\
+\Delta r= \frac{\partial r}{\partial x} \Delta x + \frac{\partial r}{\partial y} \Delta y = \frac{x}{r} \Delta x + \frac{y}{r} \Delta y = \cos \theta \Delta x + \sin \theta \Delta y\\
+\Delta \theta = \frac{\partial \theta}{\partial x} \Delta x + \frac{\partial \theta}{\partial y} {\Delta y} = - \frac{y}{r^2} \Delta x + \frac{x}{r^2} \Delta y = - \frac{1}{r} \sin \theta \Delta x + \frac{1}{r} \cos \theta \Delta y\\$
+
+
+\underline{in general}\\
+$\xi = \xi(x,y),\,\, \Delta \xi = \frac{\partial \xi}{\partial x} \Delta x + \frac{\partial \xi}{\partial y} \Delta y\\
+\eta = \eta(x,y),\,\, \Delta \eta = \frac{\partial \eta}{\partial x} \Delta x + \frac{\partial \eta}{\partial y} \Delta y\\
+\implies \begin{pmatrix} \Delta \xi \\ \Delta \eta \end{pmatrix} = \begin{pmatrix} \frac{\partial \xi}{\partial x} & \frac{\partial \xi}|{\partial y} \\ \frac{\partial \eta}{\partial x} & \frac{\partial \eta}{\partial y} \end{pmatrix} \begin{pmatrix} \Delta x \\ \Delta y \end{pmatrix}\\
+\Delta \xi = \Delta \eta = 0 \implies \Delta x = \Delta y =0\\
+\implies det \begin{pmatrix} \frac{\partial \xi}{\partial x} & \frac{\partial \xi}{\partial y} \\ \frac{\partial \eta}{\partial x} & \frac{\partial \eta}{\partial y} \end{pmatrix} \neq 0 (Jacobian)\\
+\begin{pmatrix} \Delta \xi \\ \Delta \eta \end{pmatrix} = \begin{pmatrix} \frac{\partial \xi}{\partial x} & \frac{\partial \xi}{\partial y} \\ \frac{\partial \eta}{\partial x} & \frac{\partial \eta}{\partial y} \end{pmatrix} \begin{pmatrix} \Delta x \\ \Delta y \end{pmatrix} \implies \Lambda^{\alpha'}_{\beta} = \begin{pmatrix} \frac{\partial \xi}{\partial x} & \frac{\partial \xi}{\partial y} \\ \frac{\partial \eta}{\partial x} & \frac{\partial \eta}{\partial y} \end{pmatrix}\\$
+unprimed $\rightarrow (x,y);\,\,$ primed $\rightarrow ( \xi, \eta)\\
+V^{\alpha'} = \Lambda^{\alpha'}_{\beta} V^{\beta}$ (transformation of arbitrary $\vec{V}$)\\
+$\tilde{d} \phi \rightarrow ( \frac{\partial \phi}{\partial \xi}, \frac{\partial \phi}{\partial \eta})\\
+\frac{\partial \phi}{\partial \xi} = \frac{\partial x}{\partial \xi} \frac{\partial \phi}{\partial x} + \frac{\partial y}{\partial \xi} \frac{\partial \phi}{\partial y},\,\, \frac{\partial \phi}{\partial \eta} = \frac{\partial x}{\partial \eta} \frac{\partial \phi}{\partial x} + \frac{\partial y}{\partial \eta} \frac{\partial \phi}{\partial y}\\
+\implies ( \frac{\partial \phi}{\partial \xi}, \frac{\partial \phi}{\partial \eta}) = ( \frac{\partial \phi}{\partial x}, \frac{\partial \phi}{\partial y})( \begin{pmatrix} \frac{\partial x}{\partial \xi} & \frac{\partial x}{\partial \eta} \\ \frac{\partial y}{\partial \xi} & \frac{\partial y}{\partial \eta } \end{pmatrix}\\
+\implies \Lambda^{\alpha}_{\beta'} = \begin{pmatrix} \frac{\partial x}{\partial \xi} & \frac{\partial x}{\partial \eta} \\ \frac{\partial y}{\partial \xi} & \frac{\partial y}{\partial \eta} \end{pmatrix},\,\, ( \tilde{d} \phi)_{\beta'} = \Lambda^{\alpha}_{\beta'} ( \tilde{d} \phi)_{\alpha}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$( \tilde{d} \phi)_{\xi} = \frac{\partial \phi}{\partial x} \frac{\partial x}{\partial \xi} + \frac{\partial \phi}{\partial y} \frac{\partial y}{\partial \xi} = \frac{\partial \phi}{\partial \xi} = \frac{\partial \phi}{\partial x} ( \tilde{d} x)_{\xi} + \frac{\partial \phi}{\partial y} ( \tilde{y})_{\xi}\\
+(\tilde{d} \phi)_{\eta} = \frac{\partial \phi}{\partial \eta} = \frac{\partial \phi}{\partial x} \frac{\partial x}{\partial \eta} + \frac{\partial \phi}{\partial y} \frac{\partial y}{\partial \eta} = \frac{\partial \phi}{\partial x} ( \tilde{d} x)_{\beta} + \frac{\partial \phi}{\partial y} ( \tilde{d} y)_{\eta}\\
+\implies \tilde{d} \phi = \frac{\partial \phi}{\partial x} \tilde{d} x + \frac{\partial \phi}{\partial y} \tilde{d} y\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\Lambda^{\alpha}_{\beta'},\,\, \Lambda$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$(\rho + p) a_i + p_{,i} = 0$}\\
+$n U^{\beta} ( \frac{\rho + p}{n} U^{\alpha})_{, \beta} + p_{, \beta} \eta^{\alpha \beta} = 0$ ( previous derivation)\\
+In MCRF $U^i = 0,\,\, U^i_{, \beta} \neq 0\\
+\implies n U^{\beta} ( \frac{\rho + p}{n} U^i)_{, \beta} + p_{, \beta} \eta^{i \beta} =0;\,\, U^i = 0\\
+\implies ( \rho + p) U^i_{, \beta} U^{\beta} + p_{, i} = 0;\,\, a_i \equiv U_{i, \beta} U^{\beta}\\
+\therefore ( \rho + p) a_i + p_{, i} = 0\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\begin{pmatrix} \frac{\partial \xi}{\partial x} & \frac{\partial \xi}{\partial y} \\ \frac{\partial \eta}{\partial x} & \frac{\partial \eta}{\partial y} \end{pmatrix} \begin{pmatrix} \frac{\partial x}{\partial \xi} & \frac{\partial x}{\partial \eta} \\ \frac{\partial y}{\partial \xi} & \frac{\partial y}{\partial \eta} \end{pmatrix}\\
+= \begin{pmatrix} \frac{\partial \xi}{\partial x} \frac{\partial x}{\partial \xi} + \frac{\partial \xi}{\partial y} \frac{\partial y}{\partial \xi} & \frac{\partial \xi}{\partial x} \frac{\partial x}{\partial \eta} + \frac{\partial \xi}{\partial y} \frac{\partial y}{\partial \eta} \\ \frac{\partial \eta}{\partial x} \frac{\partial x}{\partial \xi} + \frac{\partial \eta}{\partial y} \frac{\partial y}{\partial \xi} & \frac{\partial \eta}{\partial x} \frac{\partial x}{\partial \eta} + \frac{\partial \eta}{\partial y} \frac{\partial y}{\partial \eta} \end{pmatrix}\\
+\implies \begin{pmatrix} \frac{\partial \xi}{\partial \xi} & \frac{\partial \xi}{\partial \eta} \\ \frac{\partial \eta}{\partial \xi} & \frac{\partial \eta}{\partial \eta} \end{pmatrix} = \begin{pmatrix} 1 & 0 \\ 0 & 1 \end{pmatrix}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+a path is what we would normally think is a curve but a curve is a parameterized path\\
+Curve : $\{ \xi = f(s),\,\, \eta = g(s),\,\, a \leq s \leq b \}\\$
+can also change parameter, say $s' = s'(S)\\
+\implies \{ \xi = f'(s'), \eta = g'(s'), a' \leq s' \leq b' \}\\
+\frac{ d\phi}{ds} = \langle \tilde{d} \phi, \vec{V} \rangle, \vec{V}$ has components $( \frac{d \xi}{ds}, \frac{d \eta}{ds})\\$
+Vector - the thing that produces $\frac{d \phi}{ds}$ given $\phi\\
+\begin{pmatrix} \frac{d \xi}{ds} \\ \frac{d \eta}{ds} \end{pmatrix} = \begin{pmatrix} \frac{\partial \xi}{\partial x} & \frac{\partial \xi}{\partial y} \\ \frac{\partial \eta}{\partial x} & \frac{\partial \eta}{\partial y} \end{pmatrix} \begin{pmatrix} \frac{dx}{ds} \\ \frac{dy}{ds} \end{pmatrix}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\section{Chapter 8}
+
+\item \underline{$g_{\alpha \beta} = \eta_{\alpha \beta} + h_{\alpha \beta},\,\, | h_{\alpha \beta} |<<1$}
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$h_{\bar{\alpha} \bar{\beta}} := \Lambda_{\bar{\alpha}}^{\mu} \Lambda_{\bar{\beta}}^{\nu} h_{\mu \nu}$} (transforms like a tensor)\\
+$g_{\bar{\alpha} \bar{\beta}} = \Lambda_{\bar{\alpha}}^{\mu} \Lambda_{\bar{\beta}}^{\nu} g_{\mu \nu} = \Lambda_{\bar{\alpha}}^{\mu} \Lambda_{\bar{\beta}}^{\nu} \eta_{\mu \nu} + \Lambda_{\bar{\alpha}}^{\mu} \Lambda_{\bar{\beta}}^{\mu} h_{\mu \nu}\\
+= \eta_{\bar{\alpha} \bar{\beta}} + h_{\bar{\alpha} \bar{\beta}}\\
+\therefore h_{\bar{\alpha} \bar{\beta}} = \Lambda_{\bar{\alpha}}^{\mu} \Lambda_{\bar{\beta}}^{\nu} h_{\mu \nu}\\$
+\underline{Note:} under the infinitesimal coordinate transformation below, $\eta_{\alpha \beta}$ is not invariant under the transformation, I always thought that it was invariant under a coordinate transformation, but it may have to do with the fact that $h_{\alpha \beta}$ is not tensor
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$h_{\alpha \beta} \rightarrow h_{\alpha \beta} - \xi_{\alpha , \beta} - \xi_{\beta, \alpha}$}\\
+$x^{\alpha '} = x^{\alpha} + \xi^{\alpha}(x^{\beta}),\,\, |\xi_{,\beta}^{\alpha}|<<1\\
+\Lambda_{\beta}^{\alpha'} = \frac{\partial x^{\alpha'}}{\partial x^{\beta}} = \delta_{\beta}^{\alpha} + \xi^{\alpha}_{, \beta}\\
+x^{\alpha'} = x^{\alpha} + \xi^{\alpha} \implies x^{\alpha} = x^{\alpha'} - \xi^{\alpha'}_{, \beta'}\\
+\implies \Lambda_{\beta'}^{\alpha} = \frac{\partial x^{\alpha}}{\partial x^{\beta'}} = \delta^{\alpha'}_{\beta'} - \xi^{\alpha'}_{,\beta'}\\
+g_{\alpha' \beta'} = \Lambda^{\alpha}_{\alpha'} \Lambda^{\beta}_{\beta'} g_{\alpha \beta} = ( \delta^{\alpha}_{\alpha'} - \xi^{\alpha}_{,\alpha'})(\delta^{\beta}_{\beta'} - \xi^{\beta}_{, \beta'})(\eta_{\alpha \beta} + h_{\alpha \beta})\\
+= ( \delta^{\alpha}_{\alpha'} \delta^{\beta}_{\beta'} - \delta^{\alpha}_{\alpha'} \xi^{\beta}_{,\beta'} - \xi^{\alpha}_{,\alpha'} \delta^{\beta}_{\beta'}+ \xi^{\alpha}_{, \alpha '} \xi^{\beta}_{,\beta'})(\eta_{\alpha \beta} + h_{\alpha \beta})\\
+= \delta^{\alpha}_{\alpha'} \delta^{\beta}_{\beta'} \eta_{\alpha \beta} + \delta^{\alpha}_{\alpha'} \delta^{\beta}_{\beta'} h_{\alpha \beta} - \delta^{\alpha}_{\alpha'} \xi^{\beta}_{,\beta'} \eta_{\alpha \beta} - \xi^{\alpha}_{, \alpha'} \delta^{\beta}_{\beta'} \eta_{\alpha \beta}\\
+=\eta_{\alpha ' \beta '} + h_{\alpha ' \beta '} - \xi^{\beta}_{,\beta'} \eta_{\alpha' \beta} - \xi^{\alpha}_{,\alpha'} \eta_{\alpha \beta'}\\
+=\eta_{\alpha' \beta'} + h_{\alpha' \beta'} - \xi_{\alpha', \beta'} - \xi_{\beta', \alpha'}\\$\\
+$\implies h_{\alpha \beta} \rightarrow h_{\alpha \beta} - \xi_{\alpha, \beta} - \xi_{\beta, \alpha}\\$
+\underline{Shortened:} Consider $x^{\alpha'} = x^{\alpha} + \xi^{\alpha}(x^{\beta})$ calculate $\Lambda^{\alpha'}_{\beta})$ and expand as Taylor series to first order, calculate $g_{\alpha' \beta'}$ to see what $h_{\alpha' \beta'}$ becomes.
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+\comment{
+\underline{Note:} $R_{\mu \nu \rho \sigma} = \eta_{\mu \lambda} \Gamma^{\lambda}_{\,\, \nu \sigma} - \eta_{\mu \lambda} \Gamma^{\lambda}_{\,\, \nu \rho, \sigma}\\$
+}
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+\comment{
+\underline{$R= h^{\mu \nu}_{\,\, \,\, , \nu \mu} - \Box {h}$}\\
+\underline{recall:} $h = \eta^{\mu \nu} h_{\mu \nu} = h^{\mu}_{\mu};\,\, \Box = \partial_{\mu} \partial^{\mu} = \eta^{\mu \nu} \partial_{\mu} \partial_{\nu}\\
+R_{\mu \nu} = \frac{1}{2} ( h^{\sigma}_{\,\, \mu, \nu \sigma} + h^{\sigma}_{\,\, \nu, \mu \sigma} - h_{, \nu \mu} - \Box h_{\mu \nu})\\
+R = R_{\mu}^{\mu} = \frac{1}{2} ( h^{\sigma}_{\,\, \mu ,}^{\,\, \,\, \mu}_{\,\, \,\, \,\, \sigma} + h^{\sigma}_{\,\, \mu,}^{\,\, \,\, \,\, \mu}_{\sigma} - h_{,\mu}^{\,\, \mu} - \Box h_{\mu}^{\mu}\\
+= \frac{1}{2} (2 h^{\mu \nu}_{\,\, \,\, , \nu \mu} - \eta^{\mu \nu} h_{, \nu \mu} - \eta^{\mu \nu} h_{, \nu \mu})\\
+= h^{\mu \nu}_{\,\, \,\, , \nu \mu} - \Box h\\$
+}
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{$R_{\mu \nu} = \frac{1}{2} (h^{\sigma}_{\mu, \nu \sigma} + h^{\sigma}_{\,\, \nu, \mu \sigma} - h_{, \nu \mu} - \Box h_{\mu \nu})$}\\
+\underline{recall:} $ R_{\mu \nu \rho \sigma} = \frac{1}{2}( h_{\mu \sigma, \nu \rho} + h_{\nu \rho, \mu \sigma} - h_{\mu \rho, \nu \sigma} - h_{\nu \sigma, \mu \rho})\\
+R_{\mu \nu}$ is obtained by contracting $\mu$ and $\rho$\\
+$R_{\mu \nu \rho \sigma} = \eta_{\lambda \mu} R^{\lambda}_{\nu \rho \sigma}\\
+R^{\lambda}_{\nu \rho \sigma} = \frac{1}{2}( h^{\lambda}_{\sigma, \nu \rho} + {h_{\nu \rho,}^{\,\, \,\, \,\, \lambda}}_{\,\, \,\, \,\, \,\, \sigma} - h^{\lambda}_{\,\, \rho, \nu \sigma} - {h_{\nu \sigma,}^{\,\, \,\, \,\, \lambda}}_{\,\, \,\, \,\, \,\, \rho})\\
+\implies R^{\lambda}_{\,\, \nu \lambda \sigma} = \frac{1}{2} ( h^{\lambda}_{\,\, \sigma, \nu \lambda} + {h_{\nu \lambda,}}^{\,\, \,\, \,\,}_{\,\, \,\, \,\, \,\, \sigma} - h^{\lambda}_{\,\, \lambda, \nu \sigma} -{h_{\nu \sigma,}}^{\,\, \,\, \,\, \lambda}_{\,\, \,\, \,\, \,\, \lambda Z})\\
+{h_{\nu \lambda,}^{\,\, \,\, \,\, \lambda}}_{\,\, \,\, \,\, \,\, \sigma} = \eta_{\lambda \beta} \eta^{\lambda \alpha} {h_{\nu}^{\,\, \beta}}_{\,\, \,\, , \alpha \sigma}= {h_{\mu}^{\,\, \alpha}}_{\,\, \,\, , \alpha \sigma} = {h^{\alpha}}_{\,\, \nu, \alpha \sigma}\\
+= \frac{1}{2} ( {h^{\lambda}}_{\,\, \sigma, \nu \lambda} + h^{\alpha}_{\,\, \nu, \alpha \sigma} - h_{, \nu \sigma} - \Box h_{\nu \sigma})$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+\comment{
+$\implies G_{\mu \nu} = R_{\mu \nu} - \frac{1}{2} \eta_{\mu \nu} R\\
+= \frac{1}{2} ( h^{\sigma}_{\,\, \mu, \nu \sigma} + h^{\sigma}_{\,\, \nu, \mu \sigma} - h_{,\nu \mu} - \Box h_{\mu \nu} - \eta_{\mu \hu} h^{\alpha \beta}_{\,\, \,\, ,\alpha \beta} + \eta_{\mu \nu} \Box h)$
+}
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+$\Box$
+
+\item \underline{$R_{\alpha \beta \mu \nu} = \frac{1}{2} ( h_{\alpha \nu, \beta \mu} + h_{\beta \mu, \alpha \nu} - h_{\alpha \mu, \beta \nu} - h_{\beta \nu, \alpha \mu})$}\\
+\underline{recall:} $R_{\alpha \beta \mu \nu} = \frac{1}{2}(g_{\alpha \nu, \beta \mu} - g_{\alpha \mu, \beta \nu} + g_{\beta \mu, \alpha \nu} - g_{\beta \nu, \alpha \mu});\,\, g_{\alpha \beta} = \eta_{\alpha \beta} + h_{\alpha \beta}$ (what allows us to use this?)\\
+$\implies R_{\alpha \beta \mu \nu} = \frac{1}{2} ( h_{\alpha \nu, \beta \mu} - h_{\alpha \mu, \beta \nu} + h_{\beta \mu, \alpha \nu} - h_{\beta \nu, \alpha \mu})$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Definitions:} $ h^{\mu}_{\beta}:= \eta^{\mu \alpha} h_{\alpha \beta};\,\, h^{\mu \nu} := \eta^{\nu \beta} h^{\mu}_{\beta;};\,\, h:= h^{\alpha}_{\alpha}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{ reverse trace with $\bar{h} := \bar{h}^{\alpha}_{\alpha} = - h$}$;\,\, \bar{h}^{\alpha \beta}: = h^{\alpha \beta} - \frac{1}{2} \eta^{\alpha \beta} h\\
+\bar{h}^{\mu}_{\beta} = \eta^{\mu \alpha} \bar{h}_{\alpha \beta};\,\, \bar{h}_{\alpha \beta} = \eta_{\alpha \mu} \eta_{\beta \nu} \bar{h}^{\mu \nu} = \eta_{\alpha \mu} \eta_{\beta \nu}( h^{\mu \nu} - \frac{1}{2} \eta^{\mu \nu} h)\\
+=h_{\alpha \beta} - \frac{1}{2} \eta_{\alpha \mu} \delta^{\mu}_{\beta} h = h_{\alpha \beta} - \frac{1}{2} \eta_{\alpha \beta} h\\
+\implies \bar{h}^{\mu}_{\beta} = \eta^{\mu \alpha} \bar{h}_{\alpha \beta} = \eta^{\mu \alpha}(h_{\alpha \beta} - \frac{1}{2} \eta_{\alpha \beta} h) = h^{\mu}_{\beta} - \frac{1}{2} \delta^{\mu}_{\beta} h\\
+\implies \bar{h}^{\mu}_{\mu} = h - \frac{1}{2}(4) h = - h;\,\, \delta^{\mu}_{\mu}=4\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$G_{\alpha \beta} = - \frac{1}{2}[\bar{h}_{\alpha \beta, \mu}^{\,\,\,\,\,\,\,\,\,\,, \mu} + \eta_{\alpha \beta} \bar{h}_{\mu \nu}^{\,\,\,\,, \mu \nu} - \bar{h}_{\alpha \mu , \beta}^{\,\,\,\,\,\,\,\,, \mu} - \bar{h}_{\beta \mu, \alpha}^{\,\,\,\,\,\,\,\,, \mu} + O(h_{\alpha \beta})^2]$}\\
+\underline{Note:} $f^{,\mu} := \eta^{\mu \nu} f_{, \nu}$\\
+\underline{recall:} $G_{\alpha \beta} = R^{\alpha \beta} - \frac{1}{2} g^{\alpha \beta} R;\,\, R = g^{\beta \nu} g^{\alpha \mu} R_{\alpha \beta \mu \nu}\\
+R_{\alpha \beta} = R^{\mu}_{\alpha \mu \beta}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$G^{\alpha \beta} = - \frac{1}{2} \Box \bar{h}^{\alpha \beta}$} (Lorentz gauge), $\Box \bar{h}^{\mu \nu}=-16 \pi T^{\mu \nu};$ $\,\, \bar{h}^{\mu \nu}_{, \nu} = 0\\$
+\underline{recall:} $G^{\alpha \beta} =  - \frac{1}{2}[\bar{h}^{\alpha \beta\,\,,\mu}_{\,\,\,\,,\mu} + \eta^{\alpha \beta} \bar{h}_{\mu \nu}^{\,\, \,\,,\mu \nu} - \bar{h}^{\alpha \,\, , \beta \mu}_{\,\,\mu} - \bar{h}^{\beta\,\, , \alpha \mu}_{\,\,\mu}]\\$
+\underline{1st term:} $\bar{h}^{\alpha \beta \,\,, \nu}_{\,\,\,\,, \mu} = \eta^{\nu \sigma} \bar{h}^{\alpha \beta}_{\,\,\,\,, \mu \sigma}\\$
+\underline{2nd term:} $\eta^{\alpha \beta} \bar{h}_{\mu \nu}^{\,\,\,\, , \sigma \lambda} = \eta^{\alpha \beta} \eta^{\gamma \sigma} \eta^{\xi \lambda} \eta_{\mu \ell} \eta_{\nu \zeta} \bar{h}^{\ell \zeta}_{\,\,\,\,, \gamma \xi}\\
+\sigma = \mu, \lambda = \nu \implies \eta^{\alpha \beta} \eta^{\gamma \mu} \eta^{\xi \nu} \eta_{\mu \ell} \eta_{\nu \eta} \bar{h}^{\ell \zeta}_{\,\,\,\,, \gamma \xi}\\
+= \eta^{\alpha \beta} \delta ^{\gamma}_{\ell} \delta ^{\xi}_{\zeta} \bar{h}^{\ell \zeta}_{\,\, \,\,, \gamma \xi} = \eta^{\alpha \beta} \bar{h}^{\ell \zeta}_{\,\,\,\,, \ell \zeta} = 0$ (used $\bar{h}^{\mu \nu}_{\,\,\,\, , \nu}=0$)\\
+\underline{3rd term:} $\bar{h}^{\alpha\,\, , \beta \sigma}_{\,\,\mu} = \bar{h}^{\alpha\,\,, \sigma \beta}_{\,\,\mu} = \eta_{\mu \lambda} \eta^{\sigma \gamma} \bar{h}^{\alpha \lambda\,\, , b}_{\,\,\,\,, \gamma}\\
+\sigma = \mu \implies \eta_{\mu \lambda} \eta^{\mu \gamma} \bar{h}^{\alpha \lambda\,\, , \beta}_{\,\,\,\,, \gamma} = \delta^{\gamma}_{\lambda} \bar{h}^{\alpha \lambda\,\, , \beta}_{\,\,\,\,, \gamma} = \bar{h}^{\alpha \lambda\,\, , \beta}_{\,\,\,\,, \lambda} = 0\\$
+\underline{4th term} Same logic as third term $\bar{h}^{\beta\,\, , \alpha \mu}_{ \,\,\mu} = 0\\
+\therefore G^{\alpha \beta} = - \frac{1}{2} \bar{h}^{\alpha \beta\, \,\, , \mu}_{\,\, \,\,, \mu} = - \frac{1}{2} \Box \bar{h}^{\alpha \beta}\\$
+\underline{recall:} $G^{\alpha \beta} = 8 \pi T^{\alpha \beta} \implies \Box \bar{h}^{\alpha \beta} = -16 \pi T^{\alpha \beta}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\nabla^2 \phi = 4 \pi \rho;\,\, ds^2 = -(1+2 \phi) dt^2 +(1-2 \phi)(dx^2 + dy^2 + dz^2)$}\\
+\underline{recall:} $\Box \bar{h}^{\mu \nu} = -16 \pi T^{\mu \nu}\\
+|\phi|<<1 \implies |\vec{v}|<<1$ (gravitational field cannot produce near light speeds)\\
+$|T^{00}|>>|T^{0i}|>>|T^{ij}|\\
+\implies | \bar{h}^{00}|>>|\bar{h}^{0i}|>>|\bar{h}^{ij}|\\
+\implies \Box \bar{h}^{00}=-16 \pi T^{00}=-16 \pi T^{00} = -16 \pi \rho;\,\, T^{00} = \rho + O(\rho v^2) $ (dont understand)\\
+$\frac{\partial^2}{\partial t^2}=\frac{\partial}{\partial t} ( \frac{\partial x}{\partial t} \frac{\partial}{\partial x})=\frac{\partial x}{\partial t}\frac{\partial}{\partial x} \frac{\partial x}{\partial t} \frac{\partial}{\partial x}=v^2 \frac{\partial^2}{\partial x^2}; |v|<<1 \implies \Box=-\frac{\partial^2}{\partial t^2} + \nabla^2=-v^2 \nabla^2 + \nabla^2 \approx \nabla^2 \implies \nabla^2 \bar{h}^{00}=-16 \pi \rho \implies \nabla^2(-\frac{\bar{h}^{00}}{4})=4 \pi \rho\\$
+compare with $\nabla ^2 \phi = 4 \pi \rho \implies \bar{h}^{00}=-4 \phi \\$
+all other $ \bar{h}^{\alpha \beta}$ negligible\\
+$\implies h=h_{\alpha}^{\alpha} = - \bar{h}_{\alpha}^{\alpha}= - \eta_{\alpha \nu} \bar{h}^{\alpha \nu}= \bar{h}^{00}$ (all other components negligible)\\
+\underline{recall:} $\bar{h}^{\alpha \beta} = h^{\alpha \beta} - \frac{1}{2} \eta^{\alpha \beta} h\\
+\implies \bar{h}^{00}= h^{00} + \frac{1}{2} h = h^{00} + \frac{1}{2} \bar{h}^{00} = h^{00} - 2 \phi\\
+\implies h^{00} = -2 \phi \\
+\bar{h}^{ii} = h^{ii}- \frac{1}{2} ( -  4 \phi); \implies |\bar{h}^{ij}|$ small $\implies |\bar{h}^{ij}| \approx 0$ even if i=j\\
+$\implies h^{ii} = -2 \phi\\
+h^{ij} = 0$ since $\eta^{ij}=0; j \neq i\\
+ds^2 =g_{\alpha \beta} dx^{\alpha} dx^{\beta}=g_{00} dt^2 + g_{ii}(dx^2 + dy^2 + dz^2)\\
+=(\eta_{00} + h_{00}) dt^2 + (\eta_{ii} + h_{ii})(dx^2+dy^2+dz^2)\\
+\therefore ds^2= -(1+2 \phi) dt^2 + (1-2 \phi)( dx^2 + dy^2 + dz^2)$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$(\phi)_{relativistic far field} := -\frac{1}{4} ( \bar{h}^{00})_{far field}$}\\
+\underline{recall:} $\Box \bar{h}^{\mu \nu}= - 16 \pi T^{\mu \nu}$\\
+assume $T^{\mu \nu}$ is independent of time\\
+$\implies$ assume $h^{\mu \nu}$ independent of time\\
+$T^{00}$ is zero since $\rho=0$ far from the source\\
+$T^{0i} =0$ and $T^{ij}$ is zero since $T^{\mu \nu}$ is stationary.\\
+$\implies \nabla^2 \bar{h}^{\mu \nu} = 0$ assuming no angular dependence\\
+$\implies \nabla^2 \bar{h}^{\mu \nu} = \frac{1}{r^2} \frac{\partial}{\partial r} ( r^2 \frac{\partial \bar{h}^{\mu \nu}}{\partial r}) = 0 \\
+\implies \bar{h}^{\mu \nu} = \frac{A^{\mu \nu}}{ r} + O(r^{-2})$ ($O(r^{-2})$ since we made a bunch of approximations)\\
+$A^{\mu \nu}$ const\\
+\underline{recall:} $\bar{h}^{\mu \nu}_{, \nu} = 0,$ (Lorentz gauge)$\,\, \bar{h}^{\mu 0}_{,0}=0$ assumed $\bar{h}^{\mu \nu}$ is ind. of time\\
+$\bar{h}^{\mu \nu}_{, \nu} = \bar{h}^{\mu j}_{,j} = A^{\mu j} \frac{\partial}{\partial x^j} r^{-1} + O(r^{-3})\\
+= - A^{\mu j} \frac{\partial r}{\partial x^j} r^{-2};\,\, \frac{\partial r}{\partial x^j} = \frac{\partial}{\partial x^j} \sqrt{\delta_{ik} x^i x^k} = \frac{x_j}{r}\\$
+set $n_j =\frac{x_j}{r} \implies \bar{h}^{\mu j}_{,j} = - A^{\mu j} \frac{n_j}{r^2} + O(r^{-3})=0\\$ (Lorentz condition)(dont understand $n_j$)\\
+$A^{\mu j} = 0$ since otherwise $x^i$ would have to be fixed at zero\\
+Since $\bar{h}^{\mu \nu} = \frac{A^{\mu \nu}}{r} + O(r^{-2})\\
+|\bar{h}^{00}|>> | \bar{h}^{ij}|,\,\, |\bar{h}^{00}|>> | \bar{h}^{00}|$ (why not just $>$)\\
+$\implies \nabla^2 \bar{h}^{00}=0\\$
+this justifies the identification\\
+$(\phi)_{relativistic far field} := -\frac{1}{4} (\bar{h}^{00})_{far field}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+\item \underline{$ds^2 = -[1-2 \frac{M}{r} + O(r^{-2})]dt^2 + [1+ 2 \frac{M}{r} + O(r^{-2})](dx^2 + dy^2 + dz^2)$}\\
+$\nabla^2 \phi = 4 \pi \rho \implies (\phi)_{Newtonian far field} = -\frac{M}{r} + O(r^{-2})\\$
+\underline{recall:} $(\phi)_{relativistic far field}=-\frac{1}{4} (\bar{h}^{00})_{far field};\,\,\\$
+$\bar{h}^{00} = \frac{A^{00}}{r}$ set $A^{00} = 4 M\\
+\implies (\phi)_{relativistic far field} = -\frac{M}{r} + O(r^{-2})\\$
+\underline{recall:} $ds^2 = -(1+2 \phi) dt^2 + (1-2 \phi)(dx^2 + dy^2 +dz^2)\\
+\therefore ds^2 = -[1-\frac{2M}{r} + O(r^{-2}) ] dt^2 + [1 + \frac{2M}{r} + O(r^{-2})](dx^2 + dy^2 + dz^2)$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+\section*{Chapter 9}
+$\star$
+\item \underline{$k^{\nu} k_{\nu} = 0,\,\, \bar{h}^{\alpha \beta} = A^{\alpha \beta} \exp ( i k_{\nu} x^{\nu})$}  (Newtonian field equation, solution; i.e. solution to the wave equation)\\
+\underline{recall:} $( -\frac{\partial^2}{\partial t^2} + \nabla^2) \bar{h}^{\alpha \beta} =\eta^{\mu \nu} \bar{h}^{\alpha \beta}_{,\mu \nu}= 0 \implies \bar{h}^{\alpha \beta} =A^{\alpha \beta} \exp(i k_v x^v)\\
+\implies \bar{h}^{\alpha \beta}_{, \mu} = i k_{\nu} \frac{\partial x^{\nu}}{\partial x^{\mu}} \bar{h}^{\alpha \beta} = i k_{\nu} \delta^{\nu}_{\mu} \bar{h}^{\alpha \beta} = i k_{\mu} \bar{h}^{\alpha \beta}\\
+\implies \eta^{\mu \nu} \bar{h}^{\alpha \beta}_{, \mu \nu} = - \eta^{\mu \nu} k_{\mu} k_{\nu} \bar{h}^{\alpha \beta}=0\\
+\therefore \eta^{\mu \nu} k_{\mu} k_{\nu} = k^{\nu} k_{\nu}=0$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Note:} If $k_{\alpha} x^{\alpha} = const. \implies \bar{h}^{\alpha \beta}$ is const on hyper-surface (gravitational wave)\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$k_{\mu} x^{\mu} (\lambda) = k_{\mu} \ell^{\mu} = const.$} (photon)\\
+a photon travels in direction of null vector\\
+$\vec{k} \implies x^{\mu} (\lambda) = k^{\mu} \lambda + \ell^{\mu},$ since $k^{\nu} k_{\nu} = 0\\
+\implies k_{\mu} x^{\mu}(\lambda) = k_{\mu} k^{\mu} \lambda + \ell^{\mu} k_{\mu} = k_{\mu} \ell^{\mu} = const.\\$
+this is a wave whose phase is the same as the gravitational wave
+$\implies$ photon travels with gravitational wave.\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Note:} $\vec{k} \implies ( \omega, \vec{k}), k_{\alpha} x^{\alpha} = k_0 x^0 + \vec{k} \cdot \vec{x} = \eta_{0 \mu} k^{\mu} x^0 + \vec{k} \cdot \vec{x}\\
+=-\omega t + \vec{k} \cdot \vec{x}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\omega^2 = |\vec{k}|^2$} (dispersion)\\
+$k_{\alpha} k^{\alpha} = k_0 k^0 + | \vec{k} |^2 = 0 = - \omega^2 + | \vec{k}|^2\\
+\implies \omega^2 = | \vec{k} |^2\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$A^{\alpha \beta} k_{\beta}=0$} (apply gauge condition)\\
+\underline{recall:} $(-\frac{\partial^2}{\partial t^2} + \nabla^2)\bar{h}^{\alpha \beta} = 0\\$
+Einstein's field equations only have this form if the gauge condition is imposed\\
+$\bar{h}^{\alpha \beta}_{,\beta} = 0 \implies \bar{h}^{\alpha \beta} = A^{\alpha \beta} \exp(i k_{\lambda} x^{\lambda})\\
+\frac{\partial \bar{h}^{\alpha \beta}}{\partial x^{\beta}} = i k_{\lambda} \delta^{\lambda}_{\beta} A^{\alpha \beta} \exp(i k_{\lambda} x^{\lambda})\\
+=i k_{\beta} A^{\alpha \beta} \exp(i k_{\lambda} x^{\lambda})=0\\
+\implies k_{\beta} A^{\alpha \beta} = 0\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$A^{(new)}_{\alpha \beta} = A^{(old)}_{\alpha \beta} - i B_{\alpha} k_{\beta} - i B_{\beta} k_{\alpha} + i \eta_{\alpha \beta} B^{\mu} k_{\mu}$}\\
+\underline{recall:} $(-\frac{\partial^2}{\partial t^2} + \nabla^2)\bar{h}^{\alpha \beta} = 0\\$
+Einstein's field equations only have this form if the gauge condition is imposed\\
+$\bar{h}^{\alpha \beta}_{,\beta} = 0$
+
+
+$\Box \xi^{\mu} = \bar{h}^{(old) \mu \nu}_{, \nu};\,\, \bar{h}^{(old) \mu \nu}_{,\nu} = ( A^{\mu \nu} \exp(i k_{\lambda} x^{\lambda}))_{,\nu}=0\\
+\implies (-\frac{\partial^2}{\partial t^2} + \nabla^2) \xi_{\alpha} = 0 \implies \xi_{\alpha} = B_{\alpha} \exp(i k_{\mu} x^{\mu})\\
+\underline{recall: } h^{(new)}_{\alpha \beta}=h^{(old)}_{\alpha \beta}-\xi_{\alpha, \beta} - \xi_{\beta, \alpha}\\
+\implies \bar{h}^{(new)}_{\alpha \beta} = \bar{h}^{(old)}_{\alpha \beta} - \xi_{\alpha, \beta} - \xi_{\beta, \alpha} + \eta_{\alpha \beta} \xi^{\mu}_{,\mu}\\
+A^{(new)}_{\alpha \beta} = A^{(old)}_{\alpha \beta} - i B_{\alpha} k_{\beta} - i B_{\beta} k_{\alpha} + i \eta_{\alpha \beta} B^{\mu} k_{\mu}$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+\item \underline{$\Gamma_{00}^{\alpha} = \frac{1}{2} \eta^{\alpha \beta} (h_{\beta 0, 0} + h_{\beta 0, 0} - h_{00, \beta})$}\\
+\underline{recall:} $\Gamma_{\mu \nu}^{\alpha} = \frac{1}{2} g^{\alpha \beta} ( g_{\beta \mu, \nu} + g_{\beta \nu, \mu} - g_{\mu \nu, \beta});\,\,\\
+g_{\alpha \beta} = \eta_{\alpha \beta} + h_{\alpha \beta}\\
+\implies \Gamma_{\mu \nu}^{\alpha} = \frac{1}{2} ( \eta^{\alpha \beta} + h^{\alpha \beta})(\eta_{\beta \mu,\nu} + \eta_{\beta \nu, \mu} - \eta_{\mu \nu, \beta})\\ + \frac{1}{2}(\eta^{\alpha \beta} + h^{\alpha \beta})(h_{\beta \mu, \nu} + h_{\beta \nu, \mu} - h_{\mu \nu, \beta})\\
+=\frac{1}{2} \eta^{\alpha \beta}(\eta_{\beta \mu, \nu} + \eta_{\beta \nu, \mu} - \eta_{\mu \nu,\beta}) + \frac{1}{2} h^{\alpha \beta}(\eta_{\beta \mu, \nu} + \eta_{\beta \nu, \mu} - \eta_{\mu \nu, \beta}) + \frac{1}{2} \eta^{\alpha \beta}(h_{\beta \mu, \nu} + h_{\beta \nu, \mu} - h_{\mu \nu, \beta})j + O(|h_{\alpha \beta}|^2)\\$
+\underline{Note:} $\eta_{\beta \mu, \nu} = 0;\,\, h^{00} = 0\\
+\implies \Gamma_{00}^{\alpha} = \frac{1}{2} \eta^{\alpha \beta} (h_{\beta 0, 0} + h_{\beta 0, 0} - h_{00, \beta})\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+
+\item \underline{$(\frac{d U^{\alpha}}{d \tau}) = 0$} (TT gauge)
+particle initially in wave free region and at rest, equations of motion for free particle\\
+\underline{recall:} $U^{\beta} V^{\alpha}_{;\beta} \implies \frac{d}{d \lambda} ( \frac{d x^{\alpha}}{d \lambda}) + \Gamma^{\alpha}_{\mu \beta} \frac{d x^{\mu}}{d \lambda} \frac{d x^{\beta}}{d \lambda} = 0\\$
+(geodesic equaiton)\\
+$\implies \frac{d}{d \tau} U^{\alpha} + \Gamma^{\alpha}_{\mu \nu} U^{\mu} U^{\nu} = 0\\$
+initially at rest $\implies \vec{U}=(U^0,\vec{0})$ but $\vec{U} \cdot \vec{U} = -1 \implies U^0=1\\$
+$\implies$ initial acceeleration of particle\\
+$\implies (\frac{d U^{\alpha}}{d \tau} )_0 = - \Gamma^{\alpha}_{\mu \nu} U^{\mu} U^{\nu} = - \Gamma^{\alpha}_{00}$\\
+\underline{recall:} $\Gamma_{00}^{\alpha} = \frac{1}{2} \eta^{\alpha \beta} (h_{\beta 0, 0} + h_{\beta 0, 0} - h_{00, \beta})$\\
+\underline{Note:} $ h$ is in TT so $h_{\alpha \beta} = h_{\alpha \beta}^{TT}$ here and $h_{\beta 0} = h_{00} = 0\\
+\implies \Gamma_{00}^{\alpha} = 0$ (recall the matrix equation$ A_{\alpha \beta}^{TT}$ on pg. 206)\\
+$\therefore (\frac{d \vec{U}}{d \tau})_0=0$ (initially)\\
+Since initial acceleration is 0, then the particle will still be at rest a moment later\\
+$(\frac{d U^{\alpha}}{d \tau})_0=0 \implies U^{\alpha}$(moment later) $= 0$\\
+$\implies (\frac{d U^{\alpha}}{d \tau})_{moment later} = 0 \\$
+$\implies TT $gauge is a coordinate system that is " attached" to particles, giving the illusion that the particle does not move (i.e. coordinate distance does not change)\\
+particle
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\Delta \ell \approx [1+ \frac{1}{2} h_{xx}^{TT}(x = 0)] \epsilon$}\\
+$1 \sim (x_0,y_0,z_0)=(0,0,0);\,\,$ particle 2 $\sim (\epsilon,0,0)\\
+\Delta \ell \equiv \int | ds |^{1/2} = \int | g_{\alpha \beta} d x^{\alpha} dx^{\beta} |^{1/2} = \int_0^{\epsilon} |g_{xx} |^{1/2} dx\\$
+$\approx |g_{xx}(x=0)|^{1/2} \Delta x = |g_{xx}(x=0)|^{1/2} \epsilon\\$
+\underline{recall:} $ g_{\alpha \beta} = \eta_{\alpha \beta} + h_{\alpha \beta} \implies g_{xx} = 1 + h_{xx}^{TT} (x=0)\\
+(1+y)^n \approx \sum_{k=0}^n \begin{pmatrix} n \\ k \end{pmatrix} y^{n-k} \\
+(1+y)^n \approx \sum_{k=0}^{\infty} \begin{pmatrix} n \\ k \end{pmatrix} y^k \\$
+\underline{Note:} do not use $\sum_{k=0}^{\infty} \begin{pmatrix} n \\ k \end{pmatrix} y^{n-k}\\
+(1+y)^n \approx \begin{pmatrix} n \\ 0 \end{pmatrix} y^0 + \begin{pmatrix} n \\ 1\end{pmatrix} y = 1 + \frac{n!}{(n-1)!} y = 1 + \frac{1}{2} y\\
+\implies |g_{xx}(x=0)|^{1/2} \epsilon \approx [1+ \frac{1}{2} h_{xx}^{TT} (x=0) ] \epsilon\\
+\therefore$ proper distance changes with time even though in the TT gauge it is standing still.\\
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+Consider two freely falling particles with connecting vector $\xi^{\alpha}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\frac{\partial^2}{\partial t^2} \xi^x=\frac{1}{2} \epsilon \frac{\partial^2}{\partial t^2} h_{xx}^{TT},\,\, \frac{\partial^2}{\partial t^2} \xi^y = \frac{1}{2} \epsilon \frac{\partial^2}{\partial t^2} h_{xy}^{TT}$} (initially separated by $\epsilon$ in x direction); \\
+\item \underline{$\frac{\partial^2}{\partial t^2} \xi^y = \frac{1}{2} \epsilon \frac{\partial^2}{\partial t^2} h_{yy}^{TT} = -\frac{1}{2} \epsilon \frac{\partial^2}{\partial t^2} h_{xx}^{TT},\\
+\frac{\partial^2}{\partial t^2} \xi^x = \frac{1}{2} \epsilon \frac{\partial^2}{\partial^2} h_{xy}^{TT}\\$}\\
+coord dist = proper dist\\
+\underline{recall:} $ \nabla_V \nabla_V \xi^{\alpha} = R_{\mu \nu \beta}^{\alpha} V^{\mu} V^{\nu} \xi^{\beta}\\
+\implies \nabla_U \nabla_U \xi^{\alpha} = R_{\mu \nu \beta}^{\alpha} U^{\mu} U^{\nu} \xi^{\beta}$\\
+$\vec{U} \rightarrow (1,0,0,0)$ and $\vec{\xi} \rightarrow (0,\epsilon,0,0)$ initially\\
+$\frac{d^2}{d \tau^2} \xi^{\alpha} = \frac{d}{d \tau} \frac{dt}{d \tau} \frac{\partial}{\partial t} \xi^{\alpha} = \gamma^2 \frac{\partial^2}{\partial t^2} \xi^{\alpha} = \frac{\partial^2}{\partial t^2} \xi^{\alpha}\\
+=R^{\alpha}_{00 \beta} U^0 U^0 \xi^{\beta} = R^{\alpha}_{001} U^0 U^0 \xi^1 = R^{\alpha}_{001} \epsilon=- R^{\alpha}_{0x0} \epsilon\\$
+\underline{recall:} $R^{\alpha}_{\beta \mu \nu} = - R^{\alpha}_{\beta \nu \mu}\\$
+\underline{recall:} $R_{\alpha \beta \mu \nu} = \frac{1}{2} ( h_{\alpha \nu, \beta \mu} + h_{\beta \mu, \alpha \nu} - h_{\alpha \mu, \beta \nu} - h_{\beta \nu, \alpha \mu})\\
+\implies R^x_{0x0} = \eta^{x \mu} R_{\mu 0 x 0} = R_{x 0 x 0}\\
+= \frac{1}{2}(h_{x0,0}^{TT} + h^{TT}_{0x,x0} - h_{xx,00}^{TT} - h_{00,xx}^{TT})\\ $
+\underline{recall:} $A_{\alpha \beta}^{TT} = 0$ unless $\alpha = x,y and \beta = x,y\\
+\implies R_{x0x0} = - \frac{1}{2} h_{xx,00}^{TT}\\
+R^y_{0x0} = \eta^{\mu y} R_{\mu 0 x 0 } = R_{y 0 x 0}\\
+=\frac{1}{2} ( h_{y0,0x}^{TT} + h_{0x,y0}^{TT} - h_{yx,00}^{TT} - h^{TT}_{00,yx})\\
+=-\frac{1}{2} h_{yx,00}^{TT}=-\frac{1}{2} h_{xy,00}^{TT}\\
+R^y_{0y0} = R_{y0y0} = \frac{1}{2} ( h_{y0,0y} + h_{0y,yo} - h_{yy,00} - h_{00,yy})\\
+=- \frac{1}{2} h_{yy,00}^TT = - R^x_{0x0}\\
+\frac{d^2 \epsilon^{\alpha}}{d \tau^2} = - \epsilon R^{\alpha}_{0x0}\\
+\implies \frac{d^2 \epsilon^0}{d \tau^2} = - \epsilon R^0_{0x0} = 0;\,\, \frac{d^2 \epsilon^x}{d \tau^2} = - \epsilon R^x_{0x0} = \frac{\epsilon}{2} \frac{\partial^2}{\partial t^2} h_{xx}^{TT}\\
+\frac{d^2 \epsilon^y}{d \tau^2} = - \epsilon R^y_{0x0} = \frac{\epsilon}{2} \frac{\partial^2}{\partial t^2} h_{xy}^{TT}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+Same analysis can be performed for particles initially separated in the y direction\\
+$\implies \frac{\partial^2}{\partial t^2} \xi^{y} = \frac{1}{2} \epsilon \frac{\partial^2}{\partial t^2} h_{yy}^{TT}= - \frac{1}{2} \epsilon \frac{\partial^2}{\partial t^2} h_{xx}^{TT}\\
+\frac{\partial^2}{\partial t^2} \xi^x = \frac{1}{2} \epsilon \frac{\partial^2}{\partial t^2} h_{xy}^{TT}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\frac{\partial^2}{\partial t^2} \xi^i = - R^i_{0j0} \xi^j + \frac{1}{m_B} F_B^i - \frac{1}{m_A} F_A^i$}\\
+\underline{recall:} $\frac{d^2}{d \tau^2} \xi^{\alpha} = R^{\alpha}_{\mu \nu \beta} U^{\mu} U^{\nu} \xi^{\beta} = \gamma^2 \frac{\partial^2}{\partial t^2} \xi^{\alpha} = \frac{\partial^2}{\partial t^2} \xi^{\alpha}\\$
+($\xi^{\alpha}$ is the separation vector between A and B)\\
+$\implies \frac{\partial^2}{\partial t^2} \xi^i = R^i_{00 \beta} \xi^{\beta} = - R^i_{0 \beta 0} \xi^{\beta} - R^i_{0j0} \xi^j\\$
+(i.e., they are not separated in time)\\
+particle B experiences force\\
+$\implies \frac{\partial^2}{\partial t^2} \xi^i = - R^i _{0j0} \xi^j +\frac{1}{m_B} F_B^i\\$
+\underline{Note:} the second term affects separation which is why it is added.\\
+A experiences a force\\
+$\implies \frac{\partial^2}{\partial t^2} \xi^i = -R^i_{0j} \xi^j + \frac{1}{m_B} F_B^i - \frac{1}{m_A} F_A^i\\$
+(don't understand the negative)\\
+A note on the negative, lets say the force on A and the force on B are in the same direction and parallel to $\xi$ and $\xi$ points from A to B, then the force on A will cause $\dot{\xi}$ to decrease while the force on B would cause $\dot{\xi}$ to increase, so they should have the opposite sign.\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}\\
+
+Skipped: 9.32 - 9.63\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}\\
+
+
+\underline{recall:} $(- \frac{\partial^2}{\partial t^2} + \nabla^2) \bar{h}_{\mu \nu} = - 16 T_{\mu \nu}\\$
+Assume $T_{\mu \nu}$ is sinusoidal in time\\
+$\implies T_{\mu \nu} = S_{\mu \nu} ( x^i) e^{-i \omega t}$ (real part)\\
+$\implies \bar{h}_{\mu \nu} = B_{\mu \nu} (x^i) e^{-i \Omega t}\\
+\implies \Box \bar{h}_{\mu \nu} = \Omega^2 \bar{h}_{\mu \nu} + e^{-i \Omega t} \nabla^2 B_{\mu \nu} ( x^i) = - 16 S_{\mu \nu } (x^i) e^{-i \Omega t}\\
+\implies ( \nabla^2 + \Omega^2) B_{\mu \nu} = -16 \pi S_{\mu \nu}\\$
+outside source $S_{\mu \nu} (x^i)=0\\$
+\underline{recall:} $\nabla^2 = \frac{1}{r^2} \frac{\partial}{\partial r}(r^2 \frac{\partial}{\partial r})\\
+\implies ( \nabla^2 + \Omega^2) B_{\mu \nu} = \frac{1}{r^2} \frac{\partial}{\partial r} (r^2 \frac{\partial}{\partial r} B_{\mu \nu}) + \Omega^2 B_{\mu \nu}\\
+= \frac{1}{r^2}(2 r \frac{\partial}{\partial r} B_{\mu \nu}) + \frac{1}{r^2}r^2 \frac{\partial^2}{\partial r^2} B_{\mu \nu} + \Omega^2 B_{\mu \nu} = \frac{2}{r} B_{\mu \nu}'(r) + B_{\mu \nu}''+ \Omega B_{\mu \nu} = 0$ (outside source)\\
+$\implies r B_{\mu \nu}'' + 2 B_{\mu \nu}' + r \Omega B_{\mu \nu} = 0\\$
+$\implies B_{\mu \nu} = \frac{A_{\mu \nu}}{r} e^{i \Omega r} + \frac{Z_{\mu \nu}}{r} e^{-i \Omega r}\\
+A_{\mu \nu},\,\, Z_{\mu \nu} \sim const,\,\, e^{- i \Omega r}$ (ingoing),\,\, $e^{i \Omega r}$ (outgoing)\\
+we want to consider emitted waves (outgoing) $\implies Z_{\mu \nu}=0$\\
+source nonzero inside $R = \epsilon << \frac{2 \pi}{\Omega}$ Lets integrate over this sphere\\
+$(\nabla^2 + \Omega^2) B_{\mu \nu} = - 16 \pi S_{\mu \nu}\\
+\implies \int \nabla^2 B_{\mu \nu} d^3 x + \Omega^2 \int B_{\mu \nu} d^3 x = - 16 \pi \int S_{\mu \nu} d^3 x\\
+|\int B_{\mu \nu} d^3 x| \leq \int |B_{\mu \nu}| d^3 x \leq |B_{\mu \nu}|_{max} V = |B_{\mu \nu}|_{max} \frac{4 \pi}{3} \epsilon^3\\
+\int \nabla^2 B_{\mu \nu} d^3 x = \int \nabla \cdot \nabla B_{\mu \nu} d^3 x = \int \nabla B_{\mu \nu} \cdot \hat{n} dS
+$\\
+\underline{recall:} $\nabla B_{\mu \nu} = \frac{\partial}{\partial r} B_{\mu \nu} \hat{r} + \frac{1}{r} \frac{\partial}{\partial \theta} B_{\mu \nu} \hat{\theta} + \frac{1}{r \sin \theta} \frac{\partial}{\partial \phi} B_{\mu \nu} \hat{\phi} = \frac{\partial}{\partial r} B_{\mu \nu} \hat{r}\\
+\implies \int \nabla B_{\mu \nu} \cdot \hat{r} dS \approx (\frac{\partial B_{\mu \nu}}{\partial r})_{r= \epsilon} \int dS = 4 \pi \epsilon^2 ( \frac{\partial B_{\mu \nu}}{\partial r})_{r=\epsilon}\\
+(\frac{\partial B_{\mu \nu}}{\partial r})_{r=\epsilon} = (- \frac{A_{\mu \nu}}{r^2} e^{i \Omega r} + \frac{A_{\mu \nu}}{r} i \Omega e^{i \Omega r})_{r= \epsilon}\\
+= - \frac{A_{\mu \nu}}{\epsilon^32} e^{i \Omega \epsilon} + \frac{A_{\mu \nu}}{\epsilon} i \Omega e^{i \Omega \epsilon}\\
+\implies \int \nabla B_{\mu nu} \cdot \hat{n} dS = - 4 \pi A_{\mu \nu} e^{i \Omega \epsilon} + 4 \pi \epsilon i \Omega A_{\mu \nu} e^{i \Omega \epsilon} \approx -4 \pi A_{\mu \nu} e^{i \omega \epsilon} \approx - 4 \pi A_{\mu \nu}$ (Since $\epsilon << \frac{2 \pi}{\Omega}\\
+J_{\mu \nu} \equiv \int S_{\mu \nu} d^3 x\\
+\implies - 4 \pi A_{\mu \nu} = - 16 \pi J_{\mu \nu} \implies A_{\mu \nu} = 4 J_{\mu \nu}\\
+\therefore \bar{h}_{\mu \nu} = B_{\mu \nu} e^{- i \Omega t} \approx \frac{A_{\mu \nu}}{r} e^{i \Omega r} = 4 \frac{J_{\mu \nu}}{r} e^{i \Omega(r-t)}\\
+J_{\mu \nu} = \int S_{\mu \nu} d^3 x;\,\, e^{i \Omega t} J_{\mu \nu} = S_{\mu \nu}\\
+\implies e^{-i \Omega t} J_{\mu \nu} = \int T_{\mu \nu} d^3 x\\$
+$\implies J^{\mu \nu} e^{- i \Omega t} = \int T^{\mu \nu} d^3x\\$
+\underline{Note:} $J^{\mu \nu}_{,0} = \int S^{\mu \nu}(x^i)_{,0} d^3 x=0\\
+w/ \nu = 0\\
+\implies - i \Omega J^{\mu 0} e^{- i \Omega t} = \int T^{\mu 0}_{,0} d^3 x\\
+\underline{recall:} T^{\mu \nu}_{, \nu} = 0 \implies T^{\mu 0}_{,00} = - T^{|mu k}_{, k}\\
+\implies i \Omega J^{\mu 0} e^{- i \Omega t} = \int T^{\mu k}_{,k} d^3x\\
+= \oint T^{\mu k} \cdot d \vec{S} = \oint T^{\mu k} n_k dS$\\
+Let $S$ extend outside the source $\implies T^{\mu \nu} = 0$ there\\
+$\Omega \neq 0 \implies i \Omega J^{\mu 0} e^{-i \Omega t} = 0 \implies J^{\mu 0}=0\\$
+recall: $\bar{h}^{\mu \nu} = 4 J^{\mu \nu} e^{i \Omega (r-t)}/r\\
+\implies \bar{h}^{\mu 0} = 0\\$
+\underline{recall:} $\frac{\partial^2}{\partial t^2} \int T^{00} x^{\ell} x^m d^3 x = 2 \int T^{\ell m} d^3 x$ (4.10 ex. 23)\\
+\underline{recall:} $T^{00} \approx \rho$ (chapter 7)\\
+$\implies I^{\ell m} : = \int T^{00} x^{\ell} x^m d^3 x = \int S^{00} (x^i) e^{-i \Omega t} x^{\ell} x^m d^3 x\\$
+$= \int S^{00}(x^i) x^{\ell} x^m d^3 x e^{-i \Omega t} = D^{\ell m} e^{- i \Omega t}\\
+\underline{recall:} \bar{h}_{jk} = 4 J_{jk} e^{i \Omega (r-t)}/r; J_{jk} = e^{i \Omega t} \int T_{jk} d^3 x; \frac{d^2}{dt^2} \int T^{00} x^{\ell} x^m d^3 x = 2 \int T^{\ell m} d^3 x\\
+\implies \bar{h}_{jk} = 4 ( e^{i \Omega t} \int T_{jk} d^3 x) e^{i \Omega (r-t)}/r\\
+=4(e^{i \Omega t} \frac{1}{2} \frac{d^2}{dt^2} \int T^{--} x_j x_k d^3 x) e^{i \Omega(r-t)}/r\\
+= 2 e^{i \Omega t} \frac{d^2}{dt^2} ( D_{jk} e^{-i \Omega t}) e^{i \Omega(r-t)}/r\\
+= 2 e^{i \Omega r t} D_{jk} (-i \Omega)^2 e^{-i \Omega t}/r\\
+= - 2 \Omega^2 D_{jk} e^{i \Omega (r-t)}/r$\\
+Quadrupole approximation\\
+
+
+
+
+
+
+
+
+
+\section*{Chapter 10}
+\item \underline{$ds^2 = g_{00} dt^2 + 2 g_{0r} dt dr + g_{rr} dr^2 + r^2 d \Omega^2$}\\
+general metric for spherical symmetry\\
+minkowski metric in spherical coordinates:\\
+$ds^2 = - dt^2 + dr^2 + r^2 (d \theta^2 + \sin^2 \theta d \phi^2)\\$
+a surface of constant t and r is given by a sphere\\
+$ds^2 = r^2(d \theta^2 + \sin^2 \theta d \phi^2) = r^2 d \Omega^2\\$
+in general, spherical symmetry\\
+$\implies d \ell^2 = f(r',t) (d \theta^2 + \sin^2 \theta d \phi^2)\\$
+a line with const $t, \theta, \phi$ is orthogonal to the concentric two spheres centered at 0 with radius $r$ and $r + dr \implies g_{r \theta} = g_{r \phi} = 0\\$
+since $\vec{e}_r \cdot \vec{e}_{\theta} = 0\\
+\implies ds^2 = g_{\mu \nu} dx^{\mu} dx^{\nu} = g_{00} dt^2 + 2 g_{0r} dr dt + 2 g_{0 \theta} d \theta dt + 2 g_{0 \phi} d \\phi dt + g_{rr} dr^2 + r^2 d \Omega^2\\$
+If we consider line of const $r$, $\theta, \phi$ then $g_{0 \theta} = g_{0 \phi} =0\\$
+$\implies ds^2 = g_{00} dt^2 + 2 g_{0r} dr dt + g_{rr} dr^2 + r^2 d \Omega^2\\$
+spherically symmetric spacetime is not necessarily static so $g_{0r} \neq 0$ since space could be expanding\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{static}\\
+(i) metric components independent of time\\
+(ii) geometry unchanged by $t \rightarrow -t$\\
+these are not equivalent conditions, consider for example a rotating star\\
+(ii) means it looks the same when played backwards\\
+if (i) is satisfied but not (ii)\\
+$\implies$ stationary\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$ds^2 = - e^{2 \Phi} dt^2 + e^{2 \Lambda} dr^2 + r^2 d \Omega^2$}\\
+(ii) $\implies (t, r, \theta, \phi) \rightarrow (-t, r, \theta, \phi)\\
+\implies \Lambda^{\bar{0}}_0 = -1,\,\, \Lambda^i_j = \delta^i_j\\
+\implies g_{\bar{0} \bar{0}} = (\Lambda^0_{\bar{0}})^2 g_{00} = g_{00}\\
+g_{\bar{0} \bar{r}} = \Lambda^0_{\bar{0}} \Lambda^r_{\bar{r}} g_{0r} = - g_{0rr}\\
+g_{\bar{r} \bar{r}} = (\Lambda^r_{\bar{r}})^2 g_{rr} = g_{rr}\\$
+geometry unchanged $\implies g_{\bar{\alpha} \bar{\beta}} = g_{\alpha \beta} but g_{\bar{0} \bar{r}} \neq g_{0r}\\
+\implies g_{0r} = g_{r0} = 0\\$
+\underline{recall:} $ds^2 = g_{00} dt^2 +2 g_{0r} dr dt + g_{rr} dr^2 + r^2 d \Omega^2\\
+\therefore ds^2 = - e^{2 \Phi} dt^2 + e^{2 \Lambda} dr^2 + r^2 d \Omega^2\\$
+this metric works inside stars but not inside black holes.\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+\section*{Chapter 11}
+
+
+need to construct metric for cosmological model. Must be homogeneous (independent of space) and isotropic (same in every direction) It can expand, no random motion, t is proper time for each galaxy. At time $t=t_0$\\
+$\implies d \ell^2(t_0) = h_{ij}(t_0) dx^i dx^j\\$
+At time $t_1 \implies d \ell^2(t_1) = f(t_1, t_0) h_{ij}(t_0) dx^i dx^j=h_{ij}(t_1) dx^i dx^j\\$
+this guarantees all $h_{ij}'s$ increase at same rate (isotropy)\\
+$\implies d \ell^2(t) = R^2(t) h_{ij} dx^i dx^j,\,\, R(t_0) = 1 h_{ij}(const\\
+R \sim$ scale factor sometimes denoted by $a$\\
+$\implies ds^2 = - dt^2 + 2 g_{0i} dt dx^i + R^2(t) h_{ij} dx^i dx^j\\
+g_{00} = -1$ because t is proper time or $dx^i = 0\\$
+def of simultaneity must agree with lorentz frame attached to galaxy $\implies g_{0i} = 0\\
+\implies ds^2 = - dt^2 + R^2(t) h_{ij} dx^i dx^j\\$
+isotropic $\implies$ spherical symmetry\\
+$\implies d \ell^2 = e^{2 \Lambda(r)} dr^2 + r^2 d \Omega^2\\
+\implies$ only isotropy about one point
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+This metric implies isotropy about one point. We want it to be homogeneous. A condition that satisfies this is the Ricci scalar must have same value at every point in space ($R^i_i$)\\
+$G_{rr} = - \frac{1}{r^2} e^{2 \Lambda} (1- e^{-2 \Lambda});\,\, G_{\theta \theta} = - r e^{-2 \Lambda} \Lambda;\,\, G_{\phi \phi} = \sin^2 \theta G_{\theta \theta}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$R_i^i$ at every point $\implies G$ has same value at every point\\
+is $g^{\alpha \beta}$ inverse of $g_{\alpha \beta}$?\\
+$G= G_{ij} g^{ij} = G_{rr} g^{rr} + G_{\phi \phi} g^{\phi \phi} + G_{\theta \theta} g^{\theta \theta}\\
+=- \frac{1}{r^2} e^{2 \Lambda} (1- e^{-2 \Lambda}) e^{-2 \Lambda} + \sin^2 \theta ( - r e^{-2 \Lambda} \Lambda') \frac{r^{0-2}}{\sin^2 \theta} + (-r e^{-2 \Lambda} \Lambda') r^{-2}\\
+= - \frac{1}{r^2}(1-e^{-2 \Lambda}) - \frac{e^{-2 \Lambda} \Lambda'}{r} 0- \frac{e^{-2 \Lambda} \Lambda'}{r}\\
+= - \frac{1}{r^2} + \frac{e^{-2 \Lambda}}{r^2} - \frac{2 e^{-2 \Lambda} \Lambda'}{r}\\
+= - \frac{1}{r^2} [ 1- (r e^{-2 \Lambda})'] = \kappa =$ constant\\
+$\implies \kappa r^2 + 1 = (r e^{-2 \Lambda})'\\
+\implies \int(1 + \kappa r^2) dr = r e^{-2 \Lambda} + A\\
+\implies r + \frac{1}{3} \kappa r^3 = r e^{-2 \Lambda} + A\\
+\implies 1 + \frac{1}{3} \kappa r^2 - \frac{a}{r} = e^{- 2 \Lambda}\\
+\implies e^{2 \Lambda} = \frac{1}{1 + \frac{1}{3} \kappa r^2 - \frac{A}{r}} = g_{rr}\\$
+demand local flatness $\implies g_{rr} (r=0) = 1 \implies \frac{1}{3} \kappa r^2 - \frac{A}{r} = 0\\
+\implies A = 0 ,\,\,$ define $k = - \frac{\kappa}{3}\\
+\implies g_{rr} = \frac{1}{1- kr^2}\\
+\implies d \ell^2 = \frac{dr^2}{1- k r^2} + r^2 d \Omega ^2 \implies$ curvature scalar homogeneous\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\implies ds^2 = - dt^2 + R^2(t)[ \frac{dr^2}{1- k r^2} + r^2 d \Omega^2]\\$
+is homogeneous and isotropic for any value k\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+Notice that if $k=-3 then define \tilde{r} = \sqrt{3} r and \tilde{R} = \frac{1}{\sqrt{3}} R\\
+\implies ds^2 = -dt^2 + \tilde{R}^2(t)[ \frac{d \tilde{r}^2}{1-\tilde{r}^2} + \tilde{r}^2 d \Omega^2]\\
+\therefore$ only need to consider 3 values $k=(-1,0,1)$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$k=0\\
+\implies d \ell^2 = R^2(t_0) [dr^2 + r^2 d \Omega^2] = d(r')^2 + (r')^2 d \Omega\\
+r' = R(t_0) r \implies$ flat Robertson-Walker Universe\\
+$k=1\\
+d \chi^2 = \frac{dr^2}{1-r^2} \chi = 0 when r = 0\\
+\implies r = \sin \chi\\
+\implies d \ell^2 = R^2(t_0) [d \chi^2 + \sin^2 \chi(d \theta^2 + \sin^2 \theta d \phi^2)\\
+\implies$ spherical Robertson- walker universe\\
+$k=-1\\
+\implies d \ell^2 = R^2(t_0)(d \chi^2 + \sinh^2 \chi d \Omega^2) \sim$ hyperbolic\\
+Since universe is expanding, the distance is fuzzy since it is measured on the speed of light, a better way is to measure distances based on redshift, $z$. For large scale the random velocity of galaxies can be ignored compared to the velocity from expansion.\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$1+z = \frac{R(t_0)}{R(t)}$}\\
+consider photon on $\theta =$ const.,\,\, $\phi =$ const.\\
+$\implies 0 = - dt^2 + R^2(t) d \chi^2\\
+t$ is proper time?\\
+$\implies$ energy measured by local observer at rest on trajectory is $- p^0\\
+p_{\chi}$ constant. $\implies p^0 \propto \frac{1}{R(t)}\\
+\implies \lambda \propto R(t)$ ?\\
+$z \sim$ redshift ?\\
+$\implies 1+ z = \frac{R(t_0)}{R(t)}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Note:} $H(t) = \frac{\dot{R}(t)}{R(t)} \implies R(t) = R_0 \exp[\int_{t_0}^t H(t') dt']$\\
+taylor expand\\
+$\int_{t_0}^t H(t') dt' = 0 + H_0 (t-t_0) + \frac{1}{2} \dot{H}_0 (t-t_0)^2 + \cdots\\
+\implies R(t) = R_0 \exp(H_0 (t-t_0) + \frac{1}{2} \dot{H}_0(t-t_0)^2)\\
+= R_0 \exp(H_0(t-t_0)) \exp(\frac{1}{2} \dot{H}_0 (t-t_0)^2)\\
+=R_0 (1+ H_0 (t-t_0) + \frac{1}{2} H_0^2(t-t_0)^2 + \cdots)(1+ \frac{1}{2} \dot{H}_0 (t-t_0)^2 + \cdots)\\
+= R_0(1+ \frac{1}{2} \dot{H}_0 (t-t_0)^2 + H_0 (t-t_0) + \frac{1}{2} H_0^2(t-t_0)^2 + \cdots)\\
+= R_0 ( 1+ H_0 (t-t_0) + \frac{1}{2}(H_0^2 + \dot{H}_0) (t-t_0)^2 + \cdots)$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$1 + z(t) = \exp[- \int_{t_0}^t H(t') dt']\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$H(t) = - \frac{\dot{z}}{1 + z}$}\\
+\underline{recall:} $1 + z(t) = \exp[- \int_{t_0}^t H(t') dt']\\
+\implies - \ln (1+ z) = \int_{t_0}^t H(t') dt'\\
+\implies =- \frac{1}{1+z} \dot{z} = H(t)\\
+\therefore H(t) = - \frac{\dot{z}}{1+ z}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$d_L = ( \frac{L}{4 \pi F})^{1/2}$}
+spose we know the flux and distance oof a star $\frac{J}{s m^2}\\$
+to get lumosity $( \frac{J}{s})\\
+\implies L= 4 \pi d^2 f\\$
+solve for $d \implies d_L = ( \frac{L}{4 \pi F})^{1/2}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$F = \frac{L}{A(1+z)^2},\,\, d_L = R_0 r(1+z)$}\\
+object $L$ at $t_0$ what flux do we recieve at $t_0$ photon frequency $\nu_e$ at $t_e$\\
+small $\delta t_e$\\
+\# photons emitted in $\delta t_e = N = \frac{energy emitted}{energy per photon} = \frac{L \delta t_e}{h \nu_e}\\$
+suppose object at origin and we sit at $r$ the area the number of photons rest on is proper area\\
+\underline{recall:} $ds^2 = - dt^2 + R^2(rt) [ \frac{dr^2}{1- kr^2}
+ + r^2 d \Omega^2]\\
+ dt = dr = 0 \implies A = 4 \pi R_0^2 r^2\\
+ \nu_e$ redshifts to $\nu_0 by (1+z) = R_0/R(t_e)\\
+ \implies h \nu_0 = h \frac{\nu_e}{1 + z}\\
+ \delta t_0$ grows due to redshift\\
+ $\implies \delta t_0 = \delta t_e (1+z)\\
+ F_0 = \frac{N h \nu_0}{A \delta t_0} = \frac{N h \nu_0}{A \delta t_e (1 + z)} = \frac{N h \nu_e}{A \delta t_e (1+ z)^2}\\$
+ but $L = \frac{h \nu_e N}{\delta t_e} \implies F = \frac{L}{A( 1+ z)^2}\\$
+ \underline{recall:} $d_L = ( \frac{L}{4 \pi F})^{1/2} = ( \frac{A(1+z)^2}{4 \pi})^{1/2} = ( R_0^2 r^2( 1+z)^2)^{1/2}\\
+ =R_0 r(1+ z)\\$
+ 
+ 
+ \hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$d_A = \frac{D}{\theta} D$ is transverse diameter (arclength) of object $\theta$ is the angle of object and $d_A$ is distance to object
+
+
+ \hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+the metric only depends on one time dependent quantity, R(t) (scale factor, not Ricci scalar)\\
+
+
+ \hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\frac{d}{dt} ( \rho R^3) = - p \frac{d}{dt} (R^3)$}\\
+\underline{recall:} $T^{\mu \nu}_{; \nu} = 0;\,\, V_{; \beta}^{\alpha} = V_{, \beta}^{\alpha} + V^{\mu} \Gamma_{\mu \beta}^{\alpha};\,\, G^{\alpha \beta} = 8 \pi T^{\alpha \beta} \implies \frac{1}{8 \pi} G^{\alpha \beta} = T^{\alpha \beta};\,\, ds^2 = - dt^2 + R^2(t) [ \frac{dr^2}{1-k r^2} + r^2 ( d \theta^2 + \sin^2 \theta d \phi^2)]\\
+\implies g_{\mu \nu} = \begin{pmatrix} -1 & 0 & 0 & 0 \\ 0 & \frac{R^2(t)}{1-kr^2} & 0 & 0\\
+0 & 0 & r^2 & 0 \\
+0 & 0 & 0 & r^2 \sin^2 \theta \end{pmatrix}\\$
+use program to compute spacial component of $T^{\mu \nu}$ are zero, only time component matters\\
+$T^{0 \nu}_{; \nu} = \dot{\rho} + \frac{3 ( p+ \rho) \dot{R}}{R}\\
+\implies \frac{1}{R}( R \dot{\rho} + 3 \rho \dot{R}) + \frac{3 p}{R} \dot{R} = 0\\
+\implies \frac{1}{R^3} ( R^3 \dot{\rho} + 3 R^2 \dot{R} \rho) = - 3 \frac{p}{R}\\
+\implies \frac{1}{R^3} \frac{d}{dt} ( R^3 \rho) = - 3 \frac{p}{R}\\
+\implies \frac{d}{dt} (R^3 \dot{\rho}) = - 3 p R^2 \dot{R} = - p \frac{d}{dt} R^3\\$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{enumerate}
+
+\end{document}
